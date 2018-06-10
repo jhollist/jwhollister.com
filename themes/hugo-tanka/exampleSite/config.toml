@@ -1,6 +1,6 @@
 baseurl = "/"
 publishDir = "docs"
-title = "Jeffrey W. Hollister"
+title = "Hugo Tanka Theme"
 author = "Nan Xiao"
 canonifyurls = true
 languagecode = "en"
@@ -20,25 +20,21 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [[menu.main]]
     name = "Home"
-    url = "/"
+    url = "https://nanx.me"
     weight = 1
 [[menu.main]]
-    name = "About"
-    url = "/about.html"
+    name = "GitHub"
+    url = "https://github.com/road2stat"
     weight = 2
 [[menu.main]]
-    name = "C.V."
-    url = "/cv.html"
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/road2stat"
     weight = 3
 [[menu.main]]
     name = "Twitter"
-    url = "https://twitter.com/jhollist"
+    url = "https://twitter.com/road2stat"
     weight = 4
-[[menu.main]]
-    name = "GitHub"
-    url = "https://github.com/jhollist"
-    weight = 5
 [[menu.main]]
     name = "RSS"
     url = "/index.xml"
-    weight = 6
+    weight = 5
