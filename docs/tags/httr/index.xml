@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Httr on Jeffrey W. Hollister</title>
+    <link>/tags/httr/</link>
+    <description>Recent content in Httr on Jeffrey W. Hollister</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 15 Jun 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/httr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Download Shapefiles - Take 2</title>
+      <link>/post/2015-06-15-download-shapefile-reprise/</link>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2015-06-15-download-shapefile-reprise/</guid>
+      <description>So back in 2013 I posted a little function I wrote for grabbing all the relevant files that make up a shapefile from a URL. Turns out it doesn&amp;rsquo;t play so well with Windows 7 or Windows 8 (HT: John Lewis). Below is a reprised version that at least works on Ubuntu 14.04 and Windows 7. Haven&amp;rsquo;t tested it beyond that and supressing the warnings to get httr::GET to not complain too much about FTP seems a bit unclean.</description>
+    </item>
+    
+  </channel>
+</rss>

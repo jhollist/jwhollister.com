@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rstudio Server on Jeffrey W. Hollister</title>
+    <link>/tags/rstudio-server/</link>
+    <description>Recent content in Rstudio Server on Jeffrey W. Hollister</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	<atom:link href="/tags/rstudio-server/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RStudio Server on a Chromebook</title>
+      <link>/post/2018-01-18-rstudio-server-on-a-chromebook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-18-rstudio-server-on-a-chromebook/</guid>
+      <description>The only post I got around to writing in 2017 was a single messy, evoloving set of notes on how to set up a Chromebook with R and RStudio. This post is a reprise of that one as well as post #1 in my effort to double my blog output from 2017 (I’m shooting for the stars on that goal). In this post I will detail how to set up RStudio Server in a crouton chroot and access it directly via Chrome without having to fire up a separate X11 window.</description>
+    </item>
+    
+  </channel>
+</rss>

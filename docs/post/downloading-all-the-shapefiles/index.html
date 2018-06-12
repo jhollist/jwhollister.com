@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  
+
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <title>
+    
+    
+     Download Shapefiles - Take 2 
+    
+  </title>
+  <link rel="canonical" href="/post/downloading-all-the-shapefiles/">
+
+  <link rel="stylesheet" href="/css/fonts.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+
+  
+</head>
+
+<body>
+<section id=nav>
+  <h1><a href="/">Jeffrey W. Hollister</a></h1>
+  <ul>
+    
+    <li><a href="/">Home</a></li>
+    
+    <li><a href="/about.html">About</a></li>
+    
+    <li><a href="/cv.html">C.V.</a></li>
+    
+    <li><a href="https://twitter.com/jhollist">Twitter</a></li>
+    
+    <li><a href="https://github.com/jhollist">GitHub</a></li>
+    
+    <li><a href="/index.xml">RSS</a></li>
+    
+  </ul>
+</section>
+
+
+<section id=content>
+  <h1> Download Shapefiles - Take 2 </h1>
+
+  <div id=sub-header>
+    Jeffrey W. Hollister · 2015/06/15 · 2 minute read
+  </div>
+
+  <div class="entry-content">
+    <p>So back in 2013 I <a href="https://landeco2point0.wordpress.com/2013/09/30/an-r-function-to-download-shapefiles/">posted a little function</a> I wrote for grabbing all the relevant files that make up a shapefile from a URL. Turns out it doesn’t play so well with Windows 7 or Windows 8 (HT: John Lewis). Below is a reprised version that at least works on Ubuntu 14.04 and Windows 7. Haven’t tested it beyond that and supressing the warnings to get <code>httr::GET</code> to not complain too much about FTP seems a bit unclean. Well, you get what you pay for.</p>
+<p>For all this to run you’ll need <code>RCurl</code>, <code>httr</code>, <code>sp</code>, and <code>rgdal</code>.</p>
+<pre class="r"><code>#&#39; function to download all available shapefile files from a URL
+#&#39; @import RCurl
+#&#39; @export
+#&#39; @examples
+#&#39; \dontrun{
+#&#39; download_shp(&quot;ftp://ftp.granit.sr.unh.edu/pub/GRANIT_Data/Vector_Data/Administrative_and_Political_Boundaries/d-nhsenatedists/2012&quot;,&quot;NHSenateDists2012&quot;)
+#&#39; download_shp(&quot;http://jwhollister.com/iale_open_science/files&quot;,&quot;LocPt&quot;)
+#&#39; }
+download_shp&lt;-function (shape_url, layer, outfolder = &quot;.&quot;) 
+{
+  if (length(grep(&quot;/$&quot;, shape_url)) == 0) {
+    shape_url &lt;- paste(shape_url, &quot;/&quot;, sep = &quot;&quot;)
+  }
+  
+  shapefile_ext &lt;- c(&quot;.shp&quot;, &quot;.shx&quot;, &quot;.dbf&quot;, &quot;.prj&quot;, &quot;.sbn&quot;, 
+                     &quot;.sbx&quot;, &quot;.shp.xml&quot;, &quot;.fbn&quot;, &quot;.fbx&quot;, &quot;.ain&quot;, &quot;.aih&quot;, &quot;.ixs&quot;, 
+                     &quot;.mxs&quot;, &quot;.atx&quot;, &quot;.cpg&quot;)
+
+  xlogic &lt;- NULL
+  if(substr(shape_url,1,3)==&quot;ftp&quot;){
+    xurl &lt;- RCurl::getURL(shape_url)
+    for (i in paste(layer, shapefile_ext, sep = &quot;&quot;)) {
+      xlogic &lt;- c(xlogic, grepl(i, xurl))
+    }
+  } else if(substr(shape_url,1,4)==&quot;http&quot;){
+    for (i in paste(shape_url,layer, shapefile_ext, sep = &quot;&quot;)) {
+      xlogic &lt;- c(xlogic,httr::HEAD(i)$status==200)
+    }  
+  }
+  
+ 
+  shapefiles &lt;- paste(shape_url, layer, shapefile_ext, 
+                      sep = &quot;&quot;)[xlogic]
+  outfiles &lt;- paste(outfolder, &quot;/&quot;, layer, shapefile_ext, 
+                    sep = &quot;&quot;)[xlogic]
+  
+  if (sum(xlogic) &gt; 0) {
+    for (i in 1:length(shapefiles)) {
+      x &lt;- suppressWarnings(httr::GET(shapefiles[i], 
+                                      httr::write_disk(outfiles[i],
+                                                       overwrite = TRUE)))
+      
+      dwnld_file &lt;- strsplit(shapefiles[i], &quot;/&quot;)[[1]]
+      dwnld_file &lt;- dwnld_file[length(dwnld_file)]
+      
+      print(paste0(&quot;Downloaded &quot;, dwnld_file, &quot; to &quot;, 
+                   outfiles[i], &quot;.&quot;))
+    }
+  }
+  else {
+    stop(&quot;An Error has occured with the input URL or 
+              name of shapefile&quot;)
+  }
+}</code></pre>
+<p>And to see that it works again:</p>
+<p><em>note: As of 2018-06-10, this particular example no longer works as shapefiles now are served as a zip file. Left here for posterity!</em></p>
+<pre class="r"><code>#Download the NH State Boundaries
+download_shp(&quot;ftp://ftp.granit.sr.unh.edu/pub/GRANIT_Data/Vector_Data/Administrative_and_Political_Boundaries/d-nhsenatedists/2012&quot;,
+                   &quot;NHSenateDists2012&quot;)
+#Read shapefiles in SpatialPolygonsDataFrame
+NHBnd&lt;-readOGR(&quot;.&quot;,&quot;NHSenateDists2012&quot;)
+#Plot it
+plot(NHBnd)</code></pre>
+
+  </div>
+
+  <div id=links>
+    
+      <a class="basic-alignment left" href="/post/landlandcov_nlcd2001/">&laquo; </a>
+    
+    
+  </div>
+</section>
+
+<section id="comments">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+      
+      
+      if (window.location.hostname == "localhost")
+                return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'jeffreywhollister';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+  
+  
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+</body>
+</html>
+

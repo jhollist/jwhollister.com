@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  
+
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <title>
+    
+    
+     Automatically Organizing Photographs on Google Drive: Why isn&#39;t this already a thing? 
+    
+  </title>
+  <link rel="canonical" href="/post/2015-02-02-organizing-photos-on-google-drive/">
+
+  <link rel="stylesheet" href="/css/fonts.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+
+  
+</head>
+
+<body>
+<section id=nav>
+  <h1><a href="/">Jeffrey W. Hollister</a></h1>
+  <ul>
+    
+    <li><a href="/">Home</a></li>
+    
+    <li><a href="/about.html">About</a></li>
+    
+    <li><a href="/cv.html">C.V.</a></li>
+    
+    <li><a href="https://twitter.com/jhollist">Twitter</a></li>
+    
+    <li><a href="https://github.com/jhollist">GitHub</a></li>
+    
+    <li><a href="/index.xml">RSS</a></li>
+    
+  </ul>
+</section>
+
+
+<section id=content>
+  <h1> Automatically Organizing Photographs on Google Drive: Why isn&#39;t this already a thing? </h1>
+
+  <div id=sub-header>
+     · 2015/02/02 · 2 minute read
+  </div>
+
+  <div class="entry-content">
+    <p>Over the last year or so, my wife and I have been moving most our files onto Google Drive.  This has worked great as we have access across all of our devices.  The last vestiges of local storage have been our photos.  With the recent purchase of a Chromebook (which I&rsquo;ve been impressed with but that is a different post&hellip;) and the 1TB of Google Drive storage that came with it, I decided to take the plunge and get our photos up their too.</p>
+
+<p>Now, I thought that getting the photos moved and organized would be a snap because there certainly had to be a solution for keeping photos on Drive and organized.  There were many options but none of them perfect.  Many of them relied on Google+ Photos (I am not a fan of Google+), struggled with organizing large numbers of photos (nearly 20k), or were not able to be automated. It quickly became clear that I had to more less roll my own.</p>
+
+<p>The solution I settled on in the end was to use a simple bash script set up as a cron job on an Ubuntu box that called <a href="https://github.com/Grive/grive">grive</a> and <a href="http://www.sno.phy.queensu.ca/~phil/exiftool/">exiftool</a>.</p>
+
+<p><strong>Update 3/13/2015:</strong>  I was going to have more in this post, but didn&rsquo;t get around to it.  In the meantime, <code>grive</code> started giving me problems and wasn&rsquo;t syning correctly.  I think I have a solution that uses <a href="https://github.com/astrada/google-drive-ocamlfuse">google-drive-oacmlfuse</a> to just mount google drive directly on the linux box.  I need to update my bash scripts and once I get that done, I&rsquo;ll post those scripts here.</p>
+
+  </div>
+
+  <div id=links>
+    
+      <a class="basic-alignment left" href="/post/2014-10-9-category-feed/">&laquo; Getting a Category Feed Up and Running with Jekyll on Github</a>
+    
+    
+      <a class="basic-alignment left" href="/post/2015-03-13-quickmapr-pre-release/">quickmapr: An R package for mapping and interacting with spatial data &raquo;</a>
+    
+  </div>
+</section>
+
+<section id="comments">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+      
+      
+      if (window.location.hostname == "localhost")
+                return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'jeffreywhollister';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+  
+  
+
+
+</body>
+</html>
+

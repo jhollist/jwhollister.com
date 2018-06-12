@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  
+
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <title>
+    
+    
+     Rstudio Server On A Chromebook 
+    
+  </title>
+  <link rel="canonical" href="/post/2018-01-18-rstudio-server-on-a-chromebook/">
+
+  <link rel="stylesheet" href="/css/fonts.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+
+  
+</head>
+
+<body>
+<section id=nav>
+  <h1><a href="/">Jeffrey W. Hollister</a></h1>
+  <ul>
+    
+    <li><a href="/">Home</a></li>
+    
+    <li><a href="/about.html">About</a></li>
+    
+    <li><a href="/cv.html">C.V.</a></li>
+    
+    <li><a href="https://twitter.com/jhollist">Twitter</a></li>
+    
+    <li><a href="https://github.com/jhollist">GitHub</a></li>
+    
+    <li><a href="/index.xml">RSS</a></li>
+    
+  </ul>
+</section>
+
+
+<section id=content>
+  <h1> Rstudio Server On A Chromebook </h1>
+
+  <div id=sub-header>
+     · 2018/01/18 · 8 minute read
+  </div>
+
+  <div class="entry-content">
+    
+
+<p>The only post I got around to writing in 2017 was a single messy,
+evoloving set of notes on how to set up a Chromebook with R and RStudio.
+This post is a reprise of that one as well as post #1 in my effort to
+double my blog output from 2017 (I&rsquo;m shooting for the stars on that
+goal). In this post I will detail how to set up RStudio Server in a
+crouton chroot and access it directly via Chrome without having to fire
+up a separate X11 window.</p>
+
+<h2 id="why-rstudio-server">Why RStudio Server?</h2>
+
+<p>I have been succesfully using RStudio Desktop on my Chromebook all year
+and it has worked great. But there have been a few issues that have kind
+of bothered me. The top four of these are: opening web pages from
+RStudio, opening documents (PDF or Word), overall look and feel, and
+(the big one) not being able to pull out a source tab into a separate
+window. None of these are deal breakers, but they did lead to a bit of a
+bumpy workflow at times. I did not have these problems when accessing
+RStudio Server in the browser, but I don&rsquo;t want to pay for servers to
+host RStudio Server nor do I want to require an internet connection to
+work. I figured I could stand up RStudio Server in a chroot, access it
+directly in Chrome via <code>localhost</code> and have a much more native ChromeOS
+feeling experience.</p>
+
+<p>The long and short of it is that it is pretty easy to get set up (if you
+are comfortable setting up crouton) and the overall experience is much
+improved with web pages and documents just opening up in new tabs as
+you&rsquo;d expect. The biggest improvement is now I can pull out those source
+tabs into a stand alone window and take advantage of the real estate of
+dual screens!</p>
+
+<p>So enough yammering, how do you do it?</p>
+
+<h2 id="install-crouton-and-set-up-your-chroot">Install crouton and set up your chroot</h2>
+
+<p>There are a lot of great resources for installing crouton so no need for
+me to go over that again. In particular take a look at <a href="https://github.com/jennybc/operation-chromebook">Jenny Bryan&rsquo;s
+notes</a> and the <a href="https://github.com/dnschneid/crouton">crouton
+repository</a></p>
+
+<p>For RStudio Server we don&rsquo;t need a full desktop so I decided to try this
+with a minimal install. I chose core and cli-extra because, frankly, I
+didn&rsquo;t know the difference between the two and was just playing it safe.
+You can choose to encrypt the chroot or not. I didn&rsquo;t as I was playing
+around with auto-starting the chroot when Chrome OS starts (<a href="https://github.com/dnschneid/crouton/wiki/Autostart-crouton-chroot-at-ChromeOS-startup">see here
+for more on
+that</a>).
+Never got that part of it working right.</p>
+
+<p><em>update 2018-01-28:</em> With just core and cli-extra you are missing a few
+things. Most notably for me, sound was not working correctly. And well,
+I need <a href="https://cran.r-project.org/package=beepr">Rasmus Bååth&rsquo;s beepr
+package</a>. Adding the
+<code>extension</code> target fixed this.</p>
+
+<p><em>update 2018-01-30:</em> While extension fixed the audio issue, I was still
+having problems with RStudio Server and R Session getting
+discombobulated. I tried a full desktop install and that appears to be
+working much better. So the idea of using the minimal install wasn&rsquo;t so
+great as some needed tooling was obviously missing. The rest of this
+post has been updated to reflect this.</p>
+
+<p>Anyway, here is what I used to get my chroot set up.</p>
+
+<pre><code>sudo sh ~/Downloads/crouton -t xfce,extension -n rstudio
+</code></pre>
+
+<p>Once that finishes (it takes a while), you can hop into the chroot with</p>
+
+<pre><code>sudo enter-chroot
+</code></pre>
+
+<h2 id="install-r">Install R</h2>
+
+<p>With a shiny new chroot started, we can now start all of our installs.
+First one is R.</p>
+
+<pre><code>sudo echo &quot;deb http://cran.rstudio.com/bin/linux/ubuntu xenial/&quot; | sudo tee -a /etc/apt/sources.list
+gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
+gpg -a --export E084DAB9 | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install r-base r-base-dev
+</code></pre>
+
+<h2 id="install-rstudio-server">Install RStudio Server</h2>
+
+<p>Next, we need to install RStudio Server. This grabs the latest and
+greatest version as of January 2018. I choose to delete the <code>.deb</code> just
+to keep the footprint of this thing to a minimum.</p>
+
+<pre><code>sudo apt-get install gdebi-core
+wget https://download2.rstudio.org/rstudio-server-1.1.419-amd64.deb
+sudo gdebi rstudio-server-1.1.419-amd64.deb
+rm rstudio-server-1.1.419-amd64.deb
+</code></pre>
+
+<p>As an aside, I got distracted when I started working on this section. I
+wanted to be able to download the current version of RStudio Server
+without actually knowing what that version was. Luckily, RStudio lists
+those as <code>XML</code> at <a href="https://downloads2.rstudio.org">https://downloads2.rstudio.org</a>. Unluckily, I know
+next to nothing about working with <code>XML</code> so this code certainly reflects
+that as I convert to string and parse that for the current version. If
+you are interested, here&rsquo;s the function that gets the current version of
+RStudio Server. Also if you have thoughts on a more direct root (seems
+like it could be done within the <code>XML</code> itself), let me know in the
+comments.</p>
+
+<pre><code>get_rstudio_server &lt;- function(arch = c(&quot;amd64&quot;,&quot;i386&quot;,&quot;i686&quot;,&quot;x86_64&quot;),
+                               file_type = c(&quot;.deb&quot;,&quot;.rpm&quot;),
+                               pro = FALSE, get = TRUE){
+  arch &lt;- match.arg(arch)
+  file_type &lt;- match.arg(file_type)
+  url &lt;- 'https://download2.rstudio.org'
+  dat &lt;- xml2::read_xml(url)
+  dat_txt &lt;- xml2::xml_text(xml2::xml_children(dat)) 
+  current &lt;- dat_txt[stringr::str_detect(dat_txt,&quot;current&quot;)]
+  current_date &lt;- stringr::str_sub(current,12,21)
+  deb_files &lt;- dat_txt[stringr::str_detect(dat_txt,current_date)]
+  deb_files &lt;- deb_files[stringr::str_detect(deb_files,paste0(arch,file_type))]
+  if(length(deb_files) == 0){
+    stop(&quot;Not a valid arch and file_type combination&quot;)
+  }
+  if(pro){
+    deb_file &lt;- deb_files[stringr::str_detect(deb_files, &quot;pro&quot;)]
+  } else {
+    deb_file &lt;- deb_files[!stringr::str_detect(deb_files, &quot;pro&quot;)]
+  }
+  deb_file &lt;- stringr::str_sub(deb_file,1,
+                               stringr::str_locate(deb_file,current_date)[1]-1)
+  deb_file &lt;- deb_file[1]
+  if(get){
+    httr::GET(paste0(url,&quot;/&quot;,deb_file),httr::write_disk(deb_file, overwrite = TRUE),
+              httr::progress())
+  }
+  deb_file
+}
+</code></pre>
+
+<h2 id="open-up-firewall">Open up firewall</h2>
+
+<p>Since this is RStudio server, we will be accessing it via Chrome and
+will need to make sure the requests get through the chroot&rsquo;s firewall.
+We need to open that up to do so. I include the <code>nano</code> install because
+it is a little easier to work with than <code>vim</code>.</p>
+
+<pre><code>sudo apt-get install nano
+sudo nano /etc/rc.local
+</code></pre>
+
+<p>Then add <code>/sbin/iptables -I INPUT -p tcp --dport 8787 -j</code> to the end of
+the file. While I was editing the file, I also added
+<code>/sbin/iptables -I INPUT -p tcp --dport 4321 -j</code> to open up the port for
+Hugo. I&rsquo;m switching to <code>blogdown</code> for my website and wanted to be able
+to easily get at the preview versions.</p>
+
+<p><em>update 2018-01-30:</em> Actually forgot to do this with my test of the xfce
+desktop and I had no trouble access the server. So, apparently not
+needed. I&rsquo;m keep the instructions here mostly so I have access to them
+if other things (i.e. hugo) do require them.</p>
+
+<h2 id="get-rstudio-server-running-and-access-it">Get RStudio server running and access it</h2>
+
+<p>Now you need to start up the server.</p>
+
+<pre><code>sudo rstudio-server start
+</code></pre>
+
+<p>Then in your browser you can access your RStudio Server with
+<code>localhost:8787</code></p>
+
+<h2 id="draw-the-rest-of-f-ing-owl">Draw the rest of f***ing owl</h2>
+
+<p>Apologies if you have seen the <a href="http://knowyourmeme.com/memes/how-to-draw-an-owl">&ldquo;how to draw an owl&rdquo;
+meme</a>. It feels
+appropriate at this point. What follows are all the things I had to add
+to get up and running with my standard set-up.</p>
+
+<p>First, let&rsquo;s change the locale and add some needed tools</p>
+
+<pre><code>sudo locale-gen &quot;en_US.UTF-8&quot;
+sudo dpkg-reconfigure locales
+sudo apt-get install software-properties-common libxslt1-dev libcurl4-openssl-dev libssl-dev libssh2-1-dev
+</code></pre>
+
+<p>Next I needed to add the Ubuntu GIS repositories so I can get the up to
+date versions of [GDAL](), [GEOS](), etc.</p>
+
+<pre><code>sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
+sudo apt-get update
+</code></pre>
+
+<p>And add my GISy libraries</p>
+
+<pre><code>sudo apt-get install libgdal-dev libproj-dev libudunits2-dev
+</code></pre>
+
+<p>Then we can add LaTeX</p>
+
+<pre><code>sudo apt-get install texlive texlive-latex-extra texlive-pictures
+</code></pre>
+
+<p>In my experience this is close to the minimal LaTeX install that will
+work with pandoc, R Markdown, etc.</p>
+
+<p>Lastly, some version control!</p>
+
+<pre><code>sudo apt-get install git
+</code></pre>
+
+<p>And then I configure git.</p>
+
+<pre><code>git config --global user.name &quot;Your Name&quot;
+git config --global user.email &quot;your.email@email.com&quot;
+git config --global credential.helper 'cache --timeout=28800'
+</code></pre>
+
+<h2 id="day-to-day-use">Day to day use</h2>
+
+<p>There is a way to have your chroot automatically boot with Chrome OS and
+RStudio Server is supposed to start on boot. For some reason, the server
+wasn&rsquo;t kicking off when I started up the chroot. I didn&rsquo;t track this
+down so don&rsquo;t know if it will work. Seems like with some hacking it
+should.</p>
+
+<p>So given that I couldn&rsquo;t get everything starting automagicaly, the
+simplest solution I came up with is to:</p>
+
+<ul>
+<li>start up my chromebook</li>
+<li>open crosh - ctrl-alt-t</li>
+<li>type <code>shell</code></li>
+<li>type <code>sudo enter-chroot</code></li>
+<li>type <code>sudo rstudio-server start</code></li>
+<li>type <code>localhost:8787</code> into a broswer tab.</li>
+</ul>
+
+<p>Another way to go with this is set up a couple of aliases in
+<code>~/.bashrc</code>. You can do this with:</p>
+
+<ul>
+<li>at your crosh shell: <code>vi ~/.bashrc</code></li>
+<li>add this to the file: <code>alias rstudio=&quot;sudo enter-chroot -n rstudio&quot;</code></li>
+<li>now type in the shell <code>. ~/.bashrc</code>.<br /></li>
+<li>type <code>rstudio</code> in the shell. Once you enter your password, you will
+be in your chroot.</li>
+<li>enter some aliases for starting the server</li>
+<li>type <code>nano ~./bashrc</code></li>
+<li>add this: <code>alias rstudio=&quot;sudo rstudio-server start&quot;</code></li>
+<li>type rstudio, enter password.</li>
+<li>type <code>localhost:8787</code> into a browser tab.</li>
+</ul>
+
+<p>The first time I get RStudio open I want to install all my usual
+suspects. With this set up I had no issues installing the following</p>
+
+<pre><code>pkgs &lt;- c(&quot;devtools&quot;,&quot;tidyverse&quot;,&quot;sf&quot;,&quot;raster&quot;,&quot;mapview&quot;,&quot;sp&quot;,&quot;rgdal&quot;,&quot;rgeos&quot;,&quot;roxygen2&quot;, &quot;blogdown&quot;)
+
+lapply(pkgs, install.packages)
+</code></pre>
+
+<p>I then install my own packages, just so I have them handy</p>
+
+<h2 id="one-little-hiccup">One little hiccup</h2>
+
+<p>The shutdown process is not super smooth on this (only problem I have
+identified so far). When your chromebook sleeps, or you shut down the
+chroot, etc. The R session and RStudio get confused. A scary error will
+pop-up when you try to get backin in and at this point, I can no longer
+switch between projects. When you select a new project it looks like it
+is switching, but ends keeping you at your root without a project. If
+you don&rsquo;t use projects then this might not be an issue (but you do risk
+the <a href="https://www.tidyverse.org/articles/2017/12/workflow-vs-script/">arsonistic ire of Jenny
+Bryan</a>).
+If you do use projects this is a problem. I did find a very simple
+workaround for when this happens. All you need to do is start a new
+session. This can be done with the little red power button icon in the
+upper right corner of the window or with <a href="File:Quit">File:Quit</a> Session.</p>
+
+<p><em>update 2018-01-30:</em> Using the xfce desktop install seems to have fixed
+this issue. No need to unnecessarily start new session now!</p>
+
+<p>So, there you have it. RStudio on a chromebook via RStudio Server
+running in a chroot! I am now very happy with the set-up and fully
+expect to stick with the Chromebook for some time to come.</p>
+
+  </div>
+
+  <div id=links>
+    
+      <a class="basic-alignment left" href="/post/2017-04-14-chromebook-4-rstats/">&laquo; Setting up an Asus Flip C302CA Chromebook for R Development</a>
+    
+    
+  </div>
+</section>
+
+<section id="comments">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+      
+      
+      if (window.location.hostname == "localhost")
+                return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'jeffreywhollister';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+  
+  
+
+
+</body>
+</html>
+

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  
+
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <title>
+    
+    
+     Setting up an Asus Flip C302CA Chromebook for R Development 
+    
+  </title>
+  <link rel="canonical" href="/post/2017-04-14-chromebook-4-rstats/">
+
+  <link rel="stylesheet" href="/css/fonts.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+
+  
+</head>
+
+<body>
+<section id=nav>
+  <h1><a href="/">Jeffrey W. Hollister</a></h1>
+  <ul>
+    
+    <li><a href="/">Home</a></li>
+    
+    <li><a href="/about.html">About</a></li>
+    
+    <li><a href="/cv.html">C.V.</a></li>
+    
+    <li><a href="https://twitter.com/jhollist">Twitter</a></li>
+    
+    <li><a href="https://github.com/jhollist">GitHub</a></li>
+    
+    <li><a href="/index.xml">RSS</a></li>
+    
+  </ul>
+</section>
+
+
+<section id=content>
+  <h1> Setting up an Asus Flip C302CA Chromebook for R Development </h1>
+
+  <div id=sub-header>
+     · 2017/04/14 · 5 minute read
+  </div>
+
+  <div class="entry-content">
+    
+
+<p>Don&rsquo;t think of this as a real blog post.  It is mostly a loose collection of notes that I took while getting my new <a href="https://www.asus.com/us/Notebooks/ASUS-Chromebook-Flip-C302CA/">Asus Flip C302CA</a> set up with R and RStudio.  I&rsquo;ve had this up and running for just a few days now (and in fact wrote this post using RStudio on it) and I love it.  I highly recommend.</p>
+
+<p>The steps below are not really tested.  So if you run into problems or I have missed something, let me know.</p>
+
+<h1 id="steps">Steps</h1>
+
+<ol>
+<li>Enter Developer Mode
+
+<ul>
+<li>Esc - Refresh - Power</li>
+<li>Follow directions</li>
+<li>Takes a while (~30 minutes)</li>
+</ul></li>
+<li>Download crouton</li>
+<li>Add crouton integration extension</li>
+<li>Create chroot
+
+<ul>
+<li>Open crosh - <code>ctrl-alt-T</code></li>
+<li>Start bash - <code>shell</code></li>
+<li>Intall xfce xiwi extension touch</li>
+<li><code>sudo sh ~/Downloads/crouton -e -t xfce,touch,xiwi,extension</code></li>
+<li>It&rsquo;ll ask for a new username and password</li>
+<li>Since we are encrypting the chroot (with <code>-e</code>) it will also ask for a passphrase. I&rsquo;m certainly not a security expert, but don&rsquo;t use the same one as your google or new chroot password&hellip;</li>
+<li>This takes a while (~15 minutes)</li>
+</ul></li>
+<li>You should now have a working ubuntu install with the xfce desktop available.  Fire that up.
+
+<ul>
+<li>If you don&rsquo;t have shell still open, get to that (<code>ctrl-alt-T</code> and <code>shell</code>)</li>
+<li>type <code>sudo startxfce4</code></li>
+<li>Ta-da!  Linux!</li>
+</ul></li>
+<li>Now we can start installing all the tools that we need from our xfce window.
+
+<ul>
+<li>get to a terminal</li>
+<li>Install Git</li>
+<li><code>sudo apt-get install git</code></li>
+<li>Install R</li>
+<li>For more: <a href="https://cran.r-project.org/bin/linux/ubuntu/README.html">https://cran.r-project.org/bin/linux/ubuntu/README.html</a> and nice streamlined instructions  <a href="https://www.datascienceriot.com/how-to-install-r-in-linux-ubuntu-16-04-xenial-xerus/kris/">https://www.datascienceriot.com/how-to-install-r-in-linux-ubuntu-16-04-xenial-xerus/kris/</a></li>
+</ul></li>
+</ol>
+
+<pre><code>sudo echo &quot;deb http://cran.rstudio.com/bin/linux/ubuntu xenial/&quot; | sudo tee -a /etc/apt/sources.list
+gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
+gpg -a --export E084DAB9 | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install r-base r-base-dev
+</code></pre>
+
+<ul>
+<li>Install RStudio
+
+<ul>
+<li>I like to live on the edge so I usually have a fairly recent daily running.  Here&rsquo;s how you get that.</li>
+<li>You will also need to add some older versions of libgstreamer.  Good details on this from <a href="https://mikewilliamson.wordpress.com/2016/11/14/installing-r-studio-on-ubuntu-16-10/">Mike Williamson</a>.</li>
+<li>I also delete the <code>.deb</code> since this is on a chromebook.  Space will likely be at a bit of a premium.
+<br /></li>
+</ul></li>
+</ul>
+
+<pre><code># Download the installs
+wget https://s3.amazonaws.com/rstudio-dailybuilds/rstudio-1.1.244-amd64.deb
+wget http://ftp.ca.debian.org/debian/pool/main/g/gstreamer0.10/libgstreamer0.10-0_0.10.36-1.5_amd64.deb
+wget http://ftp.ca.debian.org/debian/pool/main/g/gst-plugins-base0.10/libgstreamer-plugins-base0.10-0_0.10.36-2_amd64.deb
+ 
+# Now install deps with dpkg and mark to not update
+sudo dpkg -i libgstreamer0.10-0_0.10.36-1.5_amd64.deb
+sudo dpkg -i libgstreamer-plugins-base0.10-0_0.10.36-2_amd64.deb
+sudo apt-mark hold libgstreamer-plugins-base0.10-0
+sudo apt-mark hold libgstreamer0.10
+
+# Lastly install rstudio
+sudo gdebi rstudio-1.1.244-amd64.deb
+rm rstudio-1.1.201-amd64.deb
+</code></pre>
+
+<ul>
+<li>The following are the notes I had for which libraries I added.  My notes were a bit of a mess so this might not be all or may be too many.</li>
+</ul>
+
+<p>Some of the basics (i.e. for <code>devtools</code>)</p>
+
+<pre><code>sudo apt-get install libxslt-dev libcurl4-openssl-dev libssl-dev
+</code></pre>
+
+<p>The spatial stuff.  This also adds the ubuntugis repo so that you can get the latest and greatest.  The latest is at <a href="https://launchpad.net/~ubuntugis/+archive/ubuntu/ubuntugis-unstable">https://launchpad.net/~ubuntugis/+archive/ubuntu/ubuntugis-unstable</a></p>
+
+<p>But, <code>add-apt-repository</code> was not installed.  To get that I used <code>sudo apt-get install software-properties-common</code>.  Now to add the GIS stuff.</p>
+
+<pre><code>sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
+sudo apt-get update
+sudo apt-get install libgdal-dev libproj-dev
+</code></pre>
+
+<p>In addition to gdal, geos, and proj, <code>libudunits2-dev</code> is needed and can be installed with apt-get: <code>sudo apt-get install libudunits2-dev</code>.</p>
+
+<p>Also, if you do any work with <code>rmarkdown</code>, <code>knitr</code>, and the like you will probably want a working install of latex.  I used the following:</p>
+
+<pre><code>sudo apt-get install texlive texlive-latex-extras texlive-pictures
+</code></pre>
+
+<ol>
+<li>Working with RStudio on your chromebook</li>
+</ol>
+
+<p>Not a whole lot of details here.  Just some basic notes I had for myslef.  First, I am using a 64GB microSD card to give myself some room and I keep all of my projects stored on this card (as well as on GitHub).  I just set up a symbolic link to this from my home folder.  Something like the following should do the trick.</p>
+
+<pre><code>cd 
+ln -s /var/host/media/removable/SD\ Card/ projects
+</code></pre>
+
+<p>With this you can get to the card easier (e.g. <code>cd ~/projects</code>).  Only issue I have had with this is that trying to browse local HTML files from R blows up as the linux path to the SD Card doesn&rsquo;t play nice on the Chrome OS side.  Still need to figure this one out.</p>
+
+<p>I am still playing around with the best way to fire up rstudio.  There are two ways I am doing this.  Either firing up a separate desktop and using RStudio from there or starting RStudio in its own window.  I think I prefer the later, but time will tell.  You already know how to fire up the desktop.  You can use <code>rstudio</code> from a terminal or find it in your applications menu. For the RStudio in its own window, I added this:</p>
+
+<pre><code>alias rstudio=&quot;sudo startxiwi rstudio -F&quot;
+</code></pre>
+
+<p>to my <code>~/.bashrc</code> in the chromebook (not the chroot!) shell.  Then I can fire up rstudio with <code>ctrl-alt-T</code>, then <code>shell</code>, then  <code>rstudio</code>.</p>
+
+<p>Given the hi-res of the screen, you&rsquo;ll need to either get super vision or mess with the display settings in the Xfce desktop or adjust the X11 setting that the Chrome crouton integration is using.  I used a lot of the suggestions in the <a href="https://github.com/dnschneid/crouton/wiki/Chromebook-Pixel">crouton on Pixel section of the crouton Wiki</a>.  In particular, Option 1 helped with firing up RStudio direction.  I also bumped the zoom in my RStudio Global options.</p>
+
+<p>Lastly, the locale is not set in your linux install so to take care of that, I followed <a href="https://askubuntu.com/questions/162391/how-do-i-fix-my-locale-issue">these directions from Ask Ubuntu</a>.  In particular:</p>
+
+<pre><code>sudo locale-gen &quot;en_US.UTF-8&quot;
+sudo dpkg-reconfigure locales #you'll need to cycle through with arrows, tabs, and enters
+</code></pre>
+
+<p>I <strong>think</strong> that should do the trick on any locale issues, but dealing with this made me realize how little I actually now about locales and text encoding&hellip;</p>
+
+<p>Fnally and hopefully you should now be ready to roll with R and R development on your fancy new chromebook!  See below for some additional links.</p>
+
+<h1 id="some-related-links">Some related links</h1>
+
+<ul>
+<li><a href="https://medium.com/@martinmalinda/ultimate-guide-for-web-development-on-chromebook-part-1-crouton-2ec2e6bb2a2d">Web Dev on chromebook - 1</a></li>
+<li><a href="https://medium.com/@martinmalinda/ultimate-guide-for-web-development-on-chromebook-part-2-chromeos-tricks-and-workflows-4dfcc308d391">Web Dev on Chromebook - 2</a></li>
+<li><a href="https://www.codedonut.com/chromebook/install-crouton-chromebook/">Yet another crouton how to</a></li>
+</ul>
+
+  </div>
+
+  <div id=links>
+    
+      <a class="basic-alignment left" href="/post/2015-11-06-r-gis-lightning-demo/">&laquo; Spatial Data Analysis in R: Lightning Demo!</a>
+    
+    
+      <a class="basic-alignment left" href="/post/2018-01-18-rstudio-server-on-a-chromebook/">Rstudio Server On A Chromebook &raquo;</a>
+    
+  </div>
+</section>
+
+<section id="comments">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+      
+      
+      if (window.location.hostname == "localhost")
+                return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'jeffreywhollister';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+  
+  
+<script src="/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+</body>
+</html>
+

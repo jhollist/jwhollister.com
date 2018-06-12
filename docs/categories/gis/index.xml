@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gis on Jeffrey W. Hollister</title>
+    <link>/categories/gis/</link>
+    <description>Recent content in Gis on Jeffrey W. Hollister</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 06 Nov 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/gis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spatial Data Analysis in R: Lightning Demo!</title>
+      <link>/post/2015-11-06-r-gis-lightning-demo/</link>
+      <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2015-11-06-r-gis-lightning-demo/</guid>
+      <description>At this years NEARC meeting I decided to give a lightning talk on using R as a GIS. As I was working on this I thought, &amp;ldquo;why not try a lightning demo?&amp;rdquo; That would be better than five minutes of slides on packages and commands. But, as anyone who has done a live demo will know, they often provide unexpected challenges. Add a 5 minute limit to that, and well, some level of failure is sure to occur.</description>
+    </item>
+    
+  </channel>
+</rss>

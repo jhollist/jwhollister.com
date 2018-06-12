@@ -6,56 +6,102 @@
     <description>Recent content on Jeffrey W. Hollister</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 26 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Tanka Theme Demo</title>
-      <link>/post/tanka-theme-demo/</link>
-      <pubDate>Tue, 26 Dec 2017 00:00:00 +0000</pubDate>
+      <title>Rstudio Server On A Chromebook</title>
+      <link>/post/2018-01-18-rstudio-server-on-a-chromebook/</link>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/tanka-theme-demo/</guid>
-      <description>Tanka is a minimalist, text-oriented, and performant Hugo theme.
-Features  Minimalist Responsive Typography first High Contrast Disqus Google Analytics  Typography h1 Heading h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading This is bold text
-This is bold text
-This is italic text
-This is italic text
-Deleted text
- Block quotes are written like so.
-They can span multiple paragraphs, if you like.
- Some text, and some code and then a nice plain link with title.</description>
+      <guid>/post/2018-01-18-rstudio-server-on-a-chromebook/</guid>
+      <description>The only post I got around to writing in 2017 was a single messy, evoloving set of notes on how to set up a Chromebook with R and RStudio. This post is a reprise of that one as well as post #1 in my effort to double my blog output from 2017 (I&amp;rsquo;m shooting for the stars on that goal). In this post I will detail how to set up RStudio Server in a crouton chroot and access it directly via Chrome without having to fire up a separate X11 window.</description>
     </item>
     
     <item>
-      <title>A Plain Markdown Post</title>
-      <link>/post/hello-markdown/</link>
-      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
+      <title>Setting up an Asus Flip C302CA Chromebook for R Development</title>
+      <link>/post/2017-04-14-chromebook-4-rstats/</link>
+      <pubDate>Fri, 14 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/hello-markdown/</guid>
-      <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
- You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.  There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
+      <guid>/post/2017-04-14-chromebook-4-rstats/</guid>
+      <description>Don&amp;rsquo;t think of this as a real blog post. It is mostly a loose collection of notes that I took while getting my new Asus Flip C302CA set up with R and RStudio. I&amp;rsquo;ve had this up and running for just a few days now (and in fact wrote this post using RStudio on it) and I love it. I highly recommend.
+The steps below are not really tested. So if you run into problems or I have missed something, let me know.</description>
     </item>
     
     <item>
-      <title>Hello R Markdown</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>Spatial Data Analysis in R: Lightning Demo!</title>
+      <link>/post/2015-11-06-r-gis-lightning-demo/</link>
+      <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+      <guid>/post/2015-11-06-r-gis-lightning-demo/</guid>
+      <description>At this years NEARC meeting I decided to give a lightning talk on using R as a GIS. As I was working on this I thought, &amp;ldquo;why not try a lightning demo?&amp;rdquo; That would be better than five minutes of slides on packages and commands. But, as anyone who has done a live demo will know, they often provide unexpected challenges. Add a 5 minute limit to that, and well, some level of failure is sure to occur.</description>
     </item>
     
     <item>
-      <title>Lorem Ipsum</title>
-      <link>/post/lorem-ipsum/</link>
-      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
+      <title>I finally got quickmapr on CRAN!</title>
+      <link>/post/2015-10-30-i-finally-got-quickmapr-up-on-cran/</link>
+      <pubDate>Fri, 30 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>/post/lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <guid>/post/2015-10-30-i-finally-got-quickmapr-up-on-cran/</guid>
+      <description>A little over 7 months ago I posted about a package that I had been working on, quickmapr. That was the pre-release version, the one that I finished up today and submitted to CRAN is a bit more polished, plots rasters a bit quicker, and is, I think, ready for wider release. It is now availble from CRAN.
+The README on GitHub provides details plus some examples using a small dataset included with the package.</description>
+    </item>
+    
+    <item>
+      <title>Download Shapefiles - Take 2</title>
+      <link>/post/2015-06-15-download-shapefile-reprise/</link>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2015-06-15-download-shapefile-reprise/</guid>
+      <description>So back in 2013 I posted a little function I wrote for grabbing all the relevant files that make up a shapefile from a URL. Turns out it doesn&amp;rsquo;t play so well with Windows 7 or Windows 8 (HT: John Lewis). Below is a reprised version that at least works on Ubuntu 14.04 and Windows 7. Haven&amp;rsquo;t tested it beyond that and supressing the warnings to get httr::GET to not complain too much about FTP seems a bit unclean.</description>
+    </item>
+    
+    <item>
+      <title>quickmapr: An R package for mapping and interacting with spatial data</title>
+      <link>/post/2015-03-13-quickmapr-pre-release/</link>
+      <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2015-03-13-quickmapr-pre-release/</guid>
+      <description>I do a lot of GIS. That used to mean firing up any one of the esri products, but over the course of the last couple of years I have done that less and less and instead fired up R.
+When I first started using R for my spatial analysis work I often was left struggling with viewing the results of my analysis and could only do so with a clunky workflow of pushing my sp or raster objects out to shapefiles or tiffs and then pulling those into Arcmap.</description>
+    </item>
+    
+    <item>
+      <title>Automatically Organizing Photographs on Google Drive: Why isn&#39;t this already a thing?</title>
+      <link>/post/2015-02-02-organizing-photos-on-google-drive/</link>
+      <pubDate>Mon, 02 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2015-02-02-organizing-photos-on-google-drive/</guid>
+      <description>Over the last year or so, my wife and I have been moving most our files onto Google Drive. This has worked great as we have access across all of our devices. The last vestiges of local storage have been our photos. With the recent purchase of a Chromebook (which I&amp;rsquo;ve been impressed with but that is a different post&amp;hellip;) and the 1TB of Google Drive storage that came with it, I decided to take the plunge and get our photos up their too.</description>
+    </item>
+    
+    <item>
+      <title>Getting a Category Feed Up and Running with Jekyll on Github</title>
+      <link>/post/2014-10-9-category-feed/</link>
+      <pubDate>Thu, 09 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2014-10-9-category-feed/</guid>
+      <description>Now that I have the site up and running, I am now trying to add a few category specific RSS feeds. I will say that for someone who is new to RSS (i.e. me) the feeds on Wordpress are really easy. But, since I now fancy myself somewhat of hacker, I suppose figuring out how to get a Jekyll site hosted on Github to spit these out is something I should do.</description>
+    </item>
+    
+    <item>
+      <title>Colophon: jwhollister.com v0.2.0</title>
+      <link>/post/2014-10-08-colophon/</link>
+      <pubDate>Wed, 08 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2014-10-08-colophon/</guid>
+      <description>Hard to believe that in less than a year I am now on the third version of my website. First one was me hacking at bootstrap. I knew next to nothing then, but was able to get a minimal site up and running. Since then I have learned quite a bit more about web design, Jekyll, hosting on github, and am a much better hacker than I was then (although still not a good one).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/post/2015-11-06-r-gis-lightning-demo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2015-11-06-r-gis-lightning-demo/</guid>
+      <description>Spatial Data Analysis in R: Lightning Demo!       code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs) { hljs.configure({languages: []}); hljs.initHighlightingOnLoad(); if (document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); } }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .</description>
     </item>
     
   </channel>

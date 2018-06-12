@@ -11,11 +11,38 @@
     
     
     <item>
+      <title>Gis</title>
+      <link>/categories/gis/</link>
+      <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/gis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hacking</title>
+      <link>/categories/hacking/</link>
+      <pubDate>Mon, 02 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/hacking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>R</title>
       <link>/categories/r/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/categories/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Site Details</title>
+      <link>/categories/site-details/</link>
+      <pubDate>Wed, 08 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/site-details/</guid>
       <description></description>
     </item>
     

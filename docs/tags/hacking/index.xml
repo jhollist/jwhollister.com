@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hacking on Jeffrey W. Hollister</title>
+    <link>/tags/hacking/</link>
+    <description>Recent content in Hacking on Jeffrey W. Hollister</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 08 Oct 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/hacking/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Colophon: jwhollister.com v0.2.0</title>
+      <link>/post/2014-10-08-colophon/</link>
+      <pubDate>Wed, 08 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2014-10-08-colophon/</guid>
+      <description>Hard to believe that in less than a year I am now on the third version of my website. First one was me hacking at bootstrap. I knew next to nothing then, but was able to get a minimal site up and running. Since then I have learned quite a bit more about web design, Jekyll, hosting on github, and am a much better hacker than I was then (although still not a good one).</description>
+    </item>
+    
+  </channel>
+</rss>

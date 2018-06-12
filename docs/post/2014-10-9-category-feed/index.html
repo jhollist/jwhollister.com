@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  
+
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <title>
+    
+    
+     Getting a Category Feed Up and Running with Jekyll on Github 
+    
+  </title>
+  <link rel="canonical" href="/post/2014-10-9-category-feed/">
+
+  <link rel="stylesheet" href="/css/fonts.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+
+  
+</head>
+
+<body>
+<section id=nav>
+  <h1><a href="/">Jeffrey W. Hollister</a></h1>
+  <ul>
+    
+    <li><a href="/">Home</a></li>
+    
+    <li><a href="/about.html">About</a></li>
+    
+    <li><a href="/cv.html">C.V.</a></li>
+    
+    <li><a href="https://twitter.com/jhollist">Twitter</a></li>
+    
+    <li><a href="https://github.com/jhollist">GitHub</a></li>
+    
+    <li><a href="/index.xml">RSS</a></li>
+    
+  </ul>
+</section>
+
+
+<section id=content>
+  <h1> Getting a Category Feed Up and Running with Jekyll on Github </h1>
+
+  <div id=sub-header>
+     · 2014/10/09 · 3 minute read
+  </div>
+
+  <div class="entry-content">
+    
+
+<p>Now that I have the site up and running, I am now trying to add a few category specific RSS feeds.  I will say that for someone who is new to RSS (i.e. me) the feeds on <a href="http://wordpress.com">Wordpress</a> are really easy.  But, since I now fancy myself somewhat of hacker, I suppose figuring out how to get a Jekyll site hosted on Github to spit these out is something I should do.</p>
+
+<p>This site is built on the <a href="http://andhyde.com/">Hyde theme</a> which includes an <code>atom.xml</code> file. This is great and provides a feed for the entire blog but, often a category specific feed is required.  For instance, my (poorly named) old blog <a href="http://landeco2point0.wordpress.com/">Landscape Ecology 2.0</a> has been referenced by a couple of aggregators, most notably <a href="http://www.r-bloggers.com/">R-bloggers</a>.  Since I do blog about topics other than R, I need to be able to submit a feed that is specific to R.  Wordpress does this automatically with Categories.  You can also do this in Jekyll with a little work.</p>
+
+<p>As it turns out many others have had this same need and there are a few options for getting it set up.  Since my blog already has a site wide RSS feed built with Liquid templating all I needed was a category specifc one.  So I simpl ammended the template from  @snaptortoise <a href="https://github.com/snaptortoise/jekyll-rss-feeds">jekyll-rss-feeds</a>.  For my blog, the template looks like:</p>
+
+<p>{% highlight xml %}</p>
+
+<h2 id="raw">{% raw %}</h2>
+
+<h2 id="layout-none">layout: none</h2>
+
+<p>&lt;?xml version=&ldquo;1.0&rdquo; encoding=&ldquo;UTF-8&rdquo;?&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | xml_escape }} - r</title>
+        <description>Posts categorized as &lsquo;r&rsquo;</description>
+        <link>{{ site.url }}</link>
+        <atom:link href="{{ site.url }}/feed.r.xml" rel="self" type="application/rss+xml" />
+    {% for post in site.categories.r limit:20 %}
+      <item>
+        <title>{{ post.title | xml_escape }}</title>
+        <description>{{ post.content | xml_escape }}</description>
+        <pubDate>{{ post.date | date: &ldquo;%a, %d %b %Y %H:%M:%S %z&rdquo; }}</pubDate>
+        <link>{{ site.url }}{{ post.url }}</link>
+        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+      </item>
+    {% endfor %}
+    </channel>
+</rss>
+{% endraw %}
+{% endhighlight %}</p>
+
+<p>I have saved this in the source of my website as <code>feed.r.xml</code>.  One gotcha is that Jekyll appears to convert all categories to lower case.  I had it set to loop on <code>site.categories.R</code> and it wasn&rsquo;t working.  Switching to <code>site.categories.r</code> fixed the problem.</p>
+
+<p>Since <code>feed.r.xml</code> has the <code>layout: null</code> in the YAML, everytime the site builds on Github (i.e. everytime a change is made), this feed will get updated.  In theory, I should be able to submit this feed to <a href="http://www.r-bloggers.com/add-your-blog/">R-bloggers</a> and everytime I have a new post with the R category, it will also get picked up by R-bloggers.  Only downside to this is that a new category template will be required for each category that I want to build the RSS feed for.</p>
+
+<p><strong>NOTE:</strong> Getting the Liquid templating to be highlighted in this post also took some work as the the Liquid was getting interpreted, not highlighted.  Turns out it is as easy as wrapping the code with:
+<p>
+  <code>&#123;% raw %}</code>
+  <br>
+  <code>&#123;% endraw %}</code>
+</p></p>
+
+<p>This answer courtesy of <a href="http://stackoverflow.com/questions/20568396/how-to-use-jekyll-code-in-inline-code-highlighting">StackOverflow</a></p>
+
+<p><strong>ANOTHER NOTE:</strong>
+And now to get even more into the weeds, getting <code>&#123;% raw %}</code> to render took another approach, raw HTML.  So that looks like</p>
+
+<p>{% highlight html %}
+<p>
+  <code>&#123;% raw %}</code>
+  <br>
+  <code>&#123;% endraw %}</code>
+</p>
+{% endhighlight %}</p>
+
+<p>That answer provided by
+<a href="http://blog.slaks.net/2013-06-09/writing-about-jekyll-in-jekyll/">SLaks.Blog</a>.</p>
+
+  </div>
+
+  <div id=links>
+    
+      <a class="basic-alignment left" href="/post/2014-10-08-colophon/">&laquo; Colophon: jwhollister.com v0.2.0</a>
+    
+    
+      <a class="basic-alignment left" href="/post/2015-02-02-organizing-photos-on-google-drive/">Automatically Organizing Photographs on Google Drive: Why isn&#39;t this already a thing? &raquo;</a>
+    
+  </div>
+</section>
+
+<section id="comments">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+      
+      
+      if (window.location.hostname == "localhost")
+                return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'jeffreywhollister';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+  
+  
+
+
+</body>
+</html>
+

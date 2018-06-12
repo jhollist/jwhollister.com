@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  
+
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <title>
+    
+    
+     Managing one-to-many data with simple feature points 
+    
+  </title>
+  <link rel="canonical" href="/post/2018-03-24-one-to-many-sf/">
+
+  <link rel="stylesheet" href="/css/fonts.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+
+  
+</head>
+
+<body>
+<section id=nav>
+  <h1><a href="/">Jeffrey W. Hollister</a></h1>
+  <ul>
+    
+    <li><a href="/">Home</a></li>
+    
+    <li><a href="/about.html">About</a></li>
+    
+    <li><a href="/cv.html">C.V.</a></li>
+    
+    <li><a href="https://twitter.com/jhollist">Twitter</a></li>
+    
+    <li><a href="https://github.com/jhollist">GitHub</a></li>
+    
+    <li><a href="/index.xml">RSS</a></li>
+    
+  </ul>
+</section>
+
+
+<section id=content>
+  <h1> Managing one-to-many data with simple feature points </h1>
+
+  <div id=sub-header>
+     · 0001/01/01 · 3 minute read
+  </div>
+
+  <div class="entry-content">
+    <p>A common situation I have with my work is to have a single sample locations with multiple measurements (i.e. one-to-many). For example, soil cores taken at one location will have bulk density, carbon, etc. at the varying soil horizon depths. Another example would be sampling the deep location of a lake and taking water quality profiles with dissolved oxygen, temperature, etc. measured every meter. A typical solution for storing this would be a relational database with one table holding the site location information and another containing the multiple measurments (e.g. the depth profile). Most of our data is not stored in relational databases but as multiple <code>.csv</code> files and thus my typical workflow involves reading those files in R and managing them as data frames. With the release of <code>sf</code> this workflow also works really well for spatial data; however, it was not immediately clear to me how best to handle data like soil or water quality profiles. Naturally, I asked Twitter to help out.</p>
+<p><a href="https://twitter.com/jhollist/status/977254736163491842"><img src="figure/one_many_tweet.png" alt="tweet" /></a></p>
+<p>The conversation quickly settled on the idea of a list column or nested data frame to store this information. Also it was quickly noted that Twitter had served its purpose in this conversation and we relocated to the <a href="https://github.com/r-spatial/discuss/issues/20">r-spatial disucssion issue</a>. And in the speed of the internet, we had, thanks to Edzer Pebesma, Michael Sumner, Sam Albers, and Jakub Nowosad, a solution. So that the solution is slightly more discoverable I offered to capture it on my very widely read blog (a joke).</p>
+<div id="an-example-usepas-national-wetland-condition-assessment-soil-data" class="section level2">
+<h2>An example: USEPA’s National Wetland Condition Assessment Soil Data</h2>
+<p>The example data I provided is the real life problem that precipitated my question. I am working on a project that uses the USEPA’s National Wetland Condition Assessment (NWCA) data, in particular the soil chemistry data. We need two of the <code>.csv.</code> files, the one that holds information about the site and the one that has our soil chemistry soil profiles. To get these we can:</p>
+<pre class="r"><code>library(dplyr)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<pre class="r"><code>library(sf)</code></pre>
+<pre><code>## Linking to GEOS 3.5.1, GDAL 2.2.2, proj.4 4.9.2</code></pre>
+<pre class="r"><code>sites_url &lt;- &quot;https://www.epa.gov/sites/production/files/2016-10/nwca2011_siteinfo.csv&quot;
+soil_chem_url &lt;- &quot;https://www.epa.gov/sites/production/files/2016-10/nwca2011_soilchem.csv&quot;
+
+nwca_sites_sf &lt;- read.csv(sites_url) %&gt;%
+  st_as_sf(coords = c(&quot;ANALYSIS_LON&quot;, &quot;ANALYSIS_LAT&quot;),
+           crs = &quot;+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs&quot;) %&gt;%
+  filter(UID %in% c(2610,2611,2668,2669,2672,2750)) %&gt;%
+  select(uid = UID, state = STATE)
+
+
+nwca_carbon &lt;- read.csv(soil_chem_url) %&gt;%
+  filter(VISIT_NO == 1) %&gt;%
+  filter(UID %in% c(2610,2611,2668,2669,2672,2750)) %&gt;%
+  select(uid = UID, state = STATE, depth = DEPTH, bulk_density = BULK_DEN_DBF,
+         tot_carbon = TOT_CARBON)</code></pre>
+<p>It is possible to join the two together and the <code>UID</code> (or <code>uid</code> as I prefer it) is listed multiple times with the POINT geometry just repeated. But given that the samples should be single points, I was wondering if there was a better way to store the data. The most obvious solution was to list the profile data as a list column or as a nested data frame.</p>
+</div>
+<div id="edzers-solution" class="section level2">
+<h2>Edzer’s Solution</h2>
+<p>Edzer very graciously jumped in on the discussion with a solution that used a nested data frame.</p>
+</div>
+<div id="some-examples-of-using-the-nested-data-frames" class="section level2">
+<h2>Some examples of using the nested data frames</h2>
+<p>p.s. Looks like reached my goal of two posts in 2018! I’m awesome!</p>
+</div>
+
+  </div>
+
+  <div id=links>
+    
+      <a class="basic-alignment left" href="/post/2018-01-18-rstudio-server-on-a-chromebook/">&laquo; RStudio Server on a Chromebook</a>
+    
+    
+      <a class="basic-alignment left" href="/post/2015-10-30-i-finally-got-quickmapr-up-on-cran/">I finally got quickmapr on CRAN! &raquo;</a>
+    
+  </div>
+</section>
+
+<section id="comments">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+      
+      
+      if (window.location.hostname == "localhost")
+                return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'jeffreywhollister';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+  
+  
+
+
+</body>
+</html>
+
