@@ -54,65 +54,51 @@
   </div>
 
   <div class="entry-content">
-    
-
-<p>Now that I have the site up and running, I am now trying to add a few category specific RSS feeds.  I will say that for someone who is new to RSS (i.e. me) the feeds on <a href="http://wordpress.com">Wordpress</a> are really easy.  But, since I now fancy myself somewhat of hacker, I suppose figuring out how to get a Jekyll site hosted on Github to spit these out is something I should do.</p>
+    <p>Now that I have the site up and running, I am now trying to add a few category specific RSS feeds.  I will say that for someone who is new to RSS (i.e. me) the feeds on <a href="http://wordpress.com">Wordpress</a> are really easy.  But, since I now fancy myself somewhat of hacker, I suppose figuring out how to get a Jekyll site hosted on Github to spit these out is something I should do.</p>
 
 <p>This site is built on the <a href="http://andhyde.com/">Hyde theme</a> which includes an <code>atom.xml</code> file. This is great and provides a feed for the entire blog but, often a category specific feed is required.  For instance, my (poorly named) old blog <a href="http://landeco2point0.wordpress.com/">Landscape Ecology 2.0</a> has been referenced by a couple of aggregators, most notably <a href="http://www.r-bloggers.com/">R-bloggers</a>.  Since I do blog about topics other than R, I need to be able to submit a feed that is specific to R.  Wordpress does this automatically with Categories.  You can also do this in Jekyll with a little work.</p>
 
 <p>As it turns out many others have had this same need and there are a few options for getting it set up.  Since my blog already has a site wide RSS feed built with Liquid templating all I needed was a category specifc one.  So I simpl ammended the template from  @snaptortoise <a href="https://github.com/snaptortoise/jekyll-rss-feeds">jekyll-rss-feeds</a>.  For my blog, the template looks like:</p>
-
-<p>{% highlight xml %}</p>
-
-<h2 id="raw">{% raw %}</h2>
-
-<h2 id="layout-none">layout: none</h2>
-
-<p>&lt;?xml version=&ldquo;1.0&rdquo; encoding=&ldquo;UTF-8&rdquo;?&gt;
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>{{ site.title | xml_escape }} - r</title>
-        <description>Posts categorized as &lsquo;r&rsquo;</description>
-        <link>{{ site.url }}</link>
-        <atom:link href="{{ site.url }}/feed.r.xml" rel="self" type="application/rss+xml" />
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">---
+layout: none
+---
+<span style="color:#00f">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+&lt;rss version=<span style="color:#a31515">&#34;2.0&#34;</span> xmlns:atom=<span style="color:#a31515">&#34;http://www.w3.org/2005/Atom&#34;</span>&gt;
+  &lt;channel&gt;
+  	&lt;title&gt;{{ site.title | xml_escape }} - r&lt;/title&gt;
+		&lt;description&gt;Posts categorized as &#39;r&#39;&lt;/description&gt;
+		&lt;link&gt;{{ site.url }}&lt;/link&gt;
+		&lt;atom:link href=<span style="color:#a31515">&#34;{{ site.url }}/feed.r.xml&#34;</span> rel=<span style="color:#a31515">&#34;self&#34;</span> type=<span style="color:#a31515">&#34;application/rss+xml&#34;</span> /&gt;
     {% for post in site.categories.r limit:20 %}
-      <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date: &ldquo;%a, %d %b %Y %H:%M:%S %z&rdquo; }}</pubDate>
-        <link>{{ site.url }}{{ post.url }}</link>
-        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
-      </item>
+      &lt;item&gt;
+        &lt;title&gt;{{ post.title | xml_escape }}&lt;/title&gt;
+        &lt;description&gt;{{ post.content | xml_escape }}&lt;/description&gt;
+        &lt;pubDate&gt;{{ post.date | date: &#34;%a, %d %b %Y %H:%M:%S %z&#34; }}&lt;/pubDate&gt;
+        &lt;link&gt;{{ site.url }}{{ post.url }}&lt;/link&gt;
+        &lt;guid isPermaLink=<span style="color:#a31515">&#34;true&#34;</span>&gt;{{ site.url }}{{ post.url }}&lt;/guid&gt;
+      &lt;/item&gt;
     {% endfor %}
-    </channel>
-</rss>
-{% endraw %}
-{% endhighlight %}</p>
-
+	&lt;/channel&gt;
+&lt;/rss&gt;</code></pre></div>
 <p>I have saved this in the source of my website as <code>feed.r.xml</code>.  One gotcha is that Jekyll appears to convert all categories to lower case.  I had it set to loop on <code>site.categories.R</code> and it wasn&rsquo;t working.  Switching to <code>site.categories.r</code> fixed the problem.</p>
 
 <p>Since <code>feed.r.xml</code> has the <code>layout: null</code> in the YAML, everytime the site builds on Github (i.e. everytime a change is made), this feed will get updated.  In theory, I should be able to submit this feed to <a href="http://www.r-bloggers.com/add-your-blog/">R-bloggers</a> and everytime I have a new post with the R category, it will also get picked up by R-bloggers.  Only downside to this is that a new category template will be required for each category that I want to build the RSS feed for.</p>
 
-<p><strong>NOTE:</strong> Getting the Liquid templating to be highlighted in this post also took some work as the the Liquid was getting interpreted, not highlighted.  Turns out it is as easy as wrapping the code with:
-<p>
-  <code>&#123;% raw %}</code>
-  <br>
-  <code>&#123;% endraw %}</code>
-</p></p>
+<p><strong>NOTE:</strong> Getting the Liquid templating to be highlighted in this post also took some work as the the Liquid was getting interpreted, not highlighted.  Turns out it is as easy as wrapping the code with:</p>
+
+<pre><code>{% raw %}
+{% endraw %}
+</code></pre>
 
 <p>This answer courtesy of <a href="http://stackoverflow.com/questions/20568396/how-to-use-jekyll-code-in-inline-code-highlighting">StackOverflow</a></p>
 
 <p><strong>ANOTHER NOTE:</strong>
 And now to get even more into the weeds, getting <code>&#123;% raw %}</code> to render took another approach, raw HTML.  So that looks like</p>
-
-<p>{% highlight html %}
-<p>
-  <code>&#123;% raw %}</code>
-  <br>
-  <code>&#123;% endraw %}</code>
-</p>
-{% endhighlight %}</p>
-
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;p&gt;
+  &lt;code&gt;&amp;#123;% raw %}&lt;/code&gt;
+  &lt;br&gt;
+  &lt;code&gt;&amp;#123;% endraw %}&lt;/code&gt;
+&lt;/p&gt; </code></pre></div>
 <p>That answer provided by
 <a href="http://blog.slaks.net/2013-06-09/writing-about-jekyll-in-jekyll/">SLaks.Blog</a>.</p>
 

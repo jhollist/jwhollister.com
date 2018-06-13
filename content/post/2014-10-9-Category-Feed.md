@@ -11,8 +11,7 @@ This site is built on the [Hyde theme](http://andhyde.com/) which includes an `a
 
 As it turns out many others have had this same need and there are a few options for getting it set up.  Since my blog already has a site wide RSS feed built with Liquid templating all I needed was a category specifc one.  So I simpl ammended the template from  @snaptortoise [jekyll-rss-feeds](https://github.com/snaptortoise/jekyll-rss-feeds).  For my blog, the template looks like:
 
-{% highlight xml %}
-{% raw %}
+```xml
 ---
 layout: none
 ---
@@ -34,32 +33,31 @@ layout: none
     {% endfor %}
 	</channel>
 </rss>
-{% endraw %}
-{% endhighlight %}
+```
 
 I have saved this in the source of my website as `feed.r.xml`.  One gotcha is that Jekyll appears to convert all categories to lower case.  I had it set to loop on `site.categories.R` and it wasn't working.  Switching to `site.categories.r` fixed the problem.  
 
 Since `feed.r.xml` has the `layout: null` in the YAML, everytime the site builds on Github (i.e. everytime a change is made), this feed will get updated.  In theory, I should be able to submit this feed to [R-bloggers](http://www.r-bloggers.com/add-your-blog/) and everytime I have a new post with the R category, it will also get picked up by R-bloggers.  Only downside to this is that a new category template will be required for each category that I want to build the RSS feed for.  
 
 **NOTE:** Getting the Liquid templating to be highlighted in this post also took some work as the the Liquid was getting interpreted, not highlighted.  Turns out it is as easy as wrapping the code with:
-<p>
-  <code>&#123;% raw %}</code>
-  <br>
-  <code>&#123;% endraw %}</code>
-</p> 
+
+```
+{% raw %}
+{% endraw %}
+```
 
 This answer courtesy of [StackOverflow](http://stackoverflow.com/questions/20568396/how-to-use-jekyll-code-in-inline-code-highlighting)
 
 **ANOTHER NOTE:**
 And now to get even more into the weeds, getting <code>&#123;% raw %}</code> to render took another approach, raw HTML.  So that looks like
 
-{% highlight html %}
+```html
 <p>
   <code>&#123;% raw %}</code>
   <br>
   <code>&#123;% endraw %}</code>
 </p> 
-{% endhighlight %}
+```
 
 That answer provided by
 [SLaks.Blog](http://blog.slaks.net/2013-06-09/writing-about-jekyll-in-jekyll/).

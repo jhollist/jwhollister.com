@@ -95,14 +95,5 @@ When I first started using R for my spatial analysis work I often was left strug
       <description>Hard to believe that in less than a year I am now on the third version of my website. First one was me hacking at bootstrap. I knew next to nothing then, but was able to get a minimal site up and running. Since then I have learned quite a bit more about web design, Jekyll, hosting on github, and am a much better hacker than I was then (although still not a good one).</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>/post/2015-11-06-r-gis-lightning-demo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2015-11-06-r-gis-lightning-demo/</guid>
-      <description>Spatial Data Analysis in R: Lightning Demo!       code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs) { hljs.configure({languages: []}); hljs.initHighlightingOnLoad(); if (document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); } }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .</description>
-    </item>
-    
   </channel>
 </rss>

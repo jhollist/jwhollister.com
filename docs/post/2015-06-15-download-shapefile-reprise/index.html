@@ -54,106 +54,68 @@
   </div>
 
   <div class="entry-content">
-    
-
-<p>So back in 2013 I <a href="https://landeco2point0.wordpress.com/2013/09/30/an-r-function-to-download-shapefiles/">posted a little function</a> I wrote for grabbing all the relevant files that make up a shapefile from a URL.  Turns out it doesn&rsquo;t play so well with Windows 7 or Windows 8 (HT: John Lewis).  Below is a reprised version that at least works on Ubuntu 14.04 and Windows 7.  Haven&rsquo;t tested it beyond that and supressing the warnings to get <code>httr::GET</code> to not complain too much about FTP seems a bit unclean.  Well, you get what you pay for.</p>
+    <p>So back in 2013 I <a href="https://landeco2point0.wordpress.com/2013/09/30/an-r-function-to-download-shapefiles/">posted a little function</a> I wrote for grabbing all the relevant files that make up a shapefile from a URL.  Turns out it doesn&rsquo;t play so well with Windows 7 or Windows 8 (HT: John Lewis).  Below is a reprised version that at least works on Ubuntu 14.04 and Windows 7.  Haven&rsquo;t tested it beyond that and supressing the warnings to get <code>httr::GET</code> to not complain too much about FTP seems a bit unclean.  Well, you get what you pay for.</p>
 
 <p>For all this to run you&rsquo;ll need <code>RCurl</code>, <code>httr</code>, <code>sp</code>, and <code>rgdal</code>.</p>
-
-<p>{% highlight r %}
-download_shp&lt;-function (shape_url, layer, outfolder = &ldquo;.&rdquo;)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">download_shp&lt;-<span style="color:#00f">function</span> (shape_url, layer, outfolder = <span style="color:#a31515">&#34;.&#34;</span>) 
 {
-  if (length(grep(&ldquo;/$&rdquo;, shape_url)) == 0) {
-    shape_url &lt;- paste(shape_url, &ldquo;/&rdquo;, sep = &ldquo;&rdquo;)
-  }</p>
-
-<p>shapefile_ext &lt;- c(&ldquo;.shp&rdquo;, &ldquo;.shx&rdquo;, &ldquo;.dbf&rdquo;, &ldquo;.prj&rdquo;, &ldquo;.sbn&rdquo;,
-                     &ldquo;.sbx&rdquo;, &ldquo;.shp.xml&rdquo;, &ldquo;.fbn&rdquo;, &ldquo;.fbx&rdquo;, &ldquo;.ain&rdquo;, &ldquo;.aih&rdquo;, &ldquo;.ixs&rdquo;,
-                     &ldquo;.mxs&rdquo;, &ldquo;.atx&rdquo;, &ldquo;.cpg&rdquo;)</p>
-
-<p>xlogic &lt;- NULL
-  if(substr(shape_url,1,3)==&ldquo;ftp&rdquo;){
-    xurl &lt;- RCurl::getURL(shape_url)
-    for (i in paste(layer, shapefile_ext, sep = &ldquo;&rdquo;)) {
-      xlogic &lt;- c(xlogic, grepl(i, xurl))
-    }
-  } else if(substr(shape_url,1,4)==&ldquo;http&rdquo;){
-    for (i in paste(shape_url,layer, shapefile_ext, sep = &ldquo;&rdquo;)) {
-      xlogic &lt;- c(xlogic,httr::HEAD(i)$status==200)
-    }<br />
-  }</p>
-
-<p>shapefiles &lt;- paste(shape_url, layer, shapefile_ext,
-                      sep = &ldquo;&rdquo;)[xlogic]
-  outfiles &lt;- paste(outfolder, &ldquo;/&rdquo;, layer, shapefile_ext,
-                    sep = &ldquo;&rdquo;)[xlogic]</p>
-
-<p>if (sum(xlogic) &gt; 0) {
-    for (i in 1:length(shapefiles)) {
-      x &lt;- suppressWarnings(httr::GET(shapefiles[i],
-                                      httr::write_disk(outfiles[i],
-                                                       overwrite = TRUE)))</p>
-
-<pre><code>  dwnld_file &lt;- strsplit(shapefiles[i], &quot;/&quot;)[[1]]
-  dwnld_file &lt;- dwnld_file[length(dwnld_file)]
-
-  print(paste0(&quot;Downloaded &quot;, dwnld_file, &quot; to &quot;, 
-               outfiles[i], &quot;.&quot;))
-}
-</code></pre>
-
-<p>}
-  else {
-    stop(&ldquo;An Error has occured with the input URL or
-              name of shapefile&rdquo;)
+  <span style="color:#00f">if</span> (<span style="color:#00f">length</span>(<span style="color:#00f">grep</span>(<span style="color:#a31515">&#34;/$&#34;</span>, shape_url)) == 0) {
+    shape_url &lt;- <span style="color:#00f">paste</span>(shape_url, <span style="color:#a31515">&#34;/&#34;</span>, sep = <span style="color:#a31515">&#34;&#34;</span>)
   }
-}
-{% endhighlight %}</p>
+  
+  shapefile_ext &lt;- <span style="color:#2b91af">c</span>(<span style="color:#a31515">&#34;.shp&#34;</span>, <span style="color:#a31515">&#34;.shx&#34;</span>, <span style="color:#a31515">&#34;.dbf&#34;</span>, <span style="color:#a31515">&#34;.prj&#34;</span>, <span style="color:#a31515">&#34;.sbn&#34;</span>, 
+                     <span style="color:#a31515">&#34;.sbx&#34;</span>, <span style="color:#a31515">&#34;.shp.xml&#34;</span>, <span style="color:#a31515">&#34;.fbn&#34;</span>, <span style="color:#a31515">&#34;.fbx&#34;</span>, <span style="color:#a31515">&#34;.ain&#34;</span>, <span style="color:#a31515">&#34;.aih&#34;</span>, <span style="color:#a31515">&#34;.ixs&#34;</span>, 
+                     <span style="color:#a31515">&#34;.mxs&#34;</span>, <span style="color:#a31515">&#34;.atx&#34;</span>, <span style="color:#a31515">&#34;.cpg&#34;</span>)
 
+  xlogic &lt;- <span style="color:#00f">NULL</span>
+  <span style="color:#00f">if</span>(<span style="color:#00f">substr</span>(shape_url,1,3)==<span style="color:#a31515">&#34;ftp&#34;</span>){
+    xurl &lt;- RCurl::getURL(shape_url)
+    <span style="color:#00f">for</span> (i <span style="color:#00f">in</span> <span style="color:#00f">paste</span>(layer, shapefile_ext, sep = <span style="color:#a31515">&#34;&#34;</span>)) {
+      xlogic &lt;- <span style="color:#2b91af">c</span>(xlogic, <span style="color:#00f">grepl</span>(i, xurl))
+    }
+  } <span style="color:#00f">else</span> <span style="color:#00f">if</span>(<span style="color:#00f">substr</span>(shape_url,1,4)==<span style="color:#a31515">&#34;http&#34;</span>){
+    <span style="color:#00f">for</span> (i <span style="color:#00f">in</span> <span style="color:#00f">paste</span>(shape_url,layer, shapefile_ext, sep = <span style="color:#a31515">&#34;&#34;</span>)) {
+      xlogic &lt;- <span style="color:#2b91af">c</span>(xlogic,httr::HEAD(i)$status==200)
+    }  
+  }
+  
+ 
+  shapefiles &lt;- <span style="color:#00f">paste</span>(shape_url, layer, shapefile_ext, 
+                      sep = <span style="color:#a31515">&#34;&#34;</span>)[xlogic]
+  outfiles &lt;- <span style="color:#00f">paste</span>(outfolder, <span style="color:#a31515">&#34;/&#34;</span>, layer, shapefile_ext, 
+                    sep = <span style="color:#a31515">&#34;&#34;</span>)[xlogic]
+  
+  <span style="color:#00f">if</span> (<span style="color:#00f">sum</span>(xlogic) &gt; 0) {
+    <span style="color:#00f">for</span> (i <span style="color:#00f">in</span> 1:<span style="color:#00f">length</span>(shapefiles)) {
+      x &lt;- <span style="color:#00f">suppressWarnings</span>(httr::GET(shapefiles[i], 
+                                      httr::write_disk(outfiles[i],
+                                                       overwrite = <span style="color:#00f">TRUE</span>)))
+      
+      dwnld_file &lt;- <span style="color:#00f">strsplit</span>(shapefiles[i], <span style="color:#a31515">&#34;/&#34;</span>)[[1]]
+      dwnld_file &lt;- dwnld_file[<span style="color:#00f">length</span>(dwnld_file)]
+      
+      <span style="color:#00f">print</span>(<span style="color:#00f">paste0</span>(<span style="color:#a31515">&#34;Downloaded &#34;</span>, dwnld_file, <span style="color:#a31515">&#34; to &#34;</span>, 
+                   outfiles[i], <span style="color:#a31515">&#34;.&#34;</span>))
+    }
+  }
+  <span style="color:#00f">else</span> {
+    <span style="color:#00f">stop</span>(<span style="color:#a31515">&#34;An Error has occured with the input URL or 
+</span><span style="color:#a31515">              name of shapefile&#34;</span>)
+  }
+}</code></pre></div>
 <p>And to see that it works again:</p>
-
-<p>{% highlight r %}
-#Download the NH State Boundaries
-download_shp(&ldquo;<a href="ftp://ftp.granit.sr.unh.edu/pub/GRANIT_Data/Vector_Data/Administrative_and_Political_Boundaries/d-nhsenatedists/2012&quot;">ftp://ftp.granit.sr.unh.edu/pub/GRANIT_Data/Vector_Data/Administrative_and_Political_Boundaries/d-nhsenatedists/2012&quot;</a>,
-                   &ldquo;NHSenateDists2012&rdquo;)
-{% endhighlight %}</p>
-
-<p>{% highlight r %}</p>
-
-<h2 id="1-downloaded-nhsenatedists2012-shp-to-nhsenatedists2012-shp">[1] &ldquo;Downloaded NHSenateDists2012.shp to ./NHSenateDists2012.shp.&rdquo;</h2>
-
-<h2 id="1-downloaded-nhsenatedists2012-shx-to-nhsenatedists2012-shx">[1] &ldquo;Downloaded NHSenateDists2012.shx to ./NHSenateDists2012.shx.&rdquo;</h2>
-
-<h2 id="1-downloaded-nhsenatedists2012-dbf-to-nhsenatedists2012-dbf">[1] &ldquo;Downloaded NHSenateDists2012.dbf to ./NHSenateDists2012.dbf.&rdquo;</h2>
-
-<h2 id="1-downloaded-nhsenatedists2012-prj-to-nhsenatedists2012-prj">[1] &ldquo;Downloaded NHSenateDists2012.prj to ./NHSenateDists2012.prj.&rdquo;</h2>
-
-<h2 id="1-downloaded-nhsenatedists2012-sbn-to-nhsenatedists2012-sbn">[1] &ldquo;Downloaded NHSenateDists2012.sbn to ./NHSenateDists2012.sbn.&rdquo;</h2>
-
-<h2 id="1-downloaded-nhsenatedists2012-sbx-to-nhsenatedists2012-sbx">[1] &ldquo;Downloaded NHSenateDists2012.sbx to ./NHSenateDists2012.sbx.&rdquo;</h2>
-
-<p>{% endhighlight %}</p>
-
-<p>{% highlight r %}
-#Read shapefiles in SpatialPolygonsDataFrame
-NHBnd&lt;-readOGR(&ldquo;.&rdquo;,&ldquo;NHSenateDists2012&rdquo;)
-{% endhighlight %}</p>
-
-<p>{% highlight r %}</p>
-
-<h2 id="ogr-data-source-with-driver-esri-shapefile">OGR data source with driver: ESRI Shapefile</h2>
-
-<h2 id="source-layer-nhsenatedists2012">Source: &ldquo;.&rdquo;, layer: &ldquo;NHSenateDists2012&rdquo;</h2>
-
-<h2 id="with-24-features">with 24 features</h2>
-
-<p>{% endhighlight %}</p>
-
-<p>{% highlight r %}
-#Plot it
-plot(NHBnd)
-{% endhighlight %}</p>
-
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#008000">#Download the NH State Boundaries</span>
+download_shp(<span style="color:#a31515">&#34;ftp://ftp.granit.sr.unh.edu/pub/GRANIT_Data/Vector_Data/Administrative_and_Political_Boundaries/d-nhsenatedists/2012&#34;</span>,
+                   <span style="color:#a31515">&#34;NHSenateDists2012&#34;</span>)</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#008000">## [1] &#34;Downloaded NHSenateDists2012.shp to ./NHSenateDists2012.shp.&#34;</span>
+<span style="color:#008000">## [1] &#34;Downloaded NHSenateDists2012.shx to ./NHSenateDists2012.shx.&#34;</span>
+<span style="color:#008000">## [1] &#34;Downloaded NHSenateDists2012.dbf to ./NHSenateDists2012.dbf.&#34;</span>
+<span style="color:#008000">## [1] &#34;Downloaded NHSenateDists2012.prj to ./NHSenateDists2012.prj.&#34;</span>
+<span style="color:#008000">## [1] &#34;Downloaded NHSenateDists2012.sbn to ./NHSenateDists2012.sbn.&#34;</span>
+<span style="color:#008000">## [1] &#34;Downloaded NHSenateDists2012.sbx to ./NHSenateDists2012.sbx.&#34;</span></code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#008000">#Read shapefiles in SpatialPolygonsDataFrame</span>
+NHBnd&lt;-readOGR(<span style="color:#a31515">&#34;.&#34;</span>,<span style="color:#a31515">&#34;NHSenateDists2012&#34;</span>)</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#008000">## OGR data source with driver: ESRI Shapefile </span>
+<span style="color:#008000">## Source: &#34;.&#34;, layer: &#34;NHSenateDists2012&#34;</span>
+<span style="color:#008000">## with 24 features</span></code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#008000">#Plot it</span>
+plot(NHBnd)</code></pre></div>
 <p><img src="/figure/run_it-1.png" alt="plot of chunk run_it" /></p>
 
   </div>
