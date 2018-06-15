@@ -1,17 +1,10 @@
 ---
 layout: page
-title: Curriculum Vitae
-cv: True
-output:
-  html_document:
-    css: "public/css/pdf.css"
+cv: true
 ---
 
+<div id ="cv">
 <div id="address">
- 
-# Jeffrey William Hollister
-
-<a id="pdf-link" href="http://jwhollister.com/public/files/cv.pdf">CV in pdf</a>
 
 - updated: `r format(Sys.time(), "%Y-%m-%d")`
 - U.S. Environmental Protection Agency
@@ -22,9 +15,6 @@ output:
 - (c)401 556 4087
 - [hollister.jeff@epa.gov](hollister.jeff@epa.gov)
 - [jwhollister.com](http://jwhollister.com)
-- Twitter: [jhollist](https://twitter.com/jhollist)
-- GitHub: [jhollist](https://github.com/jhollist)
-- ORCID: [0000-0002-9254-9740](https://orcid.org/0000-0002-9254-9740)
 
 </div>
 
@@ -92,13 +82,20 @@ May 1995
 
 Aug 2008 - Present
   : Research Ecologist, U.S. Environmental Protection Agency, Atlantic Ecology Division
+    
+      -
 
 Nov 2016 - Present
   : Adjunct Associate Professor, University of Rhode Island, Department of Natural 
   Resources Science
+  
+      -
 
 Dec 2005 - Present
   : Senior Fellow, Coastal Institute, University of Rhode Island
+  
+      -
+
 
 ## Research
 
@@ -194,25 +191,24 @@ Peer Reviewed Articles
 
   : Submitted
       
-      - Kuhn, A., S. G. Leibowitz, Z. C. Johnson, J. Lin, J. A. Massie, J. W. Hollister, J. L. Ebersole, J. L. Lake, J. R. Serbst, J. James, M. G. Bennett, R. J. Brooks, C. T. Nietch, L. C. Alexander, J. E. Compton. (Submitted). Performance of national maps of watershed integrity at watershed scales. Water. 
-      
-       - Nojavan, F. A., B. J. Kreakie, J. W. Hollister, S. S. Qian. (Submitted). Rethinking the Lake Trophic State Index. Ecological Indicators. [GitHub](https://github.com/USEPA/rethinking_tsi)
+    - Nojavan, F. A., B. J. Kreakie, J. W. Hollister, S. S. Qian. (Submitted). Rethinking the Lake Trophic State Index. Ecological Indicators. [GitHub](https://github.com/USEPA/rethinking_tsi)
        
-      - Raposa, K. B., R. A. McKinney, C. Wigand, J. W. Hollister, C. Lovall, K. Szura, J. A. Gurak Jr., J. McNamee, C. Raithel, and E. B. Watson. (Submitted). Top-down and bottom-up controls on overabundant New England salt marsh crab populations. PeerJ. [GitHub](https://github.com/jhollist/crabs)
+  : 2010 - Present
+  
+    - Raposa, K. B., R. A. McKinney, C. Wigand, J. W. Hollister, C. Lovall, K. Szura, J. A. Gurak Jr., J. McNamee, C. Raithel, and E. B. Watson. (2018). Top-down and bottom-up controls on overabundant New England salt marsh crab populations. PeerJ. [10.7717/peerj.4876](https://doi.org/10.7717/peerj.4876) [GitHub](https://github.com/jhollist/crabs)
+  
+    - Kuhn, A., S. G. Leibowitz, Z. C. Johnson, J. Lin, J. A. Massie, J. W. Hollister, J. L. Ebersole, J. L. Lake, J. R. Serbst, J. James, M. G. Bennett, R. J. Brooks, C. T. Nietch, L. C. Alexander, J. E. Compton. (2018). Performance of national maps of watershed integrity at watershed scales. Water. [10.3390/w10050604](https://doi.org/10.3390/w10050604) [pdf](http://www.mdpi.com/2073-4441/10/5/604/pdf) [GitHub](https://github.com/usepa/watershed_integrity)
+  
+    - Hollister, J. W. and J. J. Stachelek. (2017). lakemorpho: Calculating lake morphometry metrics in R.  F1000Research. 6:1718. [10.12688/f1000research.12512.1](https://dx.doi.org/10.12688/f1000research.12512.1). [pdf](http://f1000research.com/articles/6-1718/v1/pdf) [GitHub](https://github.com/usepa/lakemorpho_manuscript)
       
+      - Chamberlain, S, and J.W. Hollister (2017). lawn: R Client for turf.js for Geospatial Analysis. Version 0.3.3. Journal of Open Source Software 2:11. [10.21105/joss.00194](http://dx.doi.org/10.21105/joss.00194)  [CRAN](https://cran.r-project.org/package=lawn) [GitHub](https://github.com/ropensci/lawn) 
       
-  : 2010 - Present<!--: Accepted -->
-  
-       - Hollister, J. W. and J. J. Stachelek. (2017). lakemorpho: Calculating lake morphometry metrics in R.  F1000Research. 6:1718. [10.12688/f1000research.12512.1](https://dx.doi.org/10.12688/f1000research.12512.1). [pdf](http://f1000research.com/articles/6-1718/v1/pdf) [GitHub](https://github.com/usepa/lakemorpho_manuscript)
-  
-       - Chamberlain, S, and J.W. Hollister (2017). lawn: R Client for turf.js for Geospatial Analysis. Version 0.3.3. Journal of Open Source Software 2:11. [10.21105/joss.00194](http://dx.doi.org/10.21105/joss.00194)  [CRAN](https://cran.r-project.org/package=lawn) [GitHub](https://github.com/ropensci/lawn) 
-       
-       - Hart, E., Barmby, P., LeBauer, D., Michonneau, F., Mount, S., Mulrooney, P., Poisot, T., Woo, K.H., Zimmerman, N., Hollister, J. W. (2016). Ten simple rules for digital data storage. PLoS Computational Biology. e1005097.  [10.1371/journal.pcbi.1005097](http://dx.doi.org/10.1371/journal.pcbi.1005097) [pre-print](https://doi.org/10.7287/peerj.preprints.1448v2) [GitHub](https://github.com/emhart/10-simple-rules-data-storage)
-  
+      - Hart, E., Barmby, P., LeBauer, D., Michonneau, F., Mount, S., Mulrooney, P., Poisot, T., Woo, K.H., Zimmerman, N., Hollister, J. W. (2016). Ten simple rules for digital data storage. PLoS Computational Biology. e1005097.  [10.1371/journal.pcbi.1005097](http://dx.doi.org/10.1371/journal.pcbi.1005097) [pre-print](https://doi.org/10.7287/peerj.preprints.1448v2) [GitHub](https://github.com/emhart/10-simple-rules-data-storage)
+      
       - Hollister, J. W., W. B . Milstead, B. J. Kreakie. (2016). Modeling Lake Trophic State: A Random Forest Approach. Ecosphere 7:3  [10.1002/ecs2.1321](http://onlinelibrary.wiley.com/doi/10.1002/ecs2.1321/full). [pdf](http://onlinelibrary.wiley.com/doi/10.1002/ecs2.1321/pdf)  [pre-print](http://dx.doi.org/10.7287/peerj.preprints.1319v2) [GitHub](https://github.com/USEPA/LakeTrophicModelling)
-  
+      
       - Hollister, J.W., B.J. Kreakie (2016). Associations between Chlorophyll a and various Microcystin-LR Health Advisory Concentrations. F1000Research 5:151  [10.12688/f1000research.7955.2](https://dx.doi.org/10.12688/f1000research.7955.2). [pdf](http://f1000research.com/articles/5-151/v2/pdf) [GitHub](https://github.com/USEPA/microcystinchla)
-   
+      
       - Milstead, W. B., J.W. Hollister, R. B. Moore, H. A. Walker. (2013). Estimating Summer Nutrient Concentrations in Northeastern Lakes from SPARROW Load Predictions and Modeled Hydraulic Residence Time. PLoS ONE 8(11): e81457  [10.1371/journal.pone.0081457](http://dx.doi.org/10.1371/journal.pone.0081457).  [pdf](http://www.plosone.org/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0081457&representation=PDF)
       
       - Hollister, J. W., W.B. Milstead, M.A. Urrutia (2011). Predicting Maximum Lake Depth from Surrounding Topography. PLoS ONE 6(9): e25764 [10.1371/journal.pone.0025764](http://dx.doi.org/10.1371/journal.pone.0025764).  [pdf](http://www.plosone.org/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0025764&representation=PDF)
@@ -674,3 +670,5 @@ Other Activities
       - Retired mediocre Ultimate player
        
       - SCUBA Certified
+
+</div>

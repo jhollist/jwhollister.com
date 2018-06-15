@@ -21,26 +21,32 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   
 [[menu.main]]
     name = "Home"
+    pre = "<i class='fas fa-home'></i>"
     url = "/"
     weight = 1
 [[menu.main]]
     name = "About"
+    pre = "<i class='fas fa-question'></i>"
     url = "/about/"
     weight = 2
 [[menu.main]]
     name = "Vitae"
+    pre = "<i class='fas fa-book-open'></i>"
     url = "/cv/"
     weight = 3
 [[menu.main]]
     name = "Twitter"
+    pre = "<i class='fab fa-twitter'></i>"
     url = "https://twitter.com/jhollist"
     weight = 4
 [[menu.main]]
     name = "GitHub"
+    pre = "<i class='fab fa-github'></i>"
     url = "https://github.com/jhollist"
     weight = 5
 [[menu.main]]
     name = "Scholar"
+    pre = "<i class='fas fa-graduation-cap'></i>"
     url = "https://scholar.google.com/citations?user=Fn9BjfIAAAAJ&hl=en"
     weight = 6
 [[menu.main]]

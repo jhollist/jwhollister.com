@@ -1,6 +1,10 @@
 {{ partial "header.html" . }}
 
+{{ if .Params.cv }}
+<section id=content style="padding-top: 0px;">
+{{ else }}
 <section id=content>
+{{ end }}
   <h1>{{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}</h1>
   
   {{ if .Params.layout }}
@@ -24,6 +28,8 @@
   </div>
 </section>
 
+{{ if .Params.layout }}
+{{ else }}
 {{ partial "disqus.html" .}}
-
+{{ end }}
 {{ partial "footer.html" . }}
