@@ -8,7 +8,7 @@ theme = "hugo-tanka"
 
 googleAnalytics = ""
 disqusShortname = "jeffreywhollister"
-disable_mathjax = false
+disable_mathjax = true
 
 pygmentsstyle      = "vs"
 pygmentscodefences = true
