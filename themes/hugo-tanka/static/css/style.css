@@ -373,3 +373,15 @@ ul li:before {
     font-size: 12px;
   }
 }
+
+  h1, h2, h3, h4, h5 {
+    color: #162d50;
+  }
+  
+  h1 a, h2 a, h3 a {
+    color: #162d50;
+  }
+  
+  #nav h1 a {
+    color: #162d50;
+  }
