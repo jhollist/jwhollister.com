@@ -49,8 +49,4 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     pre = "<i class='fas fa-graduation-cap'></i>"
     url = "https://scholar.google.com/citations?user=Fn9BjfIAAAAJ&hl=en"
     weight = 6
-[[menu.main]]
-    name = "ORCID"
-    url = "https://orcid.org/0000-0002-9254-9740"
-    weight = 7
 

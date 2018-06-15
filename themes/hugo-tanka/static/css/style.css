@@ -466,6 +466,14 @@ dl > dd > ul{
   margin-top: 10px;
 }
 
+#cv > dl > dd > p {
+  font-weight: bold;
+}
+
+#cv > dl > dt {
+  font-weight: bold;
+}
+
 /* page break from http://davidwalsh.name/css-page-breaks */
 
 @media all {
@@ -486,6 +494,10 @@ dl > dd > ul{
   li {
     orphans: 4;
     widows: 3;
+  }
+  
+  #cv {
+    font-size: 90%;
   }
   
 }
