@@ -32,9 +32,9 @@
     
     <li><a href="/">Home</a></li>
     
-    <li><a href="/about.html">About</a></li>
+    <li><a href="/about/">About</a></li>
     
-    <li><a href="/cv.html">C.V.</a></li>
+    <li><a href="/cv/">C.V.</a></li>
     
     <li><a href="https://twitter.com/jhollist">Twitter</a></li>
     
@@ -48,10 +48,12 @@
 
 <section id=content>
   <h1> Download Shapefiles - Take 2 </h1>
-
+  
+  
   <div id=sub-header>
-     · 2015/06/15 · 2 minute read
+     · 2015-06-15 · 2 minute read
   </div>
+  
 
   <div class="entry-content">
     <p>So back in 2013 I <a href="https://landeco2point0.wordpress.com/2013/09/30/an-r-function-to-download-shapefiles/">posted a little function</a> I wrote for grabbing all the relevant files that make up a shapefile from a URL.  Turns out it doesn&rsquo;t play so well with Windows 7 or Windows 8 (HT: John Lewis).  Below is a reprised version that at least works on Ubuntu 14.04 and Windows 7.  Haven&rsquo;t tested it beyond that and supressing the warnings to get <code>httr::GET</code> to not complain too much about FTP seems a bit unclean.  Well, you get what you pay for.</p>

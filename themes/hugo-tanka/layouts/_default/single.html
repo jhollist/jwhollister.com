@@ -2,10 +2,13 @@
 
 <section id=content>
   <h1>{{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}</h1>
-
+  
+  {{ if .Params.layout }}
+  {{ else }}
   <div id=sub-header>
-    {{ .Params.author }} · {{ .Date.Format (.Site.Params.dateform | default "2006/01/02") }} · {{ .ReadingTime }} minute read
+    {{ .Params.author }} · {{ .Date.Format (.Site.Params.dateform | default "2006-01-02") }} · {{ .ReadingTime }} minute read
   </div>
+  {{ end }}
 
   <div class="entry-content">
     {{ .Content }}

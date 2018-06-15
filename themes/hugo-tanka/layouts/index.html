@@ -4,10 +4,13 @@
   <ul class=posts_listing>
     {{ range .Data.Pages.ByDate.Reverse }}
       <li>
+        {{ if .Params.layout }}
+        {{ else }}
         <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
         <div id=date>
-          <time>{{ .Date.Format (.Site.Params.dateform | default "2006/01/02") }}</time>
+          <time>{{ .Date.Format (.Site.Params.dateform | default "2006-01-02") }}</time>
         </div>
+        {{ end }}
       </li>
     {{ end }}
   </ul>

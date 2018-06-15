@@ -95,5 +95,14 @@ When I first started using R for my spatial analysis work I often was left strug
       <description>Hard to believe that in less than a year I am now on the third version of my website. First one was me hacking at bootstrap. I knew next to nothing then, but was able to get a minimal site up and running. Since then I have learned quite a bit more about web design, Jekyll, hosting on github, and am a much better hacker than I was then (although still not a good one).</description>
     </item>
     
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>I am a landscape ecologist with expertise in the spatial component of ecology and environmental sciences. I hold a Bachelor’s degree in Biology from Baker University, a Master’s Degree in Resource Ecology from Duke University, and a Ph. D. in Environmental Science from the University of Rhode Island. Since, May of 2006, I have worked as a Research Ecologist with the US EPA’s Atlantic Ecology Division in Narragansett, RI. My past experience is in applications of geospatial technologies (such as geographic information systems, spatial statistics, and remote sensing) to environmental research and broad scale environmental monitoring, modeling and assessment.</description>
+    </item>
+    
   </channel>
 </rss>
