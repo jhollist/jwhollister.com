@@ -116,12 +116,12 @@ When I first started using R for my spatial analysis work I often was left strug
     </item>
     
     <item>
-      <title>Talks</title>
+      <title>Selected Talks</title>
       <link>/talks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/talks/</guid>
-      <description> Lakes, Landscapes, and R Using Chlorophyll a as a surrogate for exceeding Microcystin Health Advisory Concentrations  </description>
+      <description>Git, Github, and Cats, Multiple Venues, Multiple Dates. Lakes, Landscapes, and R, United States Chapter of the International Association of Landscape Ecology Annual Meeting, Chicago, IL, April 2018 Using Chlorophyll a as a surrogate for exceeding Microcystin Health Advisory Concentrations, Cyanobacteria - Monitoring and Treating Drinking Water: A Workshop for Water Suppliers, Worcester, MA, December 2017 An Open Science Framework for Research on Cyanobacteria in Lakes and Ponds US EPA Region 7 Regional Office, Lenexa, KS, October 2017 R packages as a reproducible framework for lake and cyanobacteria research US EPA R User Group Annual Meeting, Washington, DC, September 2017 An Open Science Approach to Modeling and Visualizing Cyanobacteria Blooms in Lakes and Ponds.</description>
     </item>
     
   </channel>
