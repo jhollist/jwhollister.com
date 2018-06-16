@@ -37,7 +37,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     weight = 2
 [[menu.main]]
     name = "Talks"
-    url = "/talks"
+    url = "/talks/"
     pre = "<i class='fas fa-chalkboard'></i>"
     weight = 3
 [[menu.main]]

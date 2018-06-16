@@ -319,7 +319,6 @@ ul li:before {
   }
 
   #nav li {
-    display: inline-block;
     font-size: 16px;
     padding: 0 16px;
   }
