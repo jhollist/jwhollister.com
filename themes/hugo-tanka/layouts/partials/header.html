@@ -37,7 +37,7 @@
   <ul>
     {{ range .Site.Menus.main }}
     {{ if .Pre }}
-    <li><a href="{{ .URL }}">{{ .Pre }} {{ .Name }}</a></li>
+    <li><a href="{{ .URL }}">{{ .Pre }}<br>{{ .Name }}</a></li>
     {{ else }}
     <li><a href="{{ .URL }}">{{ .Name }}</a></li>
     {{ end }}
