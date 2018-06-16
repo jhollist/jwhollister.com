@@ -1,0 +1,81 @@
+==================================================================
+https://keybase.io/jhollist
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jwhollister.com
+  * I am jhollist (https://keybase.io/jhollist) on keybase.
+  * I have a public key with fingerprint D3F0 73AF 7C80 CAAA B965  4E0B 98E3 5E1B 139B 2FEF
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01019f80e52069ce0053a6467c98912f06e18396367c821e7c06f514f65563726ee50a",
+      "fingerprint": "d3f073af7c80caaab9654e0b98e35e1b139b2fef",
+      "host": "keybase.io",
+      "key_id": "98e35e1b139b2fef",
+      "kid": "01019f80e52069ce0053a6467c98912f06e18396367c821e7c06f514f65563726ee50a",
+      "uid": "85e0ef8a2a2b66c2a5666485e46f5319",
+      "username": "jhollist"
+    },
+    "merkle_root": {
+      "ctime": 1529156633,
+      "hash_meta": "205d940182491c1e63a4aaa6b8a5d407f3da7fcf487e5c7a78139c9be6dcd3e2",
+      "seqno": 3085954
+    },
+    "revoke": {
+      "sig_ids": [
+        "64905f988a4a647adddf14cb118d10c018544fe74cc66371df1d98d1c18f5b6f0f"
+      ]
+    },
+    "service": {
+      "hostname": "jwhollister.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1529156639,
+  "expire_in": 157680000,
+  "prev": "9221c6eb9b2009632b94111fdbed63e37d1604a75dc2da045df960e5749d04df",
+  "seqno": 37,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.77
+Comment: https://keybase.io/crypto
+
+yMLCAnicrVNdbBVFFL7Xqjc0SNQUI4ZQugbpQykzuzOzO1c0mBhCTIQUmwYBc52d
+OXPvcm/vXne3haZWE4kmmqAB02ggwdagIhEjPPCTcgX5q7aEhMADD03lYjQBog9G
+8f9ntoHEGB/dl8me853vfOebM6fuaso0Z7e3HtpR30I+zk6eGOjLrF/U0jpo+aEa
+sPKDVhlmDqgoiJNCOVBW3kIYYa49BNRGjEtAiDqCEeZK7nFsa8QAew5njol4NgZX
+IqYpJppRyhzXZgAUCavD0kG1CFEtCqqJoVWORq4jtClCUgjhc0YJIJ974FDAPna4
+b2vQprAUxmmFEeeLGDqD0MTMT2FG3n/g/2fdfTN0HgUE2hO2sH3GpC0oY4yYKDFV
+DuYpMIaoKnrBoDeWwkolMLKHOqxeiMoVKERhmKTmyiRIIZjaHBsOxzEDirhU6IVE
+mEobUcUJwp5NOJYYmCOIsYf5nqCKIFc7SrhaauK5QKUrXM9MLrkPTEnlgG10xPBc
+NbTyDvIop8QoiKA/LEPaPA6KxrbYyq+3GOGIau55hp8RVyilNCbSx9hTGEmjgBKi
+wSVSGpUuNlnFTUpiT1OfaaStZ4bSZlF/IGfI03u6Nf+mmwZA1CnDXiOqFoVJKMOK
+SZaSpBbnU2uSgVqK3gR+4SZPwQ+qyiyKqeiHKA7CqrHKIP/tGu+wYHMtiKAQpAjq
+Mg+ZL+0D/ela2DaWDHyzFAiZS7Z9TjDGWvmgmAOOqzBDRLhUSVsJRKjSnJldcQlX
+iCj9Dxtdo1MUDacxryqSvgisoRPHN9yeyTZn7rzjtvQFZZpn3X3rXT06mPsTbVnz
+gpD3Xhib6Jz3feOe+t7Hr6y9r+vgj6vOnt8Mje3jIw/evytbez/3wdZ1E1MPrOtc
+YmXbV+7JLb544fKc+k8jfa/v/Kt5/jdPP8Jf/K11quf30frEE/uKT7V3hW9FXy/7
+ojx5/fCcnasbx75b8uS+Vw7OOr9i14K9Wy/NvjG6wDo9fGVFe8ab/fMnL+9e9eW2
+kbaWlulfL7606PDaM6WFXa/Fo40bqw9se3b/0mP1SvHTt3PXLp0c/uGj3NGxdw+d
+02ve/Oq9dx56eHjuvLZXPzt14I+mM79cvdy2fPe5ZS0RaTu6cL6zcnJ8+Yfd02d7
+vr3emJ4ya3J6w8bu42Pj4499Xpzyx54/2b3jjZ6mI38Du9eDhQ==
+=SafZ
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jhollist
+
+==================================================================
