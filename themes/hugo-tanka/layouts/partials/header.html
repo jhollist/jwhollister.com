@@ -33,6 +33,17 @@
 
 <body>
 <section id=nav>
+  <ul id=social>
+    {{ if .Site.Params.twitter }}
+    <li><a href= "https://twitter.com/{{ .Site.Params.twitter }}"><i class='fab fa-twitter'></i></a></li>
+    {{ end }}
+    {{ if .Site.Params.github}}
+    <li><a href= "https://github.com/{{ .Site.Params.github }}"><i class='fab fa-github'></i></a></li>
+    {{ end }}
+    {{ if .Site.Params.scholar }}
+    <li><a href= "https://scholar.google.com/citations?user={{ .Site.Params.scholar }}"><i class='fas fa-graduation-cap'></i></a></li>
+    {{ end }}
+  </ul>
   <h1><a href="/">{{ .Site.Params.sitename }}</a></h1>
   <ul>
     {{ range .Site.Menus.main }}

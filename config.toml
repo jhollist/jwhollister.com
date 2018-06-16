@@ -6,7 +6,7 @@ canonifyurls = true
 languagecode = "en"
 theme = "hugo-tanka"
 
-googleAnalytics = ""
+googleAnalytics = "UA-43969710-2"
 disqusShortname = "jeffreywhollister"
 disable_mathjax = true
 
@@ -20,6 +20,10 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   sitename = "Jeffrey W. Hollister"
   MathJaxCDN = "//cdn.bootcss.com"
   MathJaxVersion = "2.7.1"
+  twitter = "jhollist"
+  github = "jhollist"
+  scholar = "Fn9BjfIAAAAJ"
+  
 
 [[menu.main]]
     name = "Home"
@@ -32,23 +36,28 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     url = "/about/"
     weight = 2
 [[menu.main]]
+    name = "Talks"
+    url = "/talks"
+    pre = "<i class='fas fa-chalkboard'></i>"
+    weight = 3
+[[menu.main]]
     name = "Vitae"
     pre = "<i class='fas fa-book-open'></i>"
     url = "/cv/"
-    weight = 3
-[[menu.main]]
-    name = "Twitter"
-    pre = "<i class='fab fa-twitter'></i>"
-    url = "https://twitter.com/jhollist"
     weight = 4
-[[menu.main]]
-    name = "GitHub"
-    pre = "<i class='fab fa-github'></i>"
-    url = "https://github.com/jhollist"
-    weight = 5
-[[menu.main]]
-    name = "Scholar"
-    pre = "<i class='fas fa-graduation-cap'></i>"
-    url = "https://scholar.google.com/citations?user=Fn9BjfIAAAAJ&hl=en"
-    weight = 6
+#[[menu.main]]
+#    name = "Twitter"
+#    pre = "<i class='fab fa-twitter'></i>"
+#    url = "https://twitter.com/jhollist"
+#    weight = 4
+#[[menu.main]]
+#    name = "GitHub"
+#    pre = "<i class='fab fa-github'></i>"
+#    url = "https://github.com/jhollist"
+#    weight = 5
+#[[menu.main]]
+#    name = "Scholar"
+#    pre = "<i class='fas fa-graduation-cap'></i>"
+#    url = "https://scholar.google.com/citations?user=Fn9BjfIAAAAJ&hl=en"
+#    weight = 6
 
