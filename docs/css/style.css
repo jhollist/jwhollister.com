@@ -319,6 +319,7 @@ ul li:before {
   }
 
   #nav li {
+    display: inline-block;
     font-size: 16px;
     padding: 0 16px;
   }
@@ -353,6 +354,7 @@ ul li:before {
   }
 
   #nav li {
+    display: inline-block;
     font-size: 14px;
     padding: 0 12px;
   }
