@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://jwhollister.com/"
 publishDir = "docs"
 title = "Jeffrey W. Hollister"
 author = "Jeff Hollister"
