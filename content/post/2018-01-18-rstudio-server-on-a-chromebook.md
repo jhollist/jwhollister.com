@@ -2,7 +2,7 @@
 date: 2018-01-18
 title: "Rstudio Server On A Chromebook"
 tags: ['chromeOS','Chromebook','crouton','xiwi','RStudio']
-categories: ['R','r']
+categories: ['R']
 ---
 
 The only post I got around to writing in 2017 was a single messy,

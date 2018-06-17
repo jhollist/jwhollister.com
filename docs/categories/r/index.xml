@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on Jeffrey W. Hollister</title>
+    <link>/categories/r/</link>
+    <description>Recent content in R on Jeffrey W. Hollister</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 16 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What goes up, must Blogdown:  Version 3 (or 4) of jwhollister.com</title>
+      <link>/post/what-goes-up-must-blogdown-version-3-or-4-of-jwhollister-com/</link>
+      <pubDate>Sat, 16 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/what-goes-up-must-blogdown-version-3-or-4-of-jwhollister-com/</guid>
+      <description>So, I finally have my website up and running as a Blogdown/Hugo site. I have been meaning to make this switch for some time now, but never really found the time until recently. Writing up the gory details of my experience doing this doesn’t seem like a good use of my time (nor your time to read it). This is because it wasn’t very difficult a process and many others have taken the time to put together really nice documentation.</description>
+    </item>
+    
+    <item>
+      <title>Rstudio Server On A Chromebook</title>
+      <link>/post/2018-01-18-rstudio-server-on-a-chromebook/</link>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-01-18-rstudio-server-on-a-chromebook/</guid>
+      <description>The only post I got around to writing in 2017 was a single messy, evoloving set of notes on how to set up a Chromebook with R and RStudio. This post is a reprise of that one as well as post #1 in my effort to double my blog output from 2017 (I&amp;rsquo;m shooting for the stars on that goal). In this post I will detail how to set up RStudio Server in a crouton chroot and access it directly via Chrome without having to fire up a separate X11 window.</description>
+    </item>
+    
+    <item>
+      <title>Setting up an Asus Flip C302CA Chromebook for R Development</title>
+      <link>/post/2017-04-14-chromebook-4-rstats/</link>
+      <pubDate>Fri, 14 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2017-04-14-chromebook-4-rstats/</guid>
+      <description>Don&amp;rsquo;t think of this as a real blog post. It is mostly a loose collection of notes that I took while getting my new Asus Flip C302CA set up with R and RStudio. I&amp;rsquo;ve had this up and running for just a few days now (and in fact wrote this post using RStudio on it) and I love it. I highly recommend.
+The steps below are not really tested. So if you run into problems or I have missed something, let me know.</description>
+    </item>
+    
+    <item>
+      <title>Spatial Data Analysis in R: Lightning Demo!</title>
+      <link>/post/2015-11-06-r-gis-lightning-demo/</link>
+      <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2015-11-06-r-gis-lightning-demo/</guid>
+      <description>At this years NEARC meeting I decided to give a lightning talk on using R as a GIS. As I was working on this I thought, &amp;ldquo;why not try a lightning demo?&amp;rdquo; That would be better than five minutes of slides on packages and commands. But, as anyone who has done a live demo will know, they often provide unexpected challenges. Add a 5 minute limit to that, and well, some level of failure is sure to occur.</description>
+    </item>
+    
+    <item>
+      <title>I finally got quickmapr on CRAN!</title>
+      <link>/post/2015-10-30-i-finally-got-quickmapr-up-on-cran/</link>
+      <pubDate>Fri, 30 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2015-10-30-i-finally-got-quickmapr-up-on-cran/</guid>
+      <description>A little over 7 months ago I posted about a package that I had been working on, quickmapr. That was the pre-release version, the one that I finished up today and submitted to CRAN is a bit more polished, plots rasters a bit quicker, and is, I think, ready for wider release. It is now availble from CRAN.
+The README on GitHub provides details plus some examples using a small dataset included with the package.</description>
+    </item>
+    
+    <item>
+      <title>Download Shapefiles - Take 2</title>
+      <link>/post/2015-06-15-download-shapefile-reprise/</link>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2015-06-15-download-shapefile-reprise/</guid>
+      <description>So back in 2013 I posted a little function I wrote for grabbing all the relevant files that make up a shapefile from a URL. Turns out it doesn&amp;rsquo;t play so well with Windows 7 or Windows 8 (HT: John Lewis). Below is a reprised version that at least works on Ubuntu 14.04 and Windows 7. Haven&amp;rsquo;t tested it beyond that and supressing the warnings to get httr::GET to not complain too much about FTP seems a bit unclean.</description>
+    </item>
+    
+    <item>
+      <title>quickmapr: An R package for mapping and interacting with spatial data</title>
+      <link>/post/2015-03-13-quickmapr-pre-release/</link>
+      <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2015-03-13-quickmapr-pre-release/</guid>
+      <description>I do a lot of GIS. That used to mean firing up any one of the esri products, but over the course of the last couple of years I have done that less and less and instead fired up R.
+When I first started using R for my spatial analysis work I often was left struggling with viewing the results of my analysis and could only do so with a clunky workflow of pushing my sp or raster objects out to shapefiles or tiffs and then pulling those into Arcmap.</description>
+    </item>
+    
+    <item>
+      <title>Getting a Category Feed Up and Running with Jekyll on Github</title>
+      <link>/post/2014-10-9-category-feed/</link>
+      <pubDate>Thu, 09 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2014-10-9-category-feed/</guid>
+      <description>Now that I have the site up and running, I am now trying to add a few category specific RSS feeds. I will say that for someone who is new to RSS (i.e. me) the feeds on Wordpress are really easy. But, since I now fancy myself somewhat of hacker, I suppose figuring out how to get a Jekyll site hosted on Github to spit these out is something I should do.</description>
+    </item>
+    
+  </channel>
+</rss>
