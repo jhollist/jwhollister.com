@@ -6,10 +6,19 @@
     <description>Recent content on Jeffrey W. Hollister</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 18 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What goes up, must Blogdown:  Version 3 (or 4) of jwhollister.com</title>
+      <link>/post/what-goes-up-must-blogdown-version-3-or-4-of-jwhollister-com/</link>
+      <pubDate>Sat, 16 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/what-goes-up-must-blogdown-version-3-or-4-of-jwhollister-com/</guid>
+      <description>So, I finally have my website up and running as a Blogdown/Hugo site. I have been meaning to make this switch for some time now, but never really found the time until recently. Writing up the gory details of my experience doing this doesn’t seem like a good use of my time (nor your time to read it). This is because it wasn’t very difficult a process and many others have taken the time to put together really nice documentation.</description>
+    </item>
     
     <item>
       <title>Rstudio Server On A Chromebook</title>

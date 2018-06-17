@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Blogdown</title>
+      <link>/tags/blogdown/</link>
+      <pubDate>Sat, 16 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/blogdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Categories</title>
       <link>/tags/categories/</link>
       <pubDate>Mon, 02 Feb 2015 00:00:00 +0000</pubDate>
@@ -224,6 +233,15 @@
       <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
       
       <guid>/tags/visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Website</title>
+      <link>/tags/website/</link>
+      <pubDate>Sat, 16 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/website/</guid>
       <description></description>
     </item>
     
