@@ -125,6 +125,17 @@ When I first started using R for my spatial analysis work I often was left strug
     </item>
     
     <item>
+      <title>Blogs I Read</title>
+      <link>/blogroll/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blogroll/</guid>
+      <description> I don’t always read blogs, but when I do these are the ones I read.
+– The most interesting man in the world (not really)
+  R Weekly Simply Statistics Dynamic Ecology From the bottom of the heap Living in and Ivory Basement Maribo R-Bloggers Recology rOpenSci Software Carpentry Jabberwocky Ecology  </description>
+    </item>
+    
+    <item>
       <title>Selected Talks</title>
       <link>/talks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

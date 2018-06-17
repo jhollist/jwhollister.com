@@ -45,6 +45,11 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     pre = "<i class='fas fa-book-open'></i>"
     url = "/cv/"
     weight = 4
+[[menu.main]]
+    name = "Blogroll"
+    pre = "<i class='fas fa-clipboard-list'></i>"
+    url = "/blogroll/"
+    weight = 5    
 #[[menu.main]]
 #    name = "Twitter"
 #    pre = "<i class='fab fa-twitter'></i>"
