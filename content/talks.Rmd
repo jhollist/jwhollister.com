@@ -3,9 +3,9 @@ title: "Selected Talks"
 layout: page
 ---
 
-- **[Git, Github, and Cats](http://usepa.github.io/github_101)**: Multiple Venues, Multiple Dates.
+- **[Git, Github, and Cats](https://usepa.github.io/github_101)**: Multiple Venues, Multiple Dates.
 - **[Lakes, Landscapes, and R](https://jhollist.github.io/lakes_landscapes_r)**: United States Chapter of the International Association of Landscape Ecology Annual Meeting, Chicago, IL, April 2018
-- **[Using Chlorophyll *a* as a surrogate for exceeding Microcystin Health Advisory Concentrations](http://jhollist.github.io/microcystin_chla_talk)**: Cyanobacteria - Monitoring and Treating Drinking Water: A Workshop for Water Suppliers, Worcester, MA, December 2017
+- **[Using Chlorophyll *a* as a surrogate for exceeding Microcystin Health Advisory Concentrations](https://jhollist.github.io/microcystin_chla_talk)**: Cyanobacteria - Monitoring and Treating Drinking Water: A Workshop for Water Suppliers, Worcester, MA, December 2017
 - **[An Open Science Framework for Research on Cyanobacteria in Lakes and Ponds](https://jhollist.github.io/cyano_open_sci)**: US EPA Region 7 Regional Office, Lenexa, KS, October 2017
 - **[R packages as a reproducible framework for lake and cyanobacteria research](https://usepa.github.io/reproducible_lakes/)**: US EPA R User Group Annual Meeting, Washington, DC, September 2017
 - **[An Open Science Approach to Modeling and Visualizing Cyanobacteria Blooms in Lakes and Ponds](https://usepa.github.io/cyano_open_sci_aag/)**: American Association of Geographsers Annual Meeting, Boston, MA, April 2017

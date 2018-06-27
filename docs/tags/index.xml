@@ -104,7 +104,7 @@
     <item>
       <title>Github</title>
       <link>/tags/github/</link>
-      <pubDate>Thu, 09 Oct 2014 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/github/</guid>
       <description></description>
@@ -165,6 +165,15 @@
     </item>
     
     <item>
+      <title>Projects</title>
+      <link>/tags/projects/</link>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>R</title>
       <link>/tags/r/</link>
       <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
@@ -194,7 +203,7 @@
     <item>
       <title>Rstudio</title>
       <link>/tags/rstudio/</link>
-      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/rstudio/</guid>
       <description></description>

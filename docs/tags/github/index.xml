@@ -6,10 +6,19 @@
     <description>Recent content in Github on Jeffrey W. Hollister</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 09 Oct 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My project management workflow, or, how I make the most of limited mental bandwidth</title>
+      <link>/post/2018-06-20-my-workflow-or-how-i-make-the-most-of-limited-mental-bandwidth/</link>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-06-20-my-workflow-or-how-i-make-the-most-of-limited-mental-bandwidth/</guid>
+      <description>Several weeks ago, there was some activity on Twitter espousing the virtues RStudio projects, including a mention of Jenny Bryan’s post on Project-oriented workflow Reading through the tweets and re-reading Jenny’s post reminded me that even though many of us use Projects or other tools to organize our work, the specifics of our toolset and workflows are still likely unique and reflect a lot of personal decisions and preferences. The other thing that struck me is that aside from Jenny’s post, I have rarely seen these types of things documented (they may be, I just blissfully unaware).</description>
+    </item>
     
     <item>
       <title>Getting a Category Feed Up and Running with Jekyll on Github</title>
