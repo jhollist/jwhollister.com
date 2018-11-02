@@ -202,21 +202,21 @@ Peer Reviewed Articles
   
     - Hollister, J. W. and J. J. Stachelek. (2017). lakemorpho: Calculating lake morphometry metrics in R.  F1000Research. 6:1718. [10.12688/f1000research.12512.1](https://dx.doi.org/10.12688/f1000research.12512.1). [pdf](http://f1000research.com/articles/6-1718/v1/pdf) [GitHub](https://github.com/usepa/lakemorpho_manuscript)
       
-      - Chamberlain, S, and J.W. Hollister (2017). lawn: R Client for turf.js for Geospatial Analysis. Version 0.3.3. Journal of Open Source Software 2:11. [10.21105/joss.00194](http://dx.doi.org/10.21105/joss.00194)  [CRAN](https://cran.r-project.org/package=lawn) [GitHub](https://github.com/ropensci/lawn) 
+    - Chamberlain, S, and J.W. Hollister (2017). lawn: R Client for turf.js for Geospatial Analysis. Version 0.3.3. Journal of Open Source Software 2:11. [10.21105/joss.00194](http://dx.doi.org/10.21105/joss.00194)  [CRAN](https://cran.r-project.org/package=lawn) [GitHub](https://github.com/ropensci/lawn) 
       
-      - Hart, E., Barmby, P., LeBauer, D., Michonneau, F., Mount, S., Mulrooney, P., Poisot, T., Woo, K.H., Zimmerman, N., Hollister, J. W. (2016). Ten simple rules for digital data storage. PLoS Computational Biology. e1005097.  [10.1371/journal.pcbi.1005097](http://dx.doi.org/10.1371/journal.pcbi.1005097) [pre-print](https://doi.org/10.7287/peerj.preprints.1448v2) [GitHub](https://github.com/emhart/10-simple-rules-data-storage)
+    - Hart, E., Barmby, P., LeBauer, D., Michonneau, F., Mount, S., Mulrooney, P., Poisot, T., Woo, K.H., Zimmerman, N., Hollister, J. W. (2016). Ten simple rules for digital data storage. PLoS Computational Biology. e1005097.  [10.1371/journal.pcbi.1005097](http://dx.doi.org/10.1371/journal.pcbi.1005097) [pre-print](https://doi.org/10.7287/peerj.preprints.1448v2) [GitHub](https://github.com/emhart/10-simple-rules-data-storage)
       
-      - Hollister, J. W., W. B . Milstead, B. J. Kreakie. (2016). Modeling Lake Trophic State: A Random Forest Approach. Ecosphere 7:3  [10.1002/ecs2.1321](http://onlinelibrary.wiley.com/doi/10.1002/ecs2.1321/full). [pdf](http://onlinelibrary.wiley.com/doi/10.1002/ecs2.1321/pdf)  [pre-print](http://dx.doi.org/10.7287/peerj.preprints.1319v2) [GitHub](https://github.com/USEPA/LakeTrophicModelling)
+    - Hollister, J. W., W. B . Milstead, B. J. Kreakie. (2016). Modeling Lake Trophic State: A Random Forest Approach. Ecosphere 7:3  [10.1002/ecs2.1321](http://onlinelibrary.wiley.com/doi/10.1002/ecs2.1321/full). [pdf](http://onlinelibrary.wiley.com/doi/10.1002/ecs2.1321/pdf)  [pre-print](http://dx.doi.org/10.7287/peerj.preprints.1319v2) [GitHub](https://github.com/USEPA/LakeTrophicModelling)
       
-      - Hollister, J.W., B.J. Kreakie (2016). Associations between Chlorophyll a and various Microcystin-LR Health Advisory Concentrations. F1000Research 5:151  [10.12688/f1000research.7955.2](https://dx.doi.org/10.12688/f1000research.7955.2). [pdf](http://f1000research.com/articles/5-151/v2/pdf) [GitHub](https://github.com/USEPA/microcystinchla)
+    - Hollister, J.W., B.J. Kreakie (2016). Associations between Chlorophyll a and various Microcystin-LR Health Advisory Concentrations. F1000Research 5:151  [10.12688/f1000research.7955.2](https://dx.doi.org/10.12688/f1000research.7955.2). [pdf](http://f1000research.com/articles/5-151/v2/pdf) [GitHub](https://github.com/USEPA/microcystinchla)
       
-      - Milstead, W. B., J.W. Hollister, R. B. Moore, H. A. Walker. (2013). Estimating Summer Nutrient Concentrations in Northeastern Lakes from SPARROW Load Predictions and Modeled Hydraulic Residence Time. PLoS ONE 8(11): e81457  [10.1371/journal.pone.0081457](http://dx.doi.org/10.1371/journal.pone.0081457).  [pdf](http://www.plosone.org/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0081457&representation=PDF)
+    - Milstead, W. B., J.W. Hollister, R. B. Moore, H. A. Walker. (2013). Estimating Summer Nutrient Concentrations in Northeastern Lakes from SPARROW Load Predictions and Modeled Hydraulic Residence Time. PLoS ONE 8(11): e81457  [10.1371/journal.pone.0081457](http://dx.doi.org/10.1371/journal.pone.0081457).  [pdf](http://www.plosone.org/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0081457&representation=PDF)
       
-      - Hollister, J. W., W.B. Milstead, M.A. Urrutia (2011). Predicting Maximum Lake Depth from Surrounding Topography. PLoS ONE 6(9): e25764 [10.1371/journal.pone.0025764](http://dx.doi.org/10.1371/journal.pone.0025764).  [pdf](http://www.plosone.org/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0025764&representation=PDF)
+    - Hollister, J. W., W.B. Milstead, M.A. Urrutia (2011). Predicting Maximum Lake Depth from Surrounding Topography. PLoS ONE 6(9): e25764 [10.1371/journal.pone.0025764](http://dx.doi.org/10.1371/journal.pone.0025764).  [pdf](http://www.plosone.org/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pone.0025764&representation=PDF)
       
-      - Hollister, J. W., W.B. Milstead (2010). Using GIS to Estimate Lake Volume from Limited Data. Lake and Reservoir Management. 26(3)194-199  [10.1080/07438141.2010.504321](http://dx.doi.org/10.1080/07438141.2010.504321).  [pdf](http://jwhollister.com/public/files/HollisterMilsteadLakeVolume.pdf) corrigenda: [10.1080/10402381.2014.930627](http://dx.doi.org/10.1080/10402381.2014.930627)  [pdf](http://www.tandfonline.com/doi/pdf/10.1080/10402381.2014.930627).
+    - Hollister, J. W., W.B. Milstead (2010). Using GIS to Estimate Lake Volume from Limited Data. Lake and Reservoir Management. 26(3)194-199  [10.1080/07438141.2010.504321](http://dx.doi.org/10.1080/07438141.2010.504321).  [pdf](http://jwhollister.com/public/files/HollisterMilsteadLakeVolume.pdf) corrigenda: [10.1080/10402381.2014.930627](http://dx.doi.org/10.1080/10402381.2014.930627)  [pdf](http://www.tandfonline.com/doi/pdf/10.1080/10402381.2014.930627).
       
-      - Morzillo, A. T., A. G. Mertig, J. W. Hollister, N. Garner, J. Liu (2010). Socioeconomic Factors Affecting Local Support for Black Bear Recovery Strategies. Environmental Management. 45:1299-1311 [10.1007/s00267-010-9485-3](http://dx.doi.org/10.1007/s00267-010-9485-3).  [pdf](http://jwhollister.com/public/files/Morzilloetal2010EnvMonitor_accepted.pdf)
+    - Morzillo, A. T., A. G. Mertig, J. W. Hollister, N. Garner, J. Liu (2010). Socioeconomic Factors Affecting Local Support for Black Bear Recovery Strategies. Environmental Management. 45:1299-1311 [10.1007/s00267-010-9485-3](http://dx.doi.org/10.1007/s00267-010-9485-3).  [pdf](http://jwhollister.com/public/files/Morzilloetal2010EnvMonitor_accepted.pdf)
       
   : 2000 - 2009
   
@@ -240,11 +240,9 @@ Peer Reviewed Articles
 Chapters
   : 2010 - Present
   
-      - Cormier, S. and J. W. Hollister. (2011). Chapter 6: Types of Spatial and Landscape Data and Sampling Designs. Pages 6-1:6-32. in USEPA. Landscape
-and Predictive Tools A Guide to Spatial Analysis for Environmental Assessment. EPA/100/R-11/002. [web](https://nepis.epa.gov/Exe/ZyNET.exe/P100QIFN.txt?ZyActionD=ZyDocument&Client=EPA&Index=2011%20Thru%202015&Docs=&Query=&Time=&EndTime=&SearchMethod=1&TocRestrict=n&Toc=&TocEntry=&QField=&QFieldYear=&QFieldMonth=&QFieldDay=&UseQField=&IntQFieldOp=0&ExtQFieldOp=0&XmlQuery=&File=D%3A%5CZYFILES%5CINDEX%20DATA%5C11THRU15%5CTXT%5C00000023%5CP100QIFN.txt&User=ANONYMOUS&Password=anonymous&SortMethod=h%7C-&MaximumDocuments=1&FuzzyDegree=0&ImageQuality=r75g8/r75g8/x150y150g16/i425&Display=hpfr&DefSeekPage=x&SearchBack=ZyActionL&Back=ZyActionS&BackDesc=Results%20page&MaximumPages=1&ZyEntry=190) [pdf](public/files/landscape_and_predictive_tools_chap_6.pdf) 
+      - Cormier, S. and J. W. Hollister. (2011). Chapter 6: Types of Spatial and Landscape Data and Sampling Designs. Pages 6-1:6-32. in USEPA. Landscape and Predictive Tools A Guide to Spatial Analysis for Environmental Assessment. EPA/100/R-11/002. [web](https://nepis.epa.gov/Exe/ZyNET.exe/P100QIFN.txt?ZyActionD=ZyDocument&Client=EPA&Index=2011%20Thru%202015&Docs=&Query=&Time=&EndTime=&SearchMethod=1&TocRestrict=n&Toc=&TocEntry=&QField=&QFieldYear=&QFieldMonth=&QFieldDay=&UseQField=&IntQFieldOp=0&ExtQFieldOp=0&XmlQuery=&File=D%3A%5CZYFILES%5CINDEX%20DATA%5C11THRU15%5CTXT%5C00000023%5CP100QIFN.txt&User=ANONYMOUS&Password=anonymous&SortMethod=h%7C-&MaximumDocuments=1&FuzzyDegree=0&ImageQuality=r75g8/r75g8/x150y150g16/i425&Display=hpfr&DefSeekPage=x&SearchBack=ZyActionL&Back=ZyActionS&BackDesc=Results%20page&MaximumPages=1&ZyEntry=190) [pdf](public/files/landscape_and_predictive_tools_chap_6.pdf) 
       
-      - Cormier, S. and J. W. Hollister. (2011). Chapter 7: Methods and Tools for Analyzing Spatially Explicit Information. Pages 7-1:7-34. in USEPA. Landscape
-and Predictive Tools A Guide to Spatial Analysis for Environmental Assessment. EPA/100/R-11/002. [web](https://nepis.epa.gov/Exe/ZyNET.exe/P100QIFN.txt?ZyActionD=ZyDocument&Client=EPA&Index=2011%20Thru%202015&Docs=&Query=&Time=&EndTime=&SearchMethod=1&TocRestrict=n&Toc=&TocEntry=&QField=&QFieldYear=&QFieldMonth=&QFieldDay=&UseQField=&IntQFieldOp=0&ExtQFieldOp=0&XmlQuery=&File=D%3A%5CZYFILES%5CINDEX%20DATA%5C11THRU15%5CTXT%5C00000023%5CP100QIFN.txt&User=ANONYMOUS&Password=anonymous&SortMethod=h%7C-&MaximumDocuments=1&FuzzyDegree=0&ImageQuality=r75g8/r75g8/x150y150g16/i425&Display=hpfr&DefSeekPage=x&SearchBack=ZyActionL&Back=ZyActionS&BackDesc=Results%20page&MaximumPages=1&ZyEntry=222) [pdf](public/files/landscape_and_predictive_tools_chap_7.pdf) 
+      - Cormier, S. and J. W. Hollister. (2011). Chapter 7: Methods and Tools for Analyzing Spatially Explicit Information. Pages 7-1:7-34. in USEPA. Landscape and Predictive Tools A Guide to Spatial Analysis for Environmental Assessment. EPA/100/R-11/002. [web](https://nepis.epa.gov/Exe/ZyNET.exe/P100QIFN.txt?ZyActionD=ZyDocument&Client=EPA&Index=2011%20Thru%202015&Docs=&Query=&Time=&EndTime=&SearchMethod=1&TocRestrict=n&Toc=&TocEntry=&QField=&QFieldYear=&QFieldMonth=&QFieldDay=&UseQField=&IntQFieldOp=0&ExtQFieldOp=0&XmlQuery=&File=D%3A%5CZYFILES%5CINDEX%20DATA%5C11THRU15%5CTXT%5C00000023%5CP100QIFN.txt&User=ANONYMOUS&Password=anonymous&SortMethod=h%7C-&MaximumDocuments=1&FuzzyDegree=0&ImageQuality=r75g8/r75g8/x150y150g16/i425&Display=hpfr&DefSeekPage=x&SearchBack=ZyActionL&Back=ZyActionS&BackDesc=Results%20page&MaximumPages=1&ZyEntry=222) [pdf](public/files/landscape_and_predictive_tools_chap_7.pdf) 
   
   : 2000 - 2009
   
@@ -305,6 +303,14 @@ Software and Repositories
 Bootcamps, Workshops, and Panels
   : 2010 - Present
   
+      - Hollister, J. W., N. Ross, and C. McCrowey (2019). Introduction to R.  Workshop at 2nd Annual USEPA R Users Group Meeting.  Durham, NC. March 2019. [GitHub](https://github.com/uspa/intro_r_workshop)
+      
+      - Hollister, J. W. (2018). Introduction to R. US EPA Region 2 Regional Offices. New York, NY. June 5-6, 2018. [GitHub](https://github.com/usepa/region2_r)
+      
+      - Hollister, J. W. (2018). Introduction to R and Markdown.  Narraganset Bay Commission, Providence, RI.  April 23, 2018. [GitHub](https://github.com/jhollist/narrabay_r)
+      
+      - Hollister, J. W. and F. Nojavan (2018). Introduction to Reproducible Workflows with R, Markdown, and GitHub. Yale University, Center for Industrial Ecology.  March 9, 2018. [GitHub](https://github.com/jhollist/yale_r_2018)
+      
       - Hollister, J. W. and M. Beck. (2017). Introduction to R for Analysis of Coastal and Estuarine Data. Coastal and Estuarine Research Fedaration Annual Meeting, Providence, RI.  November 2017. [Web](http://www.erf.org/introduction-to-r-for-analysis-of-coastal-and-estuarine-data) and [Web Materials](https://usepa.github.io/cerf_r)
       
       - Hollister, J. W. (2017). R-a-palooza: Introduction to R, Reproducible Research with R, and Spatial analysis/GIS with R.  Co-hosted with Stephen KRabbe (USEPA Region 7). US EPA Region 7 Laboratory and Regional Offices.  Kansas City, KS and Lenexa, KS.  October 2017. [GitHub](https://github.com/USEPA/region7_r/)
@@ -355,6 +361,12 @@ Bootcamps, Workshops, and Panels
 Seminars and Presentations
   : 2010 - Present
       
+      - Kellogg, D., J. W. Hollister, B. J. Kreakie, S. Shivers, E. Herron, L. Green, and A. Gold.  (2018). 25 Years of Water Quality Change in Rhode Island Lakes and Ponds. Association for the Sciences of Limnology and Oceanography (ASLO) Summer Meeting, Victoria, British Columbia.  June 2018.
+      
+      - Shiver, S., J. W. Hollister, B. J. Kreakie, W. B. Milstead. (2018). Spatial and Temporal Dynamics of Cyanobacterial Blooms in Two Rhode Island Ponds.  New England Association of Environmental Biologists (NEAEB) Annual Conference, Devens, MA.  March 2018.
+      
+      - Hollister, J. W. and W. B. Milstead. (2018). Lakes, landscapes, and R: A framework for open science on freshwater cyanobacteria. U.S. Chapter of the International Association of Landscape Ecology (US-IALE) Annual Meeting, Chicago, IL. April 2018. [slides](https://jhollist.github.io/lakes_landscapes_r/#1)  
+ 
       - Hollister, J. W. and B. J. Kreakie. (2017). Using Chlorophyll *a* as a surrogate for exceeding Microcystin Health Advisory Concentrations.  Cyanobacteria - Monitoring and Treating Drinking Water: A Workshop for Water Suppliers.  December 2017. Worcester, MA. [slides](http://jwhollister.com/microcystin_chla_talk)
       
       - Hollister, J. W. (2017). An Open Science Framework for Research on Cyanobacteria in Lakes and Ponds.  US EPA Region 7 Regional Office, October 2017. Lenexa, KS. [slides](https://jwhollister.com/cyano_open_sci)
@@ -422,6 +434,8 @@ Seminars and Presentations
 
 Posters
   : 2010 - Present
+  
+      - Snook, H., B. J. Kreakie, W. B Milstead, and J. W. Hollister. The Cyanobacteria Monitoring Collaborative: Multi-Tiered Approach to Citizen Science Based Cyanobacteria Monitoring.  Office of Research and Development Regional Science Poster Session, Durham, NC.  September 2018.
   
       - Nojavan, F., B. J. Kreakie. A Bayesian Multilevel Model for Microcystin Prediction in the Continental United States Lakes. 2015 Society for Freshwater Science (SFS) Annual Meeting, Milwaukee, WI May 2015.
       
@@ -626,7 +640,11 @@ Societies
  
   
 Other Activities
-  : Current
+  : 2010 - Present
+  
+      - Member, R Consortium Diversity and Inclusion Working Group, June 2018 - Present.
+      
+      - Member, Data Carpentry Geospatial Curriculum Advisory Committee, March 2018 - Present.
   
       - Data Carpentry Instructor, Mar 2016 - Present. 
       
@@ -634,7 +652,9 @@ Other Activities
       
       - List administrator for R-sig-ecology, a Special Interest Group mailing list on the use R in Ecology, April 2008 - Present.
       
-      - Provided Peer Review for: Landscape Ecology, Trends in Ecology and Evolution, Plant Ecology, Integrated Environmental Assessment and Management, Remote Sensing of Environment, Journal of Environmental Quality, Selbyana, Minnesota Sea Grant, and numerous USEPA Office of Research and Development internal reviews.
+      - Co-lead/co-founder of 2018 Nor'eastR Conference <https://noreastrconf.com>. July 2017 - Nov 2018.
+      
+      - Provided Peer Review for: Journal of Open Source Software, Journal of Open Source Education Landscape Ecology, Trends in Ecology and Evolution, Plant Ecology, Integrated Environmental Assessment and Management, Remote Sensing of Environment, Journal of Environmental Quality, Selbyana, Minnesota Sea Grant, and numerous USEPA Office of Research and Development internal reviews.
       
   : Past
   
