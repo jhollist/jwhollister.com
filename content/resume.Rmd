@@ -1,0 +1,88 @@
+---
+output: word_document
+---
+
+### Summary
+
+#### Ecology
+
+#### Data Science
+
+#### Collaboration
+
+#### Teaching
+
+### Skills and tools
+- R                   
+- Limnology           
+- Data Visualization  
+
+### Experience
+
+#### Research Ecologist, U.S. Environmental Protection Agency, Atlantic Ecology Division, Narragansett, RI
+
+Aug 2008 - Present
+
+I serve as principle investigator and provide leadership to the division on landscape ecological research, on application of geospatial sciences to the understanding of water quality in fresh and estuarine waters, and on the use of data science, informatics and information management tools in environmental research. I am currently serving as a co-Task Lead on a project exploring cyanobacteria risk in lakes of the Northeastern US. I am also exploring the use of Open Science, data science, and computational ecology in our various research programs. 
+
+#### Postdoctoral Landscape Ecologist, U.S. Environmental Protection Agency, Atlantic Ecology Division, Narragansett, RI
+
+May 2006 – July 2008 
+
+Contributed to research and technology transfer of National Coastal Assessment data, analytical methods and predictive tools to Northeast States. Developed statistical and modeling tools (e.g. Conditional Probability Analysis with R and Excel) to facilitate use of defensible techniques in water quality criteria development. Provided Landscape Ecology, Spatial Statistics and GIS support to a variety of ongoing projects at the Atlantic Ecology Division and within US EPA’s Office of Research and Development. Explored linkages between landscape and downstream receiving waters and examined utility of broad scale monitoring data in identifying and assessing ecological impairment.
+
+#### Postdoctoral Fellow, U.S. Coast Guard Academy, Department. of Science, Marine Sciences Section, New London, CT
+  
+Aug 2005 – May 2006 
+
+Continued prior research on multi-scale interactions between landscape structure (via NLCD) and sediment metal concentrations (via EMAP) and predictive modeling of estuarine impairment. Worked with students, faculty and colleagues in the Marine Sciences Section, the International Ice Patrol, and Information Services Division on a wide variety of Geographic Information Systems projects.
+
+#### Postdoctoral Associate, American Institute of Biological Sciences, National Ecological Observatory (NEON) Project Office, Washington, DC
+
+Jan 2005 – July 2005 
+
+Researched and assisted in planning of ecological observatories designed to address the National Research Council’s Environmental Grand Challenges. Made specific contributions in the design of the land use change component of NEON and design of a Multi-Scaled Remote Sensing System designed to support and develop NEON analytical tools and ecological forecasting models. Other duties included managing Geographic Information Systems operations in the Project Office, maintaining the NEON web presence (http://www.neoninc.org), interacting with research scientists and educators on the NEON Senior Management Team and National Network Design Committee, and assisting with the day-to-day operations of the NEON Project Office.
+
+#### Lead Research Technician in Landscape Ecology, J.W. Jones Ecological Research Center, Landscape Ecology Lab, Newton, GA
+
+June 1998 – July 2000 
+
+Conducted research on ecological impacts of small wetland loss in the Southeastern United States, use of home range in the design of gopher tortoise (Gopherus polyphemus) reserves, and habitat use and landscape ecology of Northern Bobwhite Quail . Other research duties included remote sensing data analysis (e.g. Landsat Thematic Mapper, SPOT-XS, B&W and CIR Aerial Photography), analysis of vector and raster GIS data, and field data collection (e.g. GPS, vegetation data). Supervised and assisted other technicians, graduate students and summer field workers and managed day-to-day operations of the Landscape Ecology Lab.
+
+#### Geographic Information Systems Specialist, Research Triangle Institute, Research Triangle Park, NC
+
+Aug 1997 – Jan 1998 
+  
+Developed a GIS methodology and series of Arc Macro Language scripts to facilitate the identification of river reaches, as required by the Clean Water Act, in the states of North Dakota and Arkansas.
+
+### Education
+
+#### Doctor of Philosophy in Environmental Science
+
+2004
+
+Department of Natural Resources Science, University of Rhode Island, Kingston, RI
+      
+#### Masters of Environmental Management
+   
+1997   
+
+Nicholas School of the Environment, Duke University, Durham, NC
+   
+#### Bachelor of Science in Biology, Magna Cum Laude
+
+1995
+
+Baker University, Baldwin City, KS
+
+### Selected Projects
+
+- Raposa, K. B., R. A. McKinney, C. Wigand, J. W. Hollister, C. Lovall, K. Szura, J. A. Gurak Jr., J. McNamee, C. Raithel, and E. B. Watson. (2018). Top-down and bottom-up controls on overabundant New England salt marsh crab populations. PeerJ. [10.7717/peerj.4876](https://doi.org/10.7717/peerj.4876) [GitHub](https://github.com/jhollist/crabs).
+    - My role on this paper was data management, analysis, and visualzation.  I designed the [correlation matrix visualizations](https://doi.org/10.7717/peerj.4876/fig-4) with inspiration from several different types of heat maps.
+  
+- Hollister, J. W. and J. J. Stachelek. (2017). lakemorpho: Calculating lake morphometry metrics in R.  F1000Research. 6:1718. [10.12688/f1000research.12512.1](https://dx.doi.org/10.12688/f1000research.12512.1). [pdf](http://f1000research.com/articles/6-1718/v1/pdf) [GitHub](https://github.com/usepa/lakemorpho_manuscript)
+
+- Hart, E., Barmby, P., LeBauer, D., Michonneau, F., Mount, S., Mulrooney, P., Poisot, T., Woo, K.H., Zimmerman, N., Hollister, J. W. (2016). Ten simple rules for digital data storage. PLoS Computational Biology. e1005097.  [10.1371/journal.pcbi.1005097](http://dx.doi.org/10.1371/journal.pcbi.1005097) [pre-print](https://doi.org/10.7287/peerj.preprints.1448v2) [GitHub](https://github.com/emhart/10-simple-rules-data-storage)
+
+
+
