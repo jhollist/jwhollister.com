@@ -16,7 +16,7 @@ cv: true
 - [hollister.jeff@epa.gov](hollister.jeff@epa.gov)
 - [jwhollister.com](http://jwhollister.com)
 - ORCID: [0000-0002-9254-9740](https://orcid.org/0000-0002-9254-9740)
-- [Generic Resume Version](resume.pdf)
+- [Generic Resume Version](https://jwhollister.com/resume.pdf)
 
 </div>
 
