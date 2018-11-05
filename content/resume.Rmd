@@ -21,7 +21,7 @@ I am an ecologist and data scientist with expertise in the spatial component of 
 - **GIS:** Open Source Geospatial Foundation Geospatial Stack (as implemented across many R packages), and Esri tool set.
 - **Visualization:** `ggplot2`, but some experience with javascript libraries as implemented in R.
 - **Data:** SQL, tidy data design for environmental monitoring, management with `dplyr` and `tidyr`
-- **Miscellany:** Just enough HTML, CSS, and Javascript
+- **Miscellany:** Just enough HTML, CSS, Javascript, Python, and Java
 
 # Experience
 
