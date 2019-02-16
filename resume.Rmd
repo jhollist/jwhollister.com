@@ -1,0 +1,64 @@
+---
+output: 
+  word_document:
+    reference_doc: resume_template.docx
+---
+
+# Summary
+I am an ecologist and data scientist with expertise in the spatial component of ecological sciences.  The focus of my work is lakes, landscapes, R, and GIS. A unifying theme to my research is using data science to benefit environmental and ecological research.
+
+# Core Competencies
+
+- **Data Science:** I am skilled in the full data analysis workflow using R.  I have expertise in collecting, managing, and manipulating data for analysis and visualization.  I have experience designing and using databases, a variety of statistical and machine learning approaches, and static and interactive data visualization.
+- **Geospatial technologies:** Nearly all my research and project work contains a geospatial focus.  I have decades of experience using geospatial tools, including the Esri suite of tools and, more recently, the open source stack supported by the Open Source Geospatial Foundation and the Open Geospatial Consortium. 
+- **Ecology:** My research intersts are in landscape ecology and how spatial patterns affect water quality in fresh- and salt-water systems.  I have experience collecting terrestrial and limnological data, analyzing that data, and publishing my results as evidenced by more than 30 peer reviewed publications, chapters, and non-peer reviewed articles.
+- **Collaboration:** A hallmark of my career has been collaboration.  I routinely work with groups across the US EPA on ecological research and on data science.  I have worked with the Office of Research and Development, Office of Environmental Information, and several Regions.  Additionally, I work closely with the University of Rhode Island and several outside entities.  For example, I work with [The Carpentries](https://carpentries.org/) as an instructor and member of the Geospatial Curriculum Advisory Committee.
+- **Teaching:** Over the last several years, I have devoted significant time to teaching others how to use R.  Since 2013 I have led more than 20 separate R and Open Science workshops to audiences in US EPA, the University of Rhode Island, various scientific societies, and other outside entities.
+
+# Skills and tools
+
+- **R:** 15+ years as a useR!, package developer, maintained RStudio and Shiny servers, `tidyverse` acolyte
+- **GIS:** Open Source Geospatial Foundation Geospatial Stack (as implemented across many R packages), and Esri tool set.
+- **Visualization:** `ggplot2`, but some experience with javascript libraries as implemented in R.
+- **Data:** SQL, tidy data design for environmental monitoring, management with `dplyr` and `tidyr`
+- **Miscellany:** Just enough HTML, CSS, Javascript, Python, and Java
+
+# Experience
+
+- **Aug 2008 - Present**, Research Ecologist, U.S. Environmental Protection Agency, Atlantic Ecology Division, Narragansett, RI
+
+I serve as principle investigator and provide leadership to the US EPA on research in harmful algal blooms and on the use of data science tools in environmental research. I currently co-Lead a project exploring cyanobacteria risk in lakes of the Northeastern US.
+
+- **May 2006 – July 2008**, Postdoctoral Landscape Ecologist, U.S. Environmental Protection Agency, Atlantic Ecology Division, Narragansett, RI
+
+I developed statistical and modeling tools to facilitate water quality criteria development. I also provided landscape ecology and spatial analysis support to a variety of projects. My research explored links between landscapes and water quality.
+
+- **Aug 2005 – May 2006**, Postdoctoral Fellow, U.S. Coast Guard Academy, Department. of Science, Marine Sciences Section, New London, CT
+
+Continued prior research on landscape structure and estuarine water quality.  Worked with students, faculty and colleagues on a wide variety of Geographic Information Systems projects. Taught a general education Oceanography course and GIS lab.
+
+- **Jan 2005 – July 2005**, Postdoctoral Associate, American Institute of Biological Sciences, National Ecological Observatory (NEON) Project Office, Washington, DC
+
+Assisted with the planning of the first national ecological observatory for the United States, NEON. Built the Project Office first Geographic Information System, maintained the NEON web presence, and interacted with research scientists and educators on the NEON Senior Management Team and National Network Design Committee.
+
+- **June 1998 – July 2000**, Lead Research Technician in Landscape Ecology, J.W. Jones Ecological Research Center, Landscape Ecology Lab, Newton, GA
+
+Conducted research on small wetland loss in the Southeastern United States, conservation of gopher tortoise (Gopherus polyphemus), and landscape ecology of Northern Bobwhite Quail. Other research duties included remote sensing data analysis, GIS analysis, and field data collection.Managed day-to-day operations of the Landscape Ecology Lab.
+
+- **Aug 1997 – Jan 1998**, Geographic Information Systems Specialist, Research Triangle Institute, Research Triangle Park, NC
+  
+Developed a GIS methodology and series of Arc Macro Language scripts to facilitate the identification of river reaches, as required by the Clean Water Act, in the states of North Dakota and Arkansas.
+
+# Education
+
+- **2004**, Doctor of Philosophy in Environmental Science, Department of Natural Resources Science, University of Rhode Island, Kingston, RI
+- **1997**, Masters of Environmental Management, Nicholas School of the Environment, Duke University, Durham, NC
+- **1995**, Bachelor of Science in Biology, Magna Cum Laude, Baker University, Baldwin City, KS
+
+# Selected Projects
+
+- Responsible for data management, analysis, and visualization on [Raposa *et al.* (2018)](https://doi.org/10.7717/peerj.4876) and designed the [correlation matrix visualizations](https://doi.org/10.7717/peerj.4876/fig-4) with inspiration from several different types of heat maps. Details available in <https://github.com/jhollist/crabs>.
+- Designed and developed three packages currently on CRAN:`quickmapr`, `lakemorpho`, and `elevatr`.  All are geospatial with `quickmpar` providing interactive tools for spatial data, `lakemorpho` calculating morphometry metrics commonly used in limnology, and `elevatr` allowing access to Digital Elevation Models in R through several APIs. These are available from <https://github.com/jhollist/quickmapr>, <https://github.com/jhollist/lakemorpho>, and <https://github.com/jhollist/elevatr>.
+
+
+
