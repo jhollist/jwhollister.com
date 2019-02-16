@@ -1,7 +1,7 @@
 ---
 title: "Download Shapefiles - Take 2"
 author: Jeffrey Hollister
-date: 2015-06-15
+date: "2015-06-15"
 categories:
   - R
   - GIS
@@ -23,6 +23,7 @@ library(httr)
 library(sp)
 library(rgdal)
 ```
+
 
 ```{r}
 download_shp<-function (shape_url, layer, outfolder = ".") 
