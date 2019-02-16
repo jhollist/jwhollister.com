@@ -1,0 +1,21 @@
+---
+title: Easy Elevation for `rayshader` with `elevatr`
+author: Jeffrey Hollister
+draft: true
+date: '2019-02-16'
+categories:
+  - R
+  - GIS
+tags:
+  - spatial data
+  - visualization
+  - elevation
+  - elevatr
+  - rayshader
+---
+
+```{r}
+library(rayshader)
+library(elevatr)
+
+```
