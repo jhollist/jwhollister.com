@@ -13,10 +13,10 @@
     
     <item>
       <title>Getting a Category Feed Up and Running with Jekyll on Github</title>
-      <link>/post/2014-10-9-category-feed/</link>
+      <link>/post/2014-10-09-category-feed/</link>
       <pubDate>Thu, 09 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>/post/2014-10-9-category-feed/</guid>
+      <guid>/post/2014-10-09-category-feed/</guid>
       <description>Now that I have the site up and running, I am now trying to add a few category specific RSS feeds. I will say that for someone who is new to RSS (i.e. me) the feeds on Wordpress are really easy. But, since I now fancy myself somewhat of hacker, I suppose figuring out how to get a Jekyll site hosted on Github to spit these out is something I should do.</description>
     </item>
     
