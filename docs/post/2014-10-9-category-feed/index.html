@@ -90,10 +90,10 @@ layout: none
 <span style="color:#00f">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
 &lt;rss version=<span style="color:#a31515">&#34;2.0&#34;</span> xmlns:atom=<span style="color:#a31515">&#34;http://www.w3.org/2005/Atom&#34;</span>&gt;
   &lt;channel&gt;
-    &lt;title&gt;{{ site.title | xml_escape }} - r&lt;/title&gt;
-        &lt;description&gt;Posts categorized as &#39;r&#39;&lt;/description&gt;
-        &lt;link&gt;{{ site.url }}&lt;/link&gt;
-        &lt;atom:link href=<span style="color:#a31515">&#34;{{ site.url }}/feed.r.xml&#34;</span> rel=<span style="color:#a31515">&#34;self&#34;</span> type=<span style="color:#a31515">&#34;application/rss+xml&#34;</span> /&gt;
+  	&lt;title&gt;{{ site.title | xml_escape }} - r&lt;/title&gt;
+		&lt;description&gt;Posts categorized as &#39;r&#39;&lt;/description&gt;
+		&lt;link&gt;{{ site.url }}&lt;/link&gt;
+		&lt;atom:link href=<span style="color:#a31515">&#34;{{ site.url }}/feed.r.xml&#34;</span> rel=<span style="color:#a31515">&#34;self&#34;</span> type=<span style="color:#a31515">&#34;application/rss+xml&#34;</span> /&gt;
     {% for post in site.categories.r limit:20 %}
       &lt;item&gt;
         &lt;title&gt;{{ post.title | xml_escape }}&lt;/title&gt;
@@ -103,7 +103,7 @@ layout: none
         &lt;guid isPermaLink=<span style="color:#a31515">&#34;true&#34;</span>&gt;{{ site.url }}{{ post.url }}&lt;/guid&gt;
       &lt;/item&gt;
     {% endfor %}
-    &lt;/channel&gt;
+	&lt;/channel&gt;
 &lt;/rss&gt;</code></pre></div>
 <p>I have saved this in the source of my website as <code>feed.r.xml</code>.  One gotcha is that Jekyll appears to convert all categories to lower case.  I had it set to loop on <code>site.categories.R</code> and it wasn&rsquo;t working.  Switching to <code>site.categories.r</code> fixed the problem.</p>
 

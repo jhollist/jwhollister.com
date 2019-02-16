@@ -6,10 +6,19 @@
     <description>Recent content in Spatial Data on Jeffrey W. Hollister</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 06 Nov 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/spatial-data/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Easy Elevation for `rayshader` with `elevatr`</title>
+      <link>/post/2019-02-16-easy-elevation-for-rayshader-with-elevatr/</link>
+      <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019-02-16-easy-elevation-for-rayshader-with-elevatr/</guid>
+      <description>library(rayshader) ## Warning in rgl.init(initValue, onlyNULL): RGL: unable to open X11 display ## Warning: &amp;#39;rgl_init&amp;#39; failed, running with rgl.useNULL = TRUE library(elevatr) </description>
+    </item>
     
     <item>
       <title>Spatial Data Analysis in R: Lightning Demo!</title>
@@ -28,6 +37,15 @@
       <guid>/post/2015-10-30-i-finally-got-quickmapr-up-on-cran/</guid>
       <description>A little over 7 months ago I posted about a package that I had been working on, quickmapr. That was the pre-release version, the one that I finished up today and submitted to CRAN is a bit more polished, plots rasters a bit quicker, and is, I think, ready for wider release. It is now availble from CRAN.
 The README on GitHub provides details plus some examples using a small dataset included with the package.</description>
+    </item>
+    
+    <item>
+      <title>Download Shapefiles - Take 2</title>
+      <link>/post/2015-06-15-download-shapefile-reprise/</link>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2015-06-15-download-shapefile-reprise/</guid>
+      <description>So back in 2013 I posted a little function I wrote for grabbing all the relevant files that make up a shapefile from a URL. Turns out it doesn’t play so well with Windows 7 or Windows 8 (HT: John Lewis). Below is a reprised version that at least works on Ubuntu 14.04 and Windows 7. Haven’t tested it beyond that and supressing the warnings to get httr::GET to not complain too much about FTP seems a bit unclean.</description>
     </item>
     
     <item>

@@ -84,6 +84,24 @@
     </item>
     
     <item>
+      <title>Elevation</title>
+      <link>/tags/elevation/</link>
+      <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/elevation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Elevatr</title>
+      <link>/tags/elevatr/</link>
+      <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/elevatr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Exiftool</title>
       <link>/tags/exiftool/</link>
       <pubDate>Mon, 02 Feb 2015 00:00:00 +0000</pubDate>
@@ -138,15 +156,6 @@
     </item>
     
     <item>
-      <title>Httr</title>
-      <link>/tags/httr/</link>
-      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/httr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Jekyll</title>
       <link>/tags/jekyll/</link>
       <pubDate>Thu, 09 Oct 2014 00:00:00 +0000</pubDate>
@@ -192,6 +201,15 @@
     </item>
     
     <item>
+      <title>Rayshader</title>
+      <link>/tags/rayshader/</link>
+      <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/rayshader/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Rss</title>
       <link>/tags/rss/</link>
       <pubDate>Thu, 09 Oct 2014 00:00:00 +0000</pubDate>
@@ -210,15 +228,6 @@
     </item>
     
     <item>
-      <title>Shapefiles</title>
-      <link>/tags/shapefiles/</link>
-      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/shapefiles/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Sp</title>
       <link>/tags/sp/</link>
       <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
@@ -230,7 +239,7 @@
     <item>
       <title>Spatial Data</title>
       <link>/tags/spatial-data/</link>
-      <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/spatial-data/</guid>
       <description></description>
@@ -239,7 +248,7 @@
     <item>
       <title>Visualization</title>
       <link>/tags/visualization/</link>
-      <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/visualization/</guid>
       <description></description>

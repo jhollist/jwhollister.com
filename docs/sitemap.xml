@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/post/2019-02-16-easy-elevation-for-rayshader-with-elevatr/</loc>
+    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/2018-06-20-my-workflow-or-how-i-make-the-most-of-limited-mental-bandwidth/</loc>
     <lastmod>2018-06-20T00:00:00+00:00</lastmod>
   </url>
@@ -59,6 +64,10 @@
   
   <url>
     <loc>/cv/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/2015-06-15-download-shapefile-reprise/</loc>
   </url>
   
   <url>
@@ -127,6 +136,18 @@
   </url>
   
   <url>
+    <loc>/tags/elevation/</loc>
+    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/elevatr/</loc>
+    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/exiftool/</loc>
     <lastmod>2015-02-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -140,7 +161,7 @@
   
   <url>
     <loc>/categories/gis/</loc>
-    <lastmod>2015-11-06T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -175,14 +196,8 @@
   </url>
   
   <url>
-    <loc>/tags/httr/</loc>
-    <lastmod>2015-06-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/</loc>
-    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -200,7 +215,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -218,13 +233,19 @@
   
   <url>
     <loc>/categories/r/</loc>
-    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/raster/</loc>
     <lastmod>2015-11-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/rayshader/</loc>
+    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -245,12 +266,6 @@
   </url>
   
   <url>
-    <loc>/tags/shapefiles/</loc>
-    <lastmod>2015-06-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/categories/site-details/</loc>
     <lastmod>2018-06-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -264,7 +279,7 @@
   
   <url>
     <loc>/tags/spatial-data/</loc>
-    <lastmod>2015-11-06T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -276,7 +291,7 @@
   
   <url>
     <loc>/tags/visualization/</loc>
-    <lastmod>2015-11-06T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
