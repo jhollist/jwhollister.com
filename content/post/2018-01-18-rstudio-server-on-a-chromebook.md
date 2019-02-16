@@ -1,5 +1,5 @@
 ---
-date: 2018-01-18
+date: "2018-01-18"
 title: "Rstudio Server On A Chromebook"
 tags: ['chromeOS','Chromebook','crouton','xiwi','RStudio']
 categories: ['R']

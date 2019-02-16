@@ -1,5 +1,5 @@
 ---
-date: 2015-11-06
+date: "2015-11-06"
 title: "Spatial Data Analysis in R: Lightning Demo!"
 tags: ['R','spatial data','visualization','demo','GIS','sp', 'raster']
 categories: ['R', 'GIS']

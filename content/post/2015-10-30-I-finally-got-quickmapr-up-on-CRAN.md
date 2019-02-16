@@ -1,5 +1,5 @@
 ---
-date: 2015-10-30
+date: "2015-10-30"
 title: "I finally got quickmapr on CRAN!"
 tags: ['R','spatial data','visualization','pan','zoom','sp', 'raster']
 categories: ['R']

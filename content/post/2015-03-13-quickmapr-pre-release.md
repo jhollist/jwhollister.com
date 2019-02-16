@@ -1,5 +1,5 @@
 ---
-date: 2015-03-13
+date: "2015-03-13"
 title: "quickmapr: An R package for mapping and interacting with spatial data"
 tags: ['R','spatial data','visualization','pan','zoom','sp', 'raster']
 categories: ['R']
