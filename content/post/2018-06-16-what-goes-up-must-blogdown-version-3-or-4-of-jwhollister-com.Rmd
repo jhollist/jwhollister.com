@@ -11,7 +11,7 @@ tags:
   - website
 ---
 
-So, I finally have my website up and running as a Blogdown/Hugo site.  I have been meaning to make this switch for some time now, but never really found the time until recently.  Writing up the gory details of my experience doing this doesn't seem like a good use of my time (nor your time to read it).  This is because it wasn't very difficult a process and many others have taken the time to put together really nice documentation.  So, I'll just link to the sites I used and say a word or two about the theme I used.
+So, I finally have my website up and running as a Blogdown/Hugo site.  I have been meaning to make this switch for some time now, but never really found the time until recently.  Writing up the gory details of my experience doesn't seem like a good use of my time (nor your time to read it).  This is because it wasn't very difficult a process and many others have taken the time to put together really nice documentation.  So, I'll just link to the sites I used and say a word or two about the theme I used.
 
 First, here are the links I found to be best: 
 
