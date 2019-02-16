@@ -1,7 +1,7 @@
 ---
-date: 2015-06-15
 title: "Download Shapefiles - Take 2"
 author: Jeffrey Hollister
+date: 2015-06-15
 categories:
   - R
   - GIS
@@ -11,8 +11,6 @@ tags:
   - elevation
   - elevatr
   - rayshader
-editor_options: 
-  chunk_output_type: console
 ---
 
 So back in 2013 I [posted a little function](https://landeco2point0.wordpress.com/2013/09/30/an-r-function-to-download-shapefiles/) I wrote for grabbing all the relevant files that make up a shapefile from a URL.  Turns out it doesn't play so well with Windows 7 or Windows 8 (HT: John Lewis).  Below is a reprised version that at least works on Ubuntu 14.04 and Windows 7.  Haven't tested it beyond that and supressing the warnings to get `httr::GET` to not complain too much about FTP seems a bit unclean.  Well, you get what you pay for. 
