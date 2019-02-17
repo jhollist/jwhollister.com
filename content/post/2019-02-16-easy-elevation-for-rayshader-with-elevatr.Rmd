@@ -21,30 +21,21 @@ library(raster)
 
 data(lake)
 
-lake_dem <- get_elev_raster(lake, z=10, clip = "bbox")
+lake_b <- rgeos::gBuffer(lake, width = 1000)
 
-lake_dem_m <- matrix(extract(lake_dem,raster::extent(lake_dem),buffer=1000),
+lake_dem <- get_elev_raster(lake_b, z=12, clip = "bbox")
+
+lake_dem_m <- matrix(extract(lake_dem,raster::extent(lake_dem)),
                nrow=ncol(lake_dem),ncol=nrow(lake_dem))
+
+lake_water <- detect_water(lake_dem_m)
+lake_ray_shade <- ray_shade(lake_dem_m,zscale=50,lambert=FALSE)
+lake_ambient_shade <- ambient_shade(lake_dem_m,zscale=50)
 
 lake_dem_m %>%
   sphere_shade(texture = "desert") %>%
-  #add_water(detect_water(lake_dem_m), color="desert") %>%
-  #add_shadow(ray_shade(lake_dem_m,zscale=50,lambert=FALSE)) %>%
-  #add_shadow(ambient_shade(lake_dem_m,zscale=50)) %>%
-  plot_map()
-
-loadzip = tempfile() 
-download.file("https://tylermw.com/data/dem_01.tif.zip", loadzip)
-localtif = raster::raster(unzip(loadzip, "dem_01.tif"))
-unlink(loadzip)
-
-#And convert it to a matrix:
-elmat = matrix(raster::extract(localtif,raster::extent(localtif),buffer=1000),
-               nrow=ncol(localtif),ncol=nrow(localtif))
-
-#We use another one of rayshader's built-in textures:
-elmat %>%
-  sphere_shade(texture = "desert") %>%
-  plot_map()
-
+  add_water(lake_water, color="desert") %>%
+  add_shadow(lake_ray_shade) %>%
+  add_shadow(lake_ambient_shade) %>%
+  plot_3d(lake_dem_m,zscale=10,fov=0,theta=135,zoom=0.75,phi=45, windowsize = c(1000,800))
 ```
