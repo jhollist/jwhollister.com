@@ -559,11 +559,11 @@ Research Funding
       
       - Estuarine Condition and Landscape Structure Relationships in the Mid-Atlantic and Southern New England Regions of the United States, EPA/URI Pre-Doctoral Fellowship (Major Advisor: Peter V. August, EPA Mentor: John F. Paul).
 
-
+<div id="awards"></div>
 Awards
   : 2010 - Present
   
-      - Best Use of GitHub Award, April 2019, bestowed by Emily Stanley for my GitHub pancake recipe repository. [Award Announcement Tweet] (https://twitter.com/EStanLimnology/status/1117081254321643521)
+      - Best Use of GitHub Award, April 2019, bestowed by Emily Stanley for my GitHub pancake recipe repository. [Award Announcement Tweet](https://twitter.com/EStanLimnology/status/1117081254321643521)
   
       - US EPA, 2015 Bronze Medal for Commendable Service to the Safe and Sustainable Water Resources National Program Tream
       
