@@ -17,7 +17,7 @@
       <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/2019-02-16-easy-elevation-for-rayshader-with-elevatr/</guid>
-      <description>library(rayshader) ## Warning in rgl.init(initValue, onlyNULL): RGL: unable to open X11 display ## Warning: &amp;#39;rgl_init&amp;#39; failed, running with rgl.useNULL = TRUE library(elevatr) </description>
+      <description>library(rayshader) ## Warning in rgl.init(initValue, onlyNULL): RGL: unable to open X11 display ## Warning: &amp;#39;rgl_init&amp;#39; failed, running with rgl.useNULL = TRUE library(elevatr) library(raster) ## Loading required package: sp data(lake) lake_b &amp;lt;- rgeos::gBuffer(lake, width = 1000) lake_dem &amp;lt;- get_elev_raster(lake_b, z=12, clip = &amp;quot;bbox&amp;quot;) ## Merging DEMs ## Clipping DEM to bbox ## Reprojecting DEM to original projection ## Note: Elevation units are in meters. ## Note: The coordinate reference system is: ## +proj=aea +lat_1=20 +lat_2=60 +lat_0=40 +lon_0=-96 +x_0=0 +y_0=0 +datum=NAD83 +units=m +no_defs +ellps=GRS80 +towgs84=0,0,0 lake_dem_m &amp;lt;- matrix(extract(lake_dem,raster::extent(lake_dem)), nrow=ncol(lake_dem),ncol=nrow(lake_dem)) lake_water &amp;lt;- detect_water(lake_dem_m) lake_ray_shade &amp;lt;- ray_shade(lake_dem_m,zscale=50,lambert=FALSE) lake_ambient_shade &amp;lt;- ambient_shade(lake_dem_m,zscale=50) lake_dem_m %&amp;gt;% sphere_shade(texture = &amp;quot;desert&amp;quot;) %&amp;gt;% add_water(lake_water, color=&amp;quot;desert&amp;quot;) %&amp;gt;% add_shadow(lake_ray_shade) %&amp;gt;% add_shadow(lake_ambient_shade) %&amp;gt;% plot_3d(lake_dem_m,zscale=10,fov=0,theta=135,zoom=0.</description>
     </item>
     
     <item>
@@ -128,7 +128,7 @@ When I first started using R for my spatial analysis work I often was left strug
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/cv/</guid>
-      <description>updated: 2019-02-16 U.S. Environmental Protection Agency Atlantic Ecology Division 27 Tarzwell Drive Narragansett, RI 02881 (o)401 782 9655 (c)401 556 4087 hollister.jeff@epa.gov jwhollister.com ORCID: 0000-0002-9254-9740 Generic Resume Version    Education Current Appointments Research Teaching Research Products Qualifications and Activities   Education  Dec 2004 Doctor of Philosophy in Environmental Science
+      <description>updated: 2019-04-13 U.S. Environmental Protection Agency Atlantic Ecology Division 27 Tarzwell Drive Narragansett, RI 02881 (o)401 782 9655 (c)401 556 4087 hollister.jeff@epa.gov jwhollister.com ORCID: 0000-0002-9254-9740 Generic Resume Version    Education Current Appointments Research Teaching Research Products Qualifications and Activities   Education  Dec 2004 Doctor of Philosophy in Environmental Science
  Department of Natural Resources Science, University of Rhode Island, Kingston, RI
  Areas of emphasis: Landscape Ecology, Geospatial Sciences, and Environmental Monitoring</description>
     </item>

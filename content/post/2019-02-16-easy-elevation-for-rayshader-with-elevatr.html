@@ -19,4 +19,32 @@ tags:
 <pre class="r"><code>library(rayshader)</code></pre>
 <pre><code>## Warning in rgl.init(initValue, onlyNULL): RGL: unable to open X11 display</code></pre>
 <pre><code>## Warning: &#39;rgl_init&#39; failed, running with rgl.useNULL = TRUE</code></pre>
-<pre class="r"><code>library(elevatr)</code></pre>
+<pre class="r"><code>library(elevatr)
+library(raster)</code></pre>
+<pre><code>## Loading required package: sp</code></pre>
+<pre class="r"><code>data(lake)
+
+lake_b &lt;- rgeos::gBuffer(lake, width = 1000)
+
+lake_dem &lt;- get_elev_raster(lake_b, z=12, clip = &quot;bbox&quot;)</code></pre>
+<pre><code>## Merging DEMs</code></pre>
+<pre><code>## Clipping DEM to bbox</code></pre>
+<pre><code>## Reprojecting DEM to original projection</code></pre>
+<pre><code>## Note: Elevation units are in meters.
+## Note: The coordinate reference system is:
+##  +proj=aea +lat_1=20 +lat_2=60 +lat_0=40 +lon_0=-96 +x_0=0 +y_0=0 +datum=NAD83 +units=m +no_defs +ellps=GRS80 +towgs84=0,0,0</code></pre>
+<pre class="r"><code>lake_dem_m &lt;- matrix(extract(lake_dem,raster::extent(lake_dem)),
+               nrow=ncol(lake_dem),ncol=nrow(lake_dem))
+
+lake_water &lt;- detect_water(lake_dem_m)
+lake_ray_shade &lt;- ray_shade(lake_dem_m,zscale=50,lambert=FALSE)
+lake_ambient_shade &lt;- ambient_shade(lake_dem_m,zscale=50)
+
+lake_dem_m %&gt;%
+  sphere_shade(texture = &quot;desert&quot;) %&gt;%
+  add_water(lake_water, color=&quot;desert&quot;) %&gt;%
+  add_shadow(lake_ray_shade) %&gt;%
+  add_shadow(lake_ambient_shade) %&gt;%
+  plot_3d(lake_dem_m,zscale=10,fov=0,theta=135,zoom=0.75,phi=45, windowsize = c(1000,800))
+render_snapshot()</code></pre>
+<p><img src="/post/2019-02-16-easy-elevation-for-rayshader-with-elevatr_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>

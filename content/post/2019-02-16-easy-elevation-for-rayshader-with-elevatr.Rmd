@@ -38,4 +38,5 @@ lake_dem_m %>%
   add_shadow(lake_ray_shade) %>%
   add_shadow(lake_ambient_shade) %>%
   plot_3d(lake_dem_m,zscale=10,fov=0,theta=135,zoom=0.75,phi=45, windowsize = c(1000,800))
+render_snapshot()
 ```
