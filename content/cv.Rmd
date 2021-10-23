@@ -199,9 +199,9 @@ Peer Reviewed Articles
 
   : 2010 - 2019
 
-    - Raposa, K. B., R. L. Weber, W. Ferguson, J. W. Hollister, R. Rozsa, N. Maher, A. Gettman. (In Press).  Drainage enhancement effects on a waterlogged Rhode Island (USA) salt marsh. Estuarine, Coastal and Shelf Science. [10.1016/j.ecss.2019.10643](https://doi.org/10.1016/j.ecss.2019.106435) [GitHub](https://github.com/jhollist/marsh_restore)
+    - Raposa, K. B., R. L. Weber, W. Ferguson, J. W. Hollister, R. Rozsa, N. Maher, A. Gettman. (2019).  Drainage enhancement effects on a waterlogged Rhode Island (USA) salt marsh. Estuarine, Coastal and Shelf Science. [10.1016/j.ecss.2019.10643](https://doi.org/10.1016/j.ecss.2019.106435) [GitHub](https://github.com/jhollist/marsh_restore)
 
-    - Nojavan, F. A., B. J. Kreakie, J. W. Hollister, S. S. Qian. (In Press). Rethinking the Lake Trophic State Index. PeerJ. [pre-print](https://peerj.com/preprints/27536/) [GitHub](https://github.com/USEPA/rethinking_tsi)
+    - Nojavan, F. A., B. J. Kreakie, J. W. Hollister, S. S. Qian. (2019). Rethinking the Lake Trophic State Index. PeerJ. [10.7717/peerj.7936](https://doi.org/10.7717/peerj.7936) [pre-print](https://peerj.com/preprints/27536/) [GitHub](https://github.com/USEPA/rethinking_tsi)
     
     - Raposa, K. B., R. A. McKinney, C. Wigand, J. W. Hollister, C. Lovall, K. Szura, J. A. Gurak Jr., J. McNamee, C. Raithel, and E. B. Watson. (2018). Top-down and bottom-up controls on overabundant New England salt marsh crab populations. PeerJ. [10.7717/peerj.4876](https://doi.org/10.7717/peerj.4876) [GitHub](https://github.com/jhollist/crabs)
   
