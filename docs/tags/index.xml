@@ -2,282 +2,273 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Jeffrey W. Hollister</title>
-    <link>/tags/</link>
+    <link>https://jwhollister.com/tags/</link>
     <description>Recent content in Tags on Jeffrey W. Hollister</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 02 Feb 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jwhollister.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bash Script</title>
-      <link>/tags/bash-script/</link>
+      <link>https://jwhollister.com/tags/bash-script/</link>
       <pubDate>Mon, 02 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/bash-script/</guid>
+      <guid>https://jwhollister.com/tags/bash-script/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blogdown</title>
-      <link>/tags/blogdown/</link>
+      <link>https://jwhollister.com/tags/blogdown/</link>
       <pubDate>Sat, 16 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/blogdown/</guid>
+      <guid>https://jwhollister.com/tags/blogdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Categories</title>
-      <link>/tags/categories/</link>
+      <link>https://jwhollister.com/tags/categories/</link>
       <pubDate>Mon, 02 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/categories/</guid>
+      <guid>https://jwhollister.com/tags/categories/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chromebook</title>
-      <link>/tags/chromebook/</link>
+      <link>https://jwhollister.com/tags/chromebook/</link>
       <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/chromebook/</guid>
+      <guid>https://jwhollister.com/tags/chromebook/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chromeos</title>
-      <link>/tags/chromeos/</link>
+      <link>https://jwhollister.com/tags/chromeos/</link>
       <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/chromeos/</guid>
+      <guid>https://jwhollister.com/tags/chromeos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Crontab</title>
-      <link>/tags/crontab/</link>
+      <link>https://jwhollister.com/tags/crontab/</link>
       <pubDate>Mon, 02 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/crontab/</guid>
+      <guid>https://jwhollister.com/tags/crontab/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Crouton</title>
-      <link>/tags/crouton/</link>
+      <link>https://jwhollister.com/tags/crouton/</link>
       <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/crouton/</guid>
+      <guid>https://jwhollister.com/tags/crouton/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Demo</title>
-      <link>/tags/demo/</link>
+      <link>https://jwhollister.com/tags/demo/</link>
       <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/demo/</guid>
+      <guid>https://jwhollister.com/tags/demo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Elevation</title>
-      <link>/tags/elevation/</link>
-      <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
+      <link>https://jwhollister.com/tags/elevation/</link>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/elevation/</guid>
+      <guid>https://jwhollister.com/tags/elevation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Elevatr</title>
-      <link>/tags/elevatr/</link>
-      <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
+      <link>https://jwhollister.com/tags/elevatr/</link>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/elevatr/</guid>
+      <guid>https://jwhollister.com/tags/elevatr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Exiftool</title>
-      <link>/tags/exiftool/</link>
+      <link>https://jwhollister.com/tags/exiftool/</link>
       <pubDate>Mon, 02 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/exiftool/</guid>
+      <guid>https://jwhollister.com/tags/exiftool/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gis</title>
-      <link>/tags/gis/</link>
+      <link>https://jwhollister.com/tags/gis/</link>
       <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/gis/</guid>
+      <guid>https://jwhollister.com/tags/gis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Github</title>
-      <link>/tags/github/</link>
-      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
+      <link>https://jwhollister.com/tags/github/</link>
+      <pubDate>Thu, 09 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>/tags/github/</guid>
+      <guid>https://jwhollister.com/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Google Drive</title>
-      <link>/tags/google-drive/</link>
+      <link>https://jwhollister.com/tags/google-drive/</link>
       <pubDate>Mon, 02 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/google-drive/</guid>
+      <guid>https://jwhollister.com/tags/google-drive/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Grive</title>
-      <link>/tags/grive/</link>
+      <link>https://jwhollister.com/tags/grive/</link>
       <pubDate>Mon, 02 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/grive/</guid>
+      <guid>https://jwhollister.com/tags/grive/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hacking</title>
-      <link>/tags/hacking/</link>
+      <link>https://jwhollister.com/tags/hacking/</link>
       <pubDate>Wed, 08 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>/tags/hacking/</guid>
+      <guid>https://jwhollister.com/tags/hacking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jekyll</title>
-      <link>/tags/jekyll/</link>
+      <link>https://jwhollister.com/tags/jekyll/</link>
       <pubDate>Thu, 09 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>/tags/jekyll/</guid>
+      <guid>https://jwhollister.com/tags/jekyll/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pan</title>
-      <link>/tags/pan/</link>
+      <link>https://jwhollister.com/tags/pan/</link>
       <pubDate>Fri, 30 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/pan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>/tags/projects/</link>
-      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/projects/</guid>
+      <guid>https://jwhollister.com/tags/pan/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>/tags/r/</link>
+      <link>https://jwhollister.com/tags/r/</link>
       <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/r/</guid>
+      <guid>https://jwhollister.com/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Raster</title>
-      <link>/tags/raster/</link>
+      <link>https://jwhollister.com/tags/raster/</link>
       <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/raster/</guid>
+      <guid>https://jwhollister.com/tags/raster/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rayshader</title>
-      <link>/tags/rayshader/</link>
-      <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
+      <link>https://jwhollister.com/tags/rayshader/</link>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/rayshader/</guid>
+      <guid>https://jwhollister.com/tags/rayshader/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rss</title>
-      <link>/tags/rss/</link>
+      <link>https://jwhollister.com/tags/rss/</link>
       <pubDate>Thu, 09 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>/tags/rss/</guid>
+      <guid>https://jwhollister.com/tags/rss/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rstudio</title>
-      <link>/tags/rstudio/</link>
-      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
+      <link>https://jwhollister.com/tags/rstudio/</link>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/rstudio/</guid>
+      <guid>https://jwhollister.com/tags/rstudio/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sp</title>
-      <link>/tags/sp/</link>
+      <link>https://jwhollister.com/tags/sp/</link>
       <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/sp/</guid>
+      <guid>https://jwhollister.com/tags/sp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spatial Data</title>
-      <link>/tags/spatial-data/</link>
-      <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
+      <link>https://jwhollister.com/tags/spatial-data/</link>
+      <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/spatial-data/</guid>
+      <guid>https://jwhollister.com/tags/spatial-data/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Visualization</title>
-      <link>/tags/visualization/</link>
-      <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
+      <link>https://jwhollister.com/tags/visualization/</link>
+      <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/visualization/</guid>
+      <guid>https://jwhollister.com/tags/visualization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Website</title>
-      <link>/tags/website/</link>
+      <link>https://jwhollister.com/tags/website/</link>
       <pubDate>Sat, 16 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/website/</guid>
+      <guid>https://jwhollister.com/tags/website/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Xiwi</title>
-      <link>/tags/xiwi/</link>
+      <link>https://jwhollister.com/tags/xiwi/</link>
       <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/xiwi/</guid>
+      <guid>https://jwhollister.com/tags/xiwi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Zoom</title>
-      <link>/tags/zoom/</link>
+      <link>https://jwhollister.com/tags/zoom/</link>
       <pubDate>Fri, 30 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/zoom/</guid>
+      <guid>https://jwhollister.com/tags/zoom/</guid>
       <description></description>
     </item>
     

@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Crouton on Jeffrey W. Hollister</title>
-    <link>/tags/crouton/</link>
+    <link>https://jwhollister.com/tags/crouton/</link>
     <description>Recent content in Crouton on Jeffrey W. Hollister</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 18 Jan 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/crouton/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jwhollister.com/tags/crouton/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Rstudio Server On A Chromebook</title>
-      <link>/post/2018-01-18-rstudio-server-on-a-chromebook/</link>
+      <link>https://jwhollister.com/post/2018-01-18-rstudio-server-on-a-chromebook/</link>
       <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-01-18-rstudio-server-on-a-chromebook/</guid>
+      <guid>https://jwhollister.com/post/2018-01-18-rstudio-server-on-a-chromebook/</guid>
       <description>The only post I got around to writing in 2017 was a single messy, evoloving set of notes on how to set up a Chromebook with R and RStudio. This post is a reprise of that one as well as post #1 in my effort to double my blog output from 2017 (I&amp;rsquo;m shooting for the stars on that goal). In this post I will detail how to set up RStudio Server in a crouton chroot and access it directly via Chrome without having to fire up a separate X11 window.</description>
     </item>
     
     <item>
       <title>Setting up an Asus Flip C302CA Chromebook for R Development</title>
-      <link>/post/2017-04-14-chromebook-4-rstats/</link>
+      <link>https://jwhollister.com/post/2017-04-14-chromebook-4-rstats/</link>
       <pubDate>Fri, 14 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/2017-04-14-chromebook-4-rstats/</guid>
+      <guid>https://jwhollister.com/post/2017-04-14-chromebook-4-rstats/</guid>
       <description>Don&amp;rsquo;t think of this as a real blog post. It is mostly a loose collection of notes that I took while getting my new Asus Flip C302CA set up with R and RStudio. I&amp;rsquo;ve had this up and running for just a few days now (and in fact wrote this post using RStudio on it) and I love it. I highly recommend.
 The steps below are not really tested. So if you run into problems or I have missed something, let me know.</description>
     </item>

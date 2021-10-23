@@ -3,304 +3,292 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/post/2019-02-16-easy-elevation-for-rayshader-with-elevatr/</loc>
-    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/2018-06-20-my-workflow-or-how-i-make-the-most-of-limited-mental-bandwidth/</loc>
-    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/what-goes-up-must-blogdown-version-3-or-4-of-jwhollister-com/</loc>
+    <loc>https://jwhollister.com/post/what-goes-up-must-blogdown-version-3-or-4-of-jwhollister-com/</loc>
     <lastmod>2018-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2018-01-18-rstudio-server-on-a-chromebook/</loc>
+    <loc>https://jwhollister.com/post/2018-01-18-rstudio-server-on-a-chromebook/</loc>
     <lastmod>2018-01-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2017-04-14-chromebook-4-rstats/</loc>
+    <loc>https://jwhollister.com/post/2017-04-14-chromebook-4-rstats/</loc>
     <lastmod>2017-04-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2015-11-06-r-gis-lightning-demo/</loc>
+    <loc>https://jwhollister.com/post/2015-11-06-r-gis-lightning-demo/</loc>
     <lastmod>2015-11-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2015-10-30-i-finally-got-quickmapr-up-on-cran/</loc>
+    <loc>https://jwhollister.com/post/2015-10-30-i-finally-got-quickmapr-up-on-cran/</loc>
     <lastmod>2015-10-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2015-06-15-download-shapefile-reprise/</loc>
+    <loc>https://jwhollister.com/post/2015-06-15-download-shapefile-reprise/</loc>
     <lastmod>2015-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2015-03-13-quickmapr-pre-release/</loc>
+    <loc>https://jwhollister.com/post/2015-03-13-quickmapr-pre-release/</loc>
     <lastmod>2015-03-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2015-02-02-organizing-photos-on-google-drive/</loc>
+    <loc>https://jwhollister.com/post/2015-02-02-organizing-photos-on-google-drive/</loc>
     <lastmod>2015-02-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2014-10-09-category-feed/</loc>
+    <loc>https://jwhollister.com/post/2014-10-09-category-feed/</loc>
     <lastmod>2014-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/2014-10-08-colophon/</loc>
+    <loc>https://jwhollister.com/post/2014-10-08-colophon/</loc>
     <lastmod>2014-10-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/cv/</loc>
+    <loc>https://jwhollister.com/calendar/</loc>
   </url>
   
   <url>
-    <loc>/about/</loc>
+    <loc>https://jwhollister.com/cv/</loc>
   </url>
   
   <url>
-    <loc>/tags/bash-script/</loc>
+    <loc>https://jwhollister.com/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jwhollister.com/tags/bash-script/</loc>
     <lastmod>2015-02-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/blogdown/</loc>
+    <loc>https://jwhollister.com/tags/blogdown/</loc>
     <lastmod>2018-06-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/blogroll/</loc>
+    <loc>https://jwhollister.com/blogroll/</loc>
   </url>
   
   <url>
-    <loc>/tags/categories/</loc>
+    <loc>https://jwhollister.com/tags/categories/</loc>
     <lastmod>2015-02-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://jwhollister.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/chromebook/</loc>
+    <loc>https://jwhollister.com/tags/chromebook/</loc>
     <lastmod>2018-01-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/chromeos/</loc>
+    <loc>https://jwhollister.com/tags/chromeos/</loc>
     <lastmod>2018-01-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/crontab/</loc>
+    <loc>https://jwhollister.com/tags/crontab/</loc>
     <lastmod>2015-02-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/crouton/</loc>
+    <loc>https://jwhollister.com/tags/crouton/</loc>
     <lastmod>2018-01-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/demo/</loc>
+    <loc>https://jwhollister.com/tags/demo/</loc>
     <lastmod>2015-11-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/elevation/</loc>
-    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
+    <loc>https://jwhollister.com/tags/elevation/</loc>
+    <lastmod>2015-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/elevatr/</loc>
-    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
+    <loc>https://jwhollister.com/tags/elevatr/</loc>
+    <lastmod>2015-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/exiftool/</loc>
+    <loc>https://jwhollister.com/tags/exiftool/</loc>
     <lastmod>2015-02-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/gis/</loc>
+    <loc>https://jwhollister.com/tags/gis/</loc>
     <lastmod>2015-11-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/gis/</loc>
-    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
+    <loc>https://jwhollister.com/categories/gis/</loc>
+    <lastmod>2015-11-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/github/</loc>
-    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/google-drive/</loc>
-    <lastmod>2015-02-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/grive/</loc>
-    <lastmod>2015-02-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/hacking/</loc>
-    <lastmod>2014-10-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/hacking/</loc>
-    <lastmod>2015-02-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/jekyll/</loc>
+    <loc>https://jwhollister.com/tags/github/</loc>
     <lastmod>2014-10-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/pan/</loc>
+    <loc>https://jwhollister.com/tags/google-drive/</loc>
+    <lastmod>2015-02-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jwhollister.com/tags/grive/</loc>
+    <lastmod>2015-02-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jwhollister.com/tags/hacking/</loc>
+    <lastmod>2014-10-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jwhollister.com/categories/hacking/</loc>
+    <lastmod>2015-02-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jwhollister.com/</loc>
+    <lastmod>2018-06-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jwhollister.com/tags/jekyll/</loc>
+    <lastmod>2014-10-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jwhollister.com/tags/pan/</loc>
     <lastmod>2015-10-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
+    <loc>https://jwhollister.com/post/</loc>
+    <lastmod>2018-06-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/projects/</loc>
-    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/r/</loc>
+    <loc>https://jwhollister.com/tags/r/</loc>
     <lastmod>2015-11-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
-    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
+    <loc>https://jwhollister.com/categories/r/</loc>
+    <lastmod>2018-06-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/raster/</loc>
+    <loc>https://jwhollister.com/tags/raster/</loc>
     <lastmod>2015-11-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/rayshader/</loc>
-    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
+    <loc>https://jwhollister.com/tags/rayshader/</loc>
+    <lastmod>2015-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/rss/</loc>
+    <loc>https://jwhollister.com/tags/rss/</loc>
     <lastmod>2014-10-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/rstudio/</loc>
-    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/talks/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/site-details/</loc>
-    <lastmod>2018-06-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sp/</loc>
-    <lastmod>2015-11-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/spatial-data/</loc>
-    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2015-02-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/visualization/</loc>
-    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/website/</loc>
-    <lastmod>2018-06-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/xiwi/</loc>
+    <loc>https://jwhollister.com/tags/rstudio/</loc>
     <lastmod>2018-01-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/zoom/</loc>
+    <loc>https://jwhollister.com/talks/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jwhollister.com/categories/site-details/</loc>
+    <lastmod>2018-06-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jwhollister.com/tags/sp/</loc>
+    <lastmod>2015-11-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jwhollister.com/tags/spatial-data/</loc>
+    <lastmod>2015-11-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jwhollister.com/tags/</loc>
+    <lastmod>2015-02-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jwhollister.com/tags/visualization/</loc>
+    <lastmod>2015-11-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jwhollister.com/tags/website/</loc>
+    <lastmod>2018-06-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jwhollister.com/tags/xiwi/</loc>
+    <lastmod>2018-01-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jwhollister.com/tags/zoom/</loc>
     <lastmod>2015-10-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

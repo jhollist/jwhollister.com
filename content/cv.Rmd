@@ -8,7 +8,7 @@ cv: true
 
 - updated: `r format(Sys.time(), "%Y-%m-%d")`
 - U.S. Environmental Protection Agency
-- Atlantic Ecology Division
+- Atlantic Coastal Environmental Sciences Division
 - 27 Tarzwell Drive
 - Narragansett, RI 02881
 - (o)401 782 9655
@@ -191,13 +191,15 @@ May 2003 – Aug 2004
 
 Peer Reviewed Articles
 
-  : Submitted
-      
+  : 2020 - Present
+  
+    - Kreakie, B. J., S. D. Shivers, J. W. Hollister, W. B. Milstead. (2021). Predictive Model of Lake Photic Zone Temperature Across the Conterminous United States. Frontiers in Environmental Science. [10.3389/fenvs.2021.707874](https://doi.org/10.3389/fenvs.2021.707874) [GitHub](https://github.com/usepa/lake_photic_zone)
+    
+    - Hollister, J. W., D. W. Kellogg, B. J. Kreakie, S. D. Shivers, W. B. Milstead, E. M. Herrong, L. T. Green, A. J. Gold. (2021). Analyzing long-term water quality of lakes in Rhode Island and the northeastern United States with an anomaly approach. Ecosphere. [10.1002/ecs2.3555](https://doi.org/10.1002/ecs2.3555) [pre-print](https://www.biorxiv.org/content/10.1101/2020.02.11.944280v1) [GitHub](https://github.com/USEPA/ri_wq_trends)
 
-       
-  : 2010 - Present
+  : 2010 - 2019
 
-    - Raposa, K. B., R. L. Weber, W. Ferguson, J. W. Hollister, R. Rozsa, N. Maher, A. Gettman. (In Press).  Drainage enhancement effects on a waterlogged Rhode Island (USA) salt marsh. Estuarine, Coastal and Shelf Science.
+    - Raposa, K. B., R. L. Weber, W. Ferguson, J. W. Hollister, R. Rozsa, N. Maher, A. Gettman. (In Press).  Drainage enhancement effects on a waterlogged Rhode Island (USA) salt marsh. Estuarine, Coastal and Shelf Science. [10.1016/j.ecss.2019.10643](https://doi.org/10.1016/j.ecss.2019.106435) [GitHub](https://github.com/jhollist/marsh_restore)
 
     - Nojavan, F. A., B. J. Kreakie, J. W. Hollister, S. S. Qian. (In Press). Rethinking the Lake Trophic State Index. PeerJ. [pre-print](https://peerj.com/preprints/27536/) [GitHub](https://github.com/USEPA/rethinking_tsi)
     

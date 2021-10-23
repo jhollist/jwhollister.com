@@ -9,7 +9,7 @@
   <meta name="referrer" content="no-referrer">
   
 
-  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="icon" type="image/png" href="https://jwhollister.com/favicon.png">
 
   <title>
     
@@ -17,10 +17,10 @@
      Getting a Category Feed Up and Running with Jekyll on Github 
     
   </title>
-  <link rel="canonical" href="/post/2014-10-09-category-feed/">
+  <link rel="canonical" href="https://jwhollister.com/post/2014-10-09-category-feed/">
 
-  <link rel="stylesheet" href="/css/fonts.css" />
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="https://jwhollister.com/css/fonts.css" />
+  <link rel="stylesheet" href="https://jwhollister.com/css/style.css" />
   
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
@@ -40,27 +40,27 @@
     <li><a href= "https://scholar.google.com/citations?user=Fn9BjfIAAAAJ"><i class='fas fa-graduation-cap'></i></a></li>
     
   </ul>
-  <h1><a href="/">Jeffrey W. Hollister</a></h1>
+  <h1><a href="https://jwhollister.com/">Jeffrey W. Hollister</a></h1>
   <ul>
     
     
-    <li><a href="/"><i class='fas fa-home'></i><br>Home</a></li>
+    <li><a href="https://jwhollister.com/"><i class='fas fa-home'></i><br>Home</a></li>
     
     
     
-    <li><a href="/about/"><i class='fas fa-question'></i><br>About</a></li>
+    <li><a href="https://jwhollister.com/about/"><i class='fas fa-question'></i><br>About</a></li>
     
     
     
-    <li><a href="/talks/"><i class='fas fa-chalkboard'></i><br>Talks</a></li>
+    <li><a href="https://jwhollister.com/talks/"><i class='fas fa-chalkboard'></i><br>Talks</a></li>
     
     
     
-    <li><a href="/cv/"><i class='fas fa-book-open'></i><br>Vitae</a></li>
+    <li><a href="https://jwhollister.com/cv/"><i class='fas fa-book-open'></i><br>Vitae</a></li>
     
     
     
-    <li><a href="/blogroll/"><i class='fas fa-clipboard-list'></i><br>Blogroll</a></li>
+    <li><a href="https://jwhollister.com/blogroll/"><i class='fas fa-clipboard-list'></i><br>Blogroll</a></li>
     
     
   </ul>
@@ -90,10 +90,10 @@ layout: none
 <span style="color:#00f">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
 &lt;rss version=<span style="color:#a31515">&#34;2.0&#34;</span> xmlns:atom=<span style="color:#a31515">&#34;http://www.w3.org/2005/Atom&#34;</span>&gt;
   &lt;channel&gt;
-  	&lt;title&gt;{{ site.title | xml_escape }} - r&lt;/title&gt;
-		&lt;description&gt;Posts categorized as &#39;r&#39;&lt;/description&gt;
-		&lt;link&gt;{{ site.url }}&lt;/link&gt;
-		&lt;atom:link href=<span style="color:#a31515">&#34;{{ site.url }}/feed.r.xml&#34;</span> rel=<span style="color:#a31515">&#34;self&#34;</span> type=<span style="color:#a31515">&#34;application/rss+xml&#34;</span> /&gt;
+    &lt;title&gt;{{ site.title | xml_escape }} - r&lt;/title&gt;
+        &lt;description&gt;Posts categorized as &#39;r&#39;&lt;/description&gt;
+        &lt;link&gt;{{ site.url }}&lt;/link&gt;
+        &lt;atom:link href=<span style="color:#a31515">&#34;{{ site.url }}/feed.r.xml&#34;</span> rel=<span style="color:#a31515">&#34;self&#34;</span> type=<span style="color:#a31515">&#34;application/rss+xml&#34;</span> /&gt;
     {% for post in site.categories.r limit:20 %}
       &lt;item&gt;
         &lt;title&gt;{{ post.title | xml_escape }}&lt;/title&gt;
@@ -103,7 +103,7 @@ layout: none
         &lt;guid isPermaLink=<span style="color:#a31515">&#34;true&#34;</span>&gt;{{ site.url }}{{ post.url }}&lt;/guid&gt;
       &lt;/item&gt;
     {% endfor %}
-	&lt;/channel&gt;
+    &lt;/channel&gt;
 &lt;/rss&gt;</code></pre></div>
 <p>I have saved this in the source of my website as <code>feed.r.xml</code>.  One gotcha is that Jekyll appears to convert all categories to lower case.  I had it set to loop on <code>site.categories.R</code> and it wasn&rsquo;t working.  Switching to <code>site.categories.r</code> fixed the problem.</p>
 
@@ -131,10 +131,10 @@ And now to get even more into the weeds, getting <code>&#123;% raw %}</code> to 
 
   <div id=links>
     
-      <a class="basic-alignment left" href="/post/2014-10-08-colophon/">&laquo; Colophon: jwhollister.com v0.2.0</a>
+      <a class="basic-alignment left" href="https://jwhollister.com/post/2014-10-08-colophon/">&laquo; Colophon: jwhollister.com v0.2.0</a>
     
     
-      <a class="basic-alignment left" href="/post/2015-02-02-organizing-photos-on-google-drive/">Automatically Organizing Photographs on Google Drive: Why isn&#39;t this already a thing? &raquo;</a>
+      <a class="basic-alignment left" href="https://jwhollister.com/post/2015-02-02-organizing-photos-on-google-drive/">Automatically Organizing Photographs on Google Drive: Why isn&#39;t this already a thing? &raquo;</a>
     
   </div>
 </section>

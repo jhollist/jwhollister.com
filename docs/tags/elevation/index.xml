@@ -2,30 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Elevation on Jeffrey W. Hollister</title>
-    <link>/tags/elevation/</link>
+    <link>https://jwhollister.com/tags/elevation/</link>
     <description>Recent content in Elevation on Jeffrey W. Hollister</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 16 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/elevation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jwhollister.com/tags/elevation/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Easy Elevation for `rayshader` with `elevatr`</title>
-      <link>/post/2019-02-16-easy-elevation-for-rayshader-with-elevatr/</link>
-      <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2019-02-16-easy-elevation-for-rayshader-with-elevatr/</guid>
-      <description>library(rayshader) ## Warning in rgl.init(initValue, onlyNULL): RGL: unable to open X11 display ## Warning: &amp;#39;rgl_init&amp;#39; failed, running with rgl.useNULL = TRUE library(elevatr) library(raster) ## Loading required package: sp data(lake) lake_b &amp;lt;- rgeos::gBuffer(lake, width = 1000) lake_dem &amp;lt;- get_elev_raster(lake_b, z=12, clip = &amp;quot;bbox&amp;quot;) ## Merging DEMs ## Clipping DEM to bbox ## Reprojecting DEM to original projection ## Note: Elevation units are in meters. ## Note: The coordinate reference system is: ## +proj=aea +lat_1=20 +lat_2=60 +lat_0=40 +lon_0=-96 +x_0=0 +y_0=0 +datum=NAD83 +units=m +no_defs +ellps=GRS80 +towgs84=0,0,0 lake_dem_m &amp;lt;- matrix(extract(lake_dem,raster::extent(lake_dem)), nrow=ncol(lake_dem),ncol=nrow(lake_dem)) lake_water &amp;lt;- detect_water(lake_dem_m) lake_ray_shade &amp;lt;- ray_shade(lake_dem_m,zscale=50,lambert=FALSE) lake_ambient_shade &amp;lt;- ambient_shade(lake_dem_m,zscale=50) lake_dem_m %&amp;gt;% sphere_shade(texture = &amp;quot;desert&amp;quot;) %&amp;gt;% add_water(lake_water, color=&amp;quot;desert&amp;quot;) %&amp;gt;% add_shadow(lake_ray_shade) %&amp;gt;% add_shadow(lake_ambient_shade) %&amp;gt;% plot_3d(lake_dem_m,zscale=10,fov=0,theta=135,zoom=0.</description>
-    </item>
     
     <item>
       <title>Download Shapefiles - Take 2</title>
-      <link>/post/2015-06-15-download-shapefile-reprise/</link>
+      <link>https://jwhollister.com/post/2015-06-15-download-shapefile-reprise/</link>
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-06-15-download-shapefile-reprise/</guid>
+      <guid>https://jwhollister.com/post/2015-06-15-download-shapefile-reprise/</guid>
       <description>So back in 2013 I posted a little function I wrote for grabbing all the relevant files that make up a shapefile from a URL. Turns out it doesn’t play so well with Windows 7 or Windows 8 (HT: John Lewis). Below is a reprised version that at least works on Ubuntu 14.04 and Windows 7. Haven’t tested it beyond that and supressing the warnings to get httr::GET to not complain too much about FTP seems a bit unclean.</description>
     </item>
     

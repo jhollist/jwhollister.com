@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Grive on Jeffrey W. Hollister</title>
-    <link>/tags/grive/</link>
+    <link>https://jwhollister.com/tags/grive/</link>
     <description>Recent content in Grive on Jeffrey W. Hollister</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 02 Feb 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/grive/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jwhollister.com/tags/grive/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Automatically Organizing Photographs on Google Drive: Why isn&#39;t this already a thing?</title>
-      <link>/post/2015-02-02-organizing-photos-on-google-drive/</link>
+      <link>https://jwhollister.com/post/2015-02-02-organizing-photos-on-google-drive/</link>
       <pubDate>Mon, 02 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-02-02-organizing-photos-on-google-drive/</guid>
+      <guid>https://jwhollister.com/post/2015-02-02-organizing-photos-on-google-drive/</guid>
       <description>Over the last year or so, my wife and I have been moving most our files onto Google Drive. This has worked great as we have access across all of our devices. The last vestiges of local storage have been our photos. With the recent purchase of a Chromebook (which I&amp;rsquo;ve been impressed with but that is a different post&amp;hellip;) and the 1TB of Google Drive storage that came with it, I decided to take the plunge and get our photos up their too.</description>
     </item>
     

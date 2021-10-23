@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on Jeffrey W. Hollister</title>
-    <link>/tags/r/</link>
+    <link>https://jwhollister.com/tags/r/</link>
     <description>Recent content in R on Jeffrey W. Hollister</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 06 Nov 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jwhollister.com/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Spatial Data Analysis in R: Lightning Demo!</title>
-      <link>/post/2015-11-06-r-gis-lightning-demo/</link>
+      <link>https://jwhollister.com/post/2015-11-06-r-gis-lightning-demo/</link>
       <pubDate>Fri, 06 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-11-06-r-gis-lightning-demo/</guid>
+      <guid>https://jwhollister.com/post/2015-11-06-r-gis-lightning-demo/</guid>
       <description>At this years NEARC meeting I decided to give a lightning talk on using R as a GIS. As I was working on this I thought, &amp;ldquo;why not try a lightning demo?&amp;rdquo; That would be better than five minutes of slides on packages and commands. But, as anyone who has done a live demo will know, they often provide unexpected challenges. Add a 5 minute limit to that, and well, some level of failure is sure to occur.</description>
     </item>
     
     <item>
       <title>I finally got quickmapr on CRAN!</title>
-      <link>/post/2015-10-30-i-finally-got-quickmapr-up-on-cran/</link>
+      <link>https://jwhollister.com/post/2015-10-30-i-finally-got-quickmapr-up-on-cran/</link>
       <pubDate>Fri, 30 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-10-30-i-finally-got-quickmapr-up-on-cran/</guid>
+      <guid>https://jwhollister.com/post/2015-10-30-i-finally-got-quickmapr-up-on-cran/</guid>
       <description>A little over 7 months ago I posted about a package that I had been working on, quickmapr. That was the pre-release version, the one that I finished up today and submitted to CRAN is a bit more polished, plots rasters a bit quicker, and is, I think, ready for wider release. It is now availble from CRAN.
 The README on GitHub provides details plus some examples using a small dataset included with the package.</description>
     </item>
     
     <item>
       <title>quickmapr: An R package for mapping and interacting with spatial data</title>
-      <link>/post/2015-03-13-quickmapr-pre-release/</link>
+      <link>https://jwhollister.com/post/2015-03-13-quickmapr-pre-release/</link>
       <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-03-13-quickmapr-pre-release/</guid>
+      <guid>https://jwhollister.com/post/2015-03-13-quickmapr-pre-release/</guid>
       <description>I do a lot of GIS. That used to mean firing up any one of the esri products, but over the course of the last couple of years I have done that less and less and instead fired up R.
 When I first started using R for my spatial analysis work I often was left struggling with viewing the results of my analysis and could only do so with a clunky workflow of pushing my sp or raster objects out to shapefiles or tiffs and then pulling those into Arcmap.</description>
     </item>
